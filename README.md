@@ -21,7 +21,7 @@ This repository releases the code and fitted models of our two selected competit
 
 ## Installation
 
-Use Linux x86_64, an NVIDIA Ampere-or-newer GPU, and an NVIDIA driver compatible with CUDA 12.8. Our original full runs used one RTX 3060 Laptop GPU with 6 GB VRAM and approximately 16 GB host RAM. Allow at least 25 GB of additional free space for weights, downloads and inference intermediates, plus the dataset and Docker image.
+Use Linux x86_64, an NVIDIA Ampere-or-newer GPU, and an NVIDIA driver compatible with CUDA 12.8. The model downloader requires Python 3.11.8 or newer on the host. Our original full runs used one RTX 3060 Laptop GPU with 6 GB VRAM and approximately 16 GB host RAM. Allow at least 25 GB of additional free space for weights, downloads and inference intermediates, plus the dataset and Docker image.
 
 ```bash
 git clone https://github.com/zmuxuny/KURONAME-CUHK-X-2026.git

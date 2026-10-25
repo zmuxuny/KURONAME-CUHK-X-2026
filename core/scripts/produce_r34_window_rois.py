@@ -5,7 +5,6 @@ from __future__ import annotations
 import argparse
 import json
 import os
-import subprocess
 import sys
 import time
 from pathlib import Path
@@ -53,7 +52,7 @@ def main():
     snapshot = args.output / 'source_snapshot'
     snapshot.mkdir()
     (snapshot / Path(__file__).name).write_bytes(Path(__file__).read_bytes())
-    subprocess.run(['git', 'archive', '--format=tar.gz', '--output=' + str(snapshot.resolve() / 'source.tar.gz'), 'HEAD'], cwd=ROOT, check=True)
+    # The executed producer is copied above; source ZIPs have no Git history.
     write_json(args.output / 'invocation.json', {'argv': sys.argv, 'cwd': str(Path.cwd()), 'python': sys.executable, 'torch': str(torch.__version__), 'numpy': np.__version__, 'plan': plan, 'OMP_NUM_THREADS': os.environ.get('OMP_NUM_THREADS')})
     output = args.output / 'units'
     output.mkdir()
