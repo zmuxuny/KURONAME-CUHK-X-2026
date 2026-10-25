@@ -28,7 +28,7 @@ flowchart TB
     Q --> E
     Q --> R
     A --> SAT[Scored SAT consistency for HAU action answers]
-    SAT --> OUT[One answer letter per question]
+    SAT --> OUT[One prediction string per question]
     T --> OUT
     E --> OUT
     R --> OUT

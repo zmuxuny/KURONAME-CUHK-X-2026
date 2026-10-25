@@ -4,11 +4,11 @@
 
 The public implementation comes from the submitted verification package. `inference.sh` selects **56239668** by default. Pass `56258762` as the third argument for the other selected version. Later experimental candidates and the unsubmitted compatibility adapter are not selected by this entry.
 
-The only inference-source change in the public export removes mandatory Git-history archiving from the raw visual and sensor preparation stages. Those stages already save the actual executed source files. This permits execution from a GitHub ZIP and a Docker build without `.git`. Model tensors, preprocessing parameters, fusion settings, grouping, and answer decoding are unchanged. The package descriptor's file records were updated for these two source files. One training helper omitted from the inference-only export was also restored.
+The only inference-source change in the public export removes mandatory Git-history archiving from the raw visual and sensor preparation stages. Those stages already save the actual executed source files. This permits execution from a GitHub ZIP and a Docker build without `.git`. Model tensors, preprocessing parameters, fusion settings, grouping, and answer decoding are unchanged. The package descriptor's file records were updated for these two source files. A training helper, its test fixture and test configuration omitted from the inference-only export were also restored.
 
 ## Input contract
 
-`test_qa.csv` contains `qa_id,source,path,category,question,A,B,C,D`. Each row asks one multiple-choice question; the category names `single`, `multi`, and `combination` describe the content of the answer, not a variable number of output letters. The model writes one A/B/C/D letter per row.
+`test_qa.csv` contains `qa_id,source,path,category,question,A,B,C,D`. Each row asks one question about the referenced recording. The output format follows the question category: single-choice questions use one option letter, HAU `multi` questions use the selected letters in canonical order, and HAU `sequence` questions use a permutation of the four action letters. For example, `AC` selects options A and C, while `BDAC` orders B before D before A before C. A `combination` question selects one option that describes an action combination.
 
 The input directory must contain the official visual and nonvisual Testing trees. `test_qa.csv` may be at the input root, under `Testing/`, or under `kaggle/`. A sibling `sample_submission.csv` is optional. If absent, the entry uses the QA order.
 
@@ -57,3 +57,14 @@ Original measurements are in `reproduction/original_validation.json`. The 4090 s
 ## Logs
 
 The top-level work directory retains a log per stage. `baseline.log` covers raw feature production and the shared specialists; `source_presence.log` covers the external-source action branch; `selected_action.log` and `selected_sat.log` cover final answer composition. If a subprocess fails, inspect its stage log and the logs in `baseline/`. Start a new end-to-end run with a new output filename.
+
+## Component checks
+
+The included CPU tests exercise partial action supervision, held-out-person
+separation, explicit acquisition layout, model replay and missing-view HARn
+fusion. To run them from an environment with pytest:
+
+```bash
+cd core
+PYTHONPATH=.:src python -m pytest -q tests
+```

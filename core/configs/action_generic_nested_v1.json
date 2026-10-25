@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "frozen_before_experiments": true,
+  "mechanism": "Partially observed HAU action labels from official QA, generic Kinetics video linear probes, and subject-scoped option-frequency joint decoding",
+  "seed": 20260905,
+  "workers": 3,
+  "inner_folds": 3,
+  "feature_dimension": 2048,
+  "feature_archive_sha256": "dfe9bcc3433b593697b637d3c95fdabd404a8a58156246bd265e68b9967b2332",
+  "presence": {"algorithm": "per_action_logistic_regression", "C": 1.0, "class_weight": "balanced", "solver": "liblinear", "max_iter": 1000, "tol": 0.0001, "standardize": "training_subjects_only"},
+  "frequency": {"n_estimators": 200, "min_samples_leaf": 5, "max_depth": 12, "max_features": 0.3, "class_weight": "balanced"},
+  "pooling": "Mean action log odds across available, physically aligned videos in the same verified repeated scene",
+  "missing_evidence": "Missing video uses available siblings; wholly missing group or unseen fitted action class has neutral visual log odds",
+  "decoders": [
+    {"name": "visual_only", "visual_weight": 1.0, "option_weight": 0.0},
+    {"name": "visual_option005", "visual_weight": 1.0, "option_weight": 0.05},
+    {"name": "option_only", "visual_weight": 0.0, "option_weight": 1.0}
+  ],
+  "inner_selection": ["highest pooled exact-question accuracy", "highest worst-subject accuracy", "earliest frozen decoder"],
+  "label_sources": ["Positive: selected official training single/multi/combination members and all sequence options", "Negative: unselected single/multi actions only. Other labels remain unknown; no cross-video label propagation."],
+  "feature_pretraining": "Public torchvision R2Plus1D_18 KINETICS400_V1, fixed generic features; no K-KUNO classifier or prediction tables",
+  "selection_history": "All 18 training subjects historically observed. Before official fitting, a train-label audit showed combination options are non-exhaustive (364/790 omit other certified positives), so the synthetic complete-set prototype was retired. The new mechanism uses only certified positive and negative labels. No outer score, per-row label or Public score chooses a decoder within a fold.",
+  "tie_rule": "Round joint state scores to 12 decimal places, then fixed lexicographic answer order; protects reloads against floating reduction order",
+  "checkpoint_retention": "All 76 inner/outer/final fitted bundles with actual training-array recomputation and prediction replay"
+}

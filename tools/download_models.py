@@ -52,7 +52,19 @@ def main():
             members = handle.getmembers()
             if {m.name for m in members} != {f['path'] for f in files}:
                 raise ValueError('Unexpected file set in model archive')
-            handle.extractall(ROOT, members=members, filter='data')
+            sizes = {f['path']: f['bytes'] for f in files}
+            for member in members:
+                tarfile.data_filter(member, str(ROOT))
+                target = ROOT / member.name
+                if target.is_file() and target.stat().st_size == sizes[member.name]:
+                    continue
+                target.parent.mkdir(parents=True, exist_ok=True)
+                temporary = target.with_suffix(target.suffix + '.part')
+                with handle.extractfile(member) as source, temporary.open('wb') as destination:
+                    shutil.copyfileobj(source, destination, length=1024 * 1024)
+                if temporary.stat().st_size != sizes[member.name]:
+                    raise ValueError(f'Incomplete model file: {member.name}')
+                temporary.replace(target)
         if not args.from_dir:
             path.unlink()  # Avoid keeping a second multi-GB copy after installation.
     print('Models ready. See MODEL_LICENSE.md for their individual terms.')
