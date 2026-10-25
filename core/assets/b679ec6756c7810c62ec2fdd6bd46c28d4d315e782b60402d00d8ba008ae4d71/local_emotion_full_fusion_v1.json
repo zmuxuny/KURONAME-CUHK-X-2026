@@ -1,0 +1,19 @@
+{
+  "kind": "cuhkx_local_emotion_fixed_state_fusion_v1",
+  "parent": "runs/20260905_emotion_recipe_nested_v6",
+  "students": "runs/20260912_local_emotion_distillation_v1",
+  "student_protocol": "configs/local_emotion_distillation_v1.json",
+  "arms": ["parent_control", "parent_half_A", "parent_half_B"],
+  "parent_weight": 0.5,
+  "student_weight": 0.5,
+  "parent_states": "Original v6 per-outer frozen recipe/decoder lexical/context/association and legal joint-state energy. Softmax at temperature1; MAP must replay all749 officialTrain correct and every original answer.",
+  "student_states": "Product of same-outer current-question student probabilities for each legal assignment, clip probability floor1e-12, normalize over exactly the original parent legal assignments. No new learned parameter.",
+  "fusion": "Arithmetic .5 parent state probability + .5 student state probability, MAP with original stable assignment order. Evaluate A and B separately, no grid or outer-based selection claimed as nested.",
+  "declared_before_student_outer_aggregate_read": true,
+  "limits": "All18people historically observed. Fixed full-scene fusion evaluation with independently trained A/B models; teacher/student dependence retained. Component comparison only, not uniform whole-system OOF. Original749 strong parent is retained unless independently justified by root.",
+  "budget_bytes": 25000000,
+  "host_reserve_bytes": 8000000000,
+  "fits": 0,
+  "Test_rows": 0,
+  "pseudo_rows": 0
+}

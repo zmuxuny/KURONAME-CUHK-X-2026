@@ -1,0 +1,47 @@
+{
+  "kind": "cuhkx_conditioned_visual_option_four_experts_v1",
+  "grouped": {
+    "schema_version": 1,
+    "profile": "three_family_harn_equal",
+    "checkpoints": {
+      "action": "runs/20260905_hau_action_checkpoint_v1/checkpoint.json",
+      "emotion": "runs/20260905_emotion_recipe_nested_v6/inference_policy.json",
+      "sequence": "runs/20260905_temporal_checkpoint_v1/checkpoint.json",
+      "harn": "/root/workspace/CUHK-X-research-20260909/runs/20260909_three_family_complete_candidate_v1/checkpoint.json"
+    },
+    "features": {
+      "imu": "artifacts/inference/local_v2_testing_v1/imu.npz",
+      "skeleton": "artifacts/inference/local_v2_testing_v1/skeleton.npz",
+      "radar": "artifacts/inference/local_v2_testing_v1/radar.npz",
+      "logits8": "artifacts/inference/local_v2_testing_v1/logits8.npz",
+      "logits16": "artifacts/inference/local_v2_testing_v1/logits16.npz",
+      "windows16": "artifacts/inference/local_v2_testing_v1/windows16.npz",
+      "windows32": "artifacts/inference/local_v2_testing_v1/windows32.npz",
+      "windows48": "artifacts/inference/local_v2_testing_v1/windows48.npz",
+      "emotion_visual": "runs/20260905_emotion_visual_guard_v5/visual_testing_only.npz",
+      "harn_middle": "runs/20260905_harn_tail_testing_guard_v1/testing_middle/manifest.json",
+      "harn_r34": "runs/20260906_r34_tail_testing_inputs_v2/visual/manifest.json",
+      "harn_videomae": "artifacts/visual/videomae_ssv2_harn_test_whole_v1/manifest.json"
+    }
+  },
+  "independent": {
+    "checkpoints": {
+      "action": "runs/20260909_independent_visual_four_expert_delivery_v1/cpu/bundle",
+      "emotion": "artifacts/delivery/emotion_independent_20260908_v1",
+      "sequence": "runs/20260905_temporal_checkpoint_v1/checkpoint.json",
+      "harn": "/root/workspace/CUHK-X-research-20260909/runs/20260909_three_family_complete_candidate_v1/checkpoint.json"
+    },
+    "features": {
+      "imu": "artifacts/inference/local_v2_testing_v1/imu.npz",
+      "skeleton": "artifacts/inference/local_v2_testing_v1/skeleton.npz",
+      "radar": "artifacts/inference/local_v2_testing_v1/radar.npz",
+      "logits8": "artifacts/inference/local_v2_testing_v1/logits8.npz",
+      "logits16": "artifacts/inference/local_v2_testing_v1/logits16.npz",
+      "emotion_visual": "runs/20260905_emotion_visual_guard_v5/visual_testing_only.npz",
+      "harn_middle": "runs/20260905_harn_tail_testing_guard_v1/testing_middle/manifest.json",
+      "action_visual8": "runs/20260909_action_independent_delivery_v1/inputs/descriptors.npz",
+      "harn_r34": "runs/20260906_r34_tail_testing_inputs_v2/visual/manifest.json",
+      "harn_videomae": "artifacts/visual/videomae_ssv2_harn_test_whole_v1/manifest.json"
+    }
+  }
+}

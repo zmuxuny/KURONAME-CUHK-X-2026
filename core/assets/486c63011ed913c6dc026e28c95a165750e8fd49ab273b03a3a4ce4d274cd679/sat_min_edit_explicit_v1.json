@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "kind": "cuhkx_sat_scored_postprocess_v1",
+  "mode": "sat_min_edit",
+  "layout": "explicit_or_independent",
+  "models": [
+    {
+      "path": "runs/incoming/server_20260912_v1/sat_v1_verified_20260912_extracted/sat_v1_verified_20260912/models/frequency_loso_v1/leaf2_final.joblib",
+      "sha256": "4b486aa3eef40e7d77a0319c8203068f22496218b7a0e839f44f35571bfcf346"
+    },
+    {
+      "path": "runs/incoming/server_20260912_v1/sat_v1_verified_20260912_extracted/sat_v1_verified_20260912/models/frequency_loso_v1/leaf5_final.joblib",
+      "sha256": "b666a2a157706c85805c639fb83afbbfbb7b72f2a9d6377b8f1b762311204c54"
+    },
+    {
+      "path": "runs/incoming/server_20260912_v1/sat_v1_verified_20260912_extracted/sat_v1_verified_20260912/models/frequency_loso_v1/leaf10_final.joblib",
+      "sha256": "db6a779671d5afb9d106116073e86765ee1deb48fffd97391281db14defe5b3a"
+    }
+  ],
+  "source_release_manifest_sha256": "50bc39ef813320401fe27c547570679d9109cd0f5b1f978db378a9ae77b2099b",
+  "pseudo_dependency": false,
+  "scope": "Frozen210D frequency ensemble and minimum whole-question edits, with caller-supplied explicit acquisition groups. Use apply_explicit_group_sat.py; no inferred grouping or new fits."
+}

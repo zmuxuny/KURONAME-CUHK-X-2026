@@ -1,0 +1,108 @@
+{
+  "kind": "cuhkx_harn_three_equal_families_plan_v1",
+  "declared_utc": "2026-09-08T19:13:01.184878+00:00",
+  "models": [
+    "runs/20260905_harn_tail_nested_v1",
+    "runs/20260905_harn_tail_seed_repeat_v1",
+    "runs/20260906_r34_tail_nested_v1",
+    "runs/20260908_harn_videomae_nested_v1"
+  ],
+  "family_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "model_weights": [
+    0.16666666666666666,
+    0.16666666666666666,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "skeleton_weights": [
+    0.0,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "weight_tie_order": [
+    0.5,
+    0.75,
+    0.0,
+    1.0
+  ],
+  "inner_splits": 3,
+  "training_config_sha256": "d2d395e60f1e8b561cf1e0f87cb5be7765362b50f178f7b76e169550870c80b9",
+  "r34_inventory": "runs/20260906_harn_architecture_ensemble_v1/r34_inventory.json",
+  "frozen_inputs": [
+    {
+      "path": "configs/harn_videomae_nested_v1.json",
+      "sha256": "d2d395e60f1e8b561cf1e0f87cb5be7765362b50f178f7b76e169550870c80b9"
+    },
+    {
+      "path": "runs/20260908_harn_videomae_assessment_v3/report.json",
+      "sha256": "30bc29f90049f6e95735e2da1bbcee6fbd62e9762420a0a2e8968891d16be822"
+    },
+    {
+      "path": "runs/20260906_r34_tail_audit_v1/report.json",
+      "sha256": "c036c179dc3ba6a7f3affb168539ebf0950c3387cb6464ccd6bee9ba2acc43b7"
+    },
+    {
+      "path": "runs/20260906_harn_architecture_ensemble_v1/r34_inventory.json",
+      "sha256": "bfa4219b3b02ac617b8d3ad20597a7d3ccbb06fd928e93a2dce9e40e0223ed18"
+    },
+    {
+      "path": "runs/20260905_harn_seed_ensemble_nested_v1/input_manifest.json",
+      "sha256": "ba4e6b90992aff08435459de31f9cce23f88d0b4489b0d16a0588702fb6cdf51"
+    },
+    {
+      "path": "runs/20260905_harn_seed_ensemble_nested_v1/frozen_config.json",
+      "sha256": "0733a4c966921e6ea3fe66cff29b75e38b60cc80036879964225adb88272f634"
+    },
+    {
+      "path": "runs/20260909_harn_three_family_execution_v1/protection.json",
+      "sha256": "83d238182fb230bac289c7782f5e296a5e99628764eb743bfe20128dd78205ce"
+    }
+  ],
+  "sources": [
+    {
+      "path": "scripts/run_harn_three_family_nested.py",
+      "sha256": "097374f990306f757abdd59f66050b9928be8186b6564c3ff8bdcf031beb17d5"
+    },
+    {
+      "path": "src/cuhkx/harn_three_family.py",
+      "sha256": "a87c034a7b6bbe25076804ad747435851e6833a66ddfeca6624feacc292ada16"
+    },
+    {
+      "path": "tests/test_harn_three_family.py",
+      "sha256": "3bd3727cbbd9bcfc1ee26cbbf12d5b4cfb93cfa2004f73b3892c9a11fd2cf3de"
+    },
+    {
+      "path": "scripts/run_harn_support_fusion.py",
+      "sha256": "4034c6d5d2acbe9e49cb4d40a59ad72ac6397972e0a7486769b30b2401c78e8b"
+    },
+    {
+      "path": "scripts/run_harn_seed_ensemble.py",
+      "sha256": "1db3ec3b6b644cd0971306e627fffd574eb2ab8cc1dea4beda3b63c97b987694"
+    },
+    {
+      "path": "src/cuhkx/harn_seed_ensemble.py",
+      "sha256": "b8d81a5b8f96808cac1227fcf90ab26375c4490969fb7dd997519642890c8572"
+    },
+    {
+      "path": "src/cuhkx/harn_nested.py",
+      "sha256": "b1340a0e4de219f05e6d739a638fecb35c5ead85fb0f21ec3b1d561534fc7bdd"
+    },
+    {
+      "path": "src/cuhkx/harn.py",
+      "sha256": "8365ff27887bbd1f95c60941ecb0b7b04c123e2182036c3a68fd9378ba5cfd37"
+    }
+  ],
+  "mechanism": "Equal independent visual pretraining/architecture families: Kinetics R18 dualseed kept asonefamily, IG65M/KineticsR34 assecond, SSv2VideoMAE asthird. Fixedweights, no mixing grid, same4innerSkeletonweights anddictionary/pairdecoding. Previously tried R18/R18/VideoMAE countedmodels2/3R18+1/3VideoMAE, andR18family/R34half; neither combined allthreefamilies. All76fittedsubjectscopes mustmatch.",
+  "comparison": "Full562officialHARnTrainQA versus originaldual522, R34family527 andthreeheadVideoMAE527; noPublicrowtruth orTestpseudometric selection.",
+  "pseudo_dependency": {
+    "weights": false,
+    "hyperparameters": false,
+    "selection": false
+  },
+  "limits": "All18historicallyobserved, cachedfusionstageonly. AnewdifferentcompleteTestvector andactualmodelreplay plusappropriateTrain evidence are required beforeusingaquota; the bestreference stays untilwholecandidate score supportschange."
+}

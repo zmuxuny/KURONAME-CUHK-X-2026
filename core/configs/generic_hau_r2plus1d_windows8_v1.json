@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "frozen_before_extraction": true,
+  "backbone": "r2plus1d_18",
+  "weights": "R2Plus1D_18_Weights.KINETICS400_V1",
+  "weights_path": "/root/.cache/torch/hub/checkpoints/r2plus1d_18-91a641e6.pth",
+  "weights_sha256": "91a641e6c2ab531d1aca5f4321b4d802ec5c3babc15df855cdb6e39c6a1107c8",
+  "media_root": "data/media/visual",
+  "train_csv": "data/raw/kaggle/training_qa.csv",
+  "test_csv": "data/raw/kaggle/test_qa.csv",
+  "person_window_caches": [
+    "artifacts/visual/kuno_temporal_hau_train_full_s8_w2p5_v1.windows.json",
+    "artifacts/visual/kuno_test_v1.windows.json"
+  ],
+  "modalities": [
+    "Depth",
+    "IR"
+  ],
+  "windows": 8,
+  "frames": 16,
+  "window_seconds": 2.5,
+  "workers": 1,
+  "torch_threads": 1,
+  "opencv_threads": 1,
+  "batch_size": 8,
+  "device": "cuda",
+  "alignment_tolerance_frames": 1.0,
+  "preprocessing": "RGB decode; same cached normalized person ROI per unit; INTER_AREA resize to 171x128; crop y8:120 x29:141; float32/255; established Kinetics mean/std; generic model fc=Identity; L2-normalize float32 output.",
+  "physical_time_convention": "Frame i occupies [i/fps,(i+1)/fps). Window starts at its first sampled frame, stops after its last sampled frame, and center is the midpoint. Normalized times divide by frame_count/fps. No cross-modality time correction is performed.",
+  "missing_encoding": "Full unit/modality/window grid; missing X rows are zero with available=false and alignment_ok=false. Missing frame indices/times are -1; fps/frame_count/duration are zero. Consumers must apply the masks.",
+  "expected_training_units": 814,
+  "expected_training_qa_units": 809,
+  "expected_test_qa_units": 144,
+  "replay_atol": 1e-06,
+  "replay_rtol": 1e-05,
+  "output_npz": "artifacts/visual/hau_depth_ir_r2plus1d18_s8_w2p5_v1.npz",
+  "restrictions": "Only generic Kinetics weights, official videos/QA metadata, and image-derived YOLO ROI caches; no K-KUNO classifier, logits, test labels, or stored prediction table. This is feature extraction only, not temporal training."
+}

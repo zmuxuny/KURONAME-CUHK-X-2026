@@ -1,0 +1,9 @@
+.git
+.cache
+.venv
+outputs
+reproduction
+report
+training_configs
+**/__pycache__
+**/*.pyc

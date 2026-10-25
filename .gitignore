@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.pt
+*.pth
+*.bin
+*.joblib
+*.npz
+*.npy
+*.tar*
+*.part
+.cache/
+outputs/
+*.csv.work/
+data/
+.venv/
+report/build/

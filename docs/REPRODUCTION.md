@@ -1,0 +1,59 @@
+# Reproduction
+
+## Version
+
+The public implementation comes from the submitted verification package. `inference.sh` selects **56239668** by default. Pass `56258762` as the third argument for the other selected version. Later experimental candidates and the unsubmitted compatibility adapter are not selected by this entry.
+
+The only inference-source change in the public export removes mandatory Git-history archiving from the raw visual and sensor preparation stages. Those stages already save the actual executed source files. This permits execution from a GitHub ZIP and a Docker build without `.git`. Model tensors, preprocessing parameters, fusion settings, grouping, and answer decoding are unchanged. The package descriptor's file records were updated for these two source files. One training helper omitted from the inference-only export was also restored.
+
+## Input contract
+
+`test_qa.csv` contains `qa_id,source,path,category,question,A,B,C,D`. Each row asks one multiple-choice question; the category names `single`, `multi`, and `combination` describe the content of the answer, not a variable number of output letters. The model writes one A/B/C/D letter per row.
+
+The input directory must contain the official visual and nonvisual Testing trees. `test_qa.csv` may be at the input root, under `Testing/`, or under `kaggle/`. A sibling `sample_submission.csv` is optional. If absent, the entry uses the QA order.
+
+For HAU, the selected method uses related questions and three-recording acquisition groups. Published consecutive Test names provide that grouping. For names that carry the original `HAU/user.../...-1`, `...-2`, `...-3` convention, those suffixes provide the positions. Equivalent supplied metadata can be represented by a sibling file:
+
+```csv
+clip,group,position
+LM_test_0193,acquisition_001,0
+LM_test_0194,acquisition_001,1
+LM_test_0195,acquisition_001,2
+```
+
+This is a schema example. Group entries must describe the actual collection. Anonymous recordings without this relationship require a different context policy; assigning arbitrary triplets does not reproduce the selected method. The original-Test score and reproduction result apply to the published collection.
+
+## Native environment
+
+Docker uses the pinned PyTorch image and packages in `environment/`. To construct a corresponding native environment with Python 3.11 or 3.12:
+
+```bash
+python3.11 -m venv .venv
+source .venv/bin/activate
+python -m pip install torch==2.11.0 torchvision==0.26.0 \
+  --index-url https://download.pytorch.org/whl/cu128
+python -m pip install --no-deps -r environment/requirements-docker.txt
+python tools/download_models.py
+bash inference.sh /absolute/path/to/official_test outputs/primary.csv
+python tools/compare_predictions.py outputs/primary.csv
+```
+
+The runtime uses OpenCV's FFmpeg backend to decode MP4 files. On Linux, install `libglib2.0-0` and `libgl1` if your image does not provide them. The process expects a free CUDA device when it starts. It is a single-GPU pipeline; no tensor parallelism is used.
+
+`CUHKX_PYTHON=/path/to/python bash inference.sh ...` selects a specific interpreter. The entry fixes the Python hash seed, BLAS thread counts, offline Hugging Face settings, and CUBLAS workspace convention. Video branches retain their original FP16/BF16/FP32 settings.
+
+## Results and scope
+
+| Validation | Profile | Complete raw-data run | Time | Original Test match |
+|---|---|---|---:|---|
+| RTX 3060 Laptop 6 GB, original offline Docker | Primary | Yes | 34.1 min | 682/682; exact CSV bytes |
+| RTX 3060 Laptop 6 GB, original offline Docker | Secondary | Yes | 35.6 min | 682/682; exact CSV bytes |
+| RTX 4090 24 GB, original native environment | Primary | Yes | 18.6 min | 682/682; exact CSV bytes |
+
+Original measurements are in `reproduction/original_validation.json`. The 4090 secondary measurement in the private development archive reused freshly produced shared features, so it is not listed as a full-run benchmark here. Measured whole-device GPU memory on the original primary 3060 run peaked at 3729 MiB; sampled container RAM peaked at 8.27 GiB.
+
+`reproduction/reference/final_submission_1.csv` is the primary reference; `_2.csv` is secondary. Inference does not read them. The comparison tool checks IDs, per-row answers, order, and exact bytes, and exits nonzero on a mismatch.
+
+## Logs
+
+The top-level work directory retains a log per stage. `baseline.log` covers raw feature production and the shared specialists; `source_presence.log` covers the external-source action branch; `selected_action.log` and `selected_sat.log` cover final answer composition. If a subprocess fails, inspect its stage log and the logs in `baseline/`. Start a new end-to-end run with a new output filename.

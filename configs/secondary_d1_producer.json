@@ -1,0 +1,22 @@
+{
+  "model_files": [
+    {
+      "name": "config.json",
+      "sha256": "b2bce2d7ce9840fd92d4a9f677d823f6116ce67f4de655a553c5b355a5dad34e"
+    },
+    {
+      "name": "preprocessor_config.json",
+      "sha256": "c3aa722f22a7ff0d234d407862025fe47672f74f46f92c91f757f7a7354107c2"
+    },
+    {
+      "name": "pytorch_model.bin",
+      "sha256": "b960dafd7b3051e8be4ce7ca1bcbc051012eee2a0767f22dd6b7ca77507b82fb"
+    }
+  ],
+  "source_revision": "e3f23b7a9bcc6f6b0bbf44da097c0f94548c6ec5",
+  "license": "cc-by-nc-4.0",
+  "windows": 16,
+  "window_seconds": 1.0,
+  "frames": 16,
+  "gpu_memory_fraction": 0.45
+}

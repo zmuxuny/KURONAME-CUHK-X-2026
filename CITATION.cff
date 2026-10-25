@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite the technical report when using this implementation."
+title: "KURONAME: Task-Specific Evidence and Structured Decoding for Non-RGB Activity Question Answering"
+type: software
+version: 1.0.0
+license: Apache-2.0
+repository-code: "https://github.com/zmuxuny/KURONAME-CUHK-X-2026"
+authors:
+  - family-names: Cao
+    given-names: Zeyang
+    affiliation: "Zhejiang University, China"
+  - family-names: Zhou
+    given-names: Yanqing
+    affiliation: "The Chinese University of Hong Kong, Shenzhen, China"

@@ -1,0 +1,23 @@
+{
+  "source_commit": "4f5ae23172ba60fd7bc11ef671cca678842c7072",
+  "model": {
+    "model_id": "depth-anything/Video-Depth-Anything-Small",
+    "commit": "256875362cff76724b920335dfb4b29dd611f66e",
+    "license": "apache-2.0",
+    "gated": false
+  },
+  "files": [
+    {
+      "path": "/root/workspace/CUHK-X/data/external/vda-small-4f5ae23172ba/author_source.tar.gz",
+      "sha256": "c6b168840ef9c3bea586eb60cda474d01b840843cc68dee58eee36e11ab6c087",
+      "bytes": 7868252
+    },
+    {
+      "path": "/root/workspace/CUHK-X/data/external/vda-small-4f5ae23172ba/video_depth_anything_vits.pth",
+      "sha256": "13379300b739e659f076a59d52e9801bd8d38c541a7e71f73bbca4dcfb013609",
+      "bytes": 116440756
+    }
+  ],
+  "status": "downloaded_not_loaded",
+  "finished_unix": 1789318544.798102
+}

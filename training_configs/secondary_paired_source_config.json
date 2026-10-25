@@ -1,0 +1,83 @@
+{
+  "BN": "all running buffers frozen; selected affine weights learned",
+  "alignment_enabled": true,
+  "backbone_lr": 1e-06,
+  "batch_windows": 16,
+  "epochs": 1,
+  "expected_source_videos": 2000,
+  "expected_source_windows": 14075,
+  "head_lr": 0.001,
+  "license": "Charades noncommercial research/evaluation; source media/derivatives not redistributed",
+  "loss": "157-axis occupied sampled-frame fraction soft BCE; invalid annotation classes masked; sqrt negative/positive prevalence positive-weight clipped[1,20],computed external source only",
+  "min_host_free_bytes": 21474836480,
+  "optimization_decision": {
+    "evidence": "runs/20260914_r34_head_stability_lr1e6_v1/report.json",
+    "head_initialization": "same seeded random157head in bothsourcearms; no target-derived source head",
+    "reason": "The same R34 trainable backbone and fixed BN lost positive features at1e-4 on target CE. Use the already justified small backbone step for both matched source arms before observing any target validation; source softBCE is a different objective, so record its entire feature/loss trajectory against the source constant predictor. Original sourcev1 was prepared but never fitted."
+  },
+  "precision": "BF16 autocast, fp32 master weights; retain fp32 source learned weights and independently reload before target adaptation, matching the E0 generic initialization precision; target deployment retention is separately fp16",
+  "sampling": "Replacement N14075 windows per epoch, same3epochs/seed/batch16/microbatch2; expected equalperson/uniqueSHA/annotation/window mass. Three duplicate pairs share mass, all annotations retained.",
+  "sampling_unit": "unique_raw_sha256_per_person",
+  "seed": 20267914,
+  "source": "Fixed2000officialCharadesTrainannotationrecords/1997unique media; original625 retained, source-only added class-person coverage; all paired actualPTS8second/stride4 windows",
+  "source_continuation": {
+    "created_utc": "2026-09-15T02:14:36.624093+00:00",
+    "evaluation": "Sourcefullrecipe/gradientcontrol/reload checks then same frozen-source HARn20epoch19heads andHAU76heads/152forests readouts on eachnewsource. Compareall18/current625RGBHAU3914. Oldsourcecontrol kept. FixedoldR34half andHAUslot replace/half only; no new weight menu. No automaticTest orupload; no19targetbackbonefit untilmechanismevidence assessed.",
+    "hypothesis": "Paired RGB source features contain readable action signal that sparse157-axis occupancy labels alone transfer incompletely to syntheticdepth. Frozen RGBsource representation is an additional semantic target for the same synthetic-depth window. Fixed pooled512 cosinealignment plusoriginalBCE versusmatchedextraepoch BCEonly. Does not assume appearance or metricdepth equivalence.",
+    "prior_evidence": [
+      "ExpandedRGBwarm1739 versusDepth1667 versusE01570; external targetadaptation raisesaccuracybutworsensNLL.",
+      "2000grayDepthsource andpalette sourceHAUfailcurrent3914; palette18Depth_Color1466vsgray1547 despite colorappearance; originalmean1766vs1805.",
+      "OriginaltargetE0probabilityKLanchor failedfullchain; this instead uses RGBpairedexternalCharades windows andsourcefeaturecosine, no44targetteacher orTest."
+    ],
+    "recipe": {
+      "arms": [
+        "BCE_control",
+        "BCE_RGB_cosine"
+      ],
+      "backbone_lr": 1e-06,
+      "batch_windows": 16,
+      "epochs": 1,
+      "head_lr": 0.001,
+      "initial": "Bothstartsamecompletedgray2000FP32sourceincluding157head; preservegenericBN",
+      "loss": "Originalsourceweightedmasked157-axissoftBCE perwindow; treatmentadds1-cosine(studentpooled512,detachedRGBteacherpooled512), coefficient1, noalignmentonfc157logits. No temperature/menu/targettuning.",
+      "microbatch": 2,
+      "optimizer": "freshAdamW/cosine880 botharms, explicitcontinuationwithoptimizerrestart; oldoptimizerretained",
+      "sampling": "One next RNG draw after originalthreeepochs from originalsourcewindowprobability, identical14075roworderbotharms",
+      "seed": 20267914,
+      "steps": 880,
+      "teacher": "FrozencompletedRGB2000source evalpooled512, originalphysicalwindowpixels, BF16forward retainedfloat32",
+      "trainable": "layer3/layer4/fc; BN buffersfrozen",
+      "weight_decay": 0.01
+    },
+    "reference": {
+      "url": "https://openaccess.thecvf.com/content_cvpr_2016/html/Gupta_Cross_Modal_Distillation_CVPR_2016_paper.html",
+      "use": "Motivation for pairedRGBtoDepthsupervision transfer; currentvideo/sourceandcosineloss are our fixed variant, not exactpaperreplication orguarantee."
+    },
+    "remote_root": "/data/cuhkx-20260914/crossmodal_source_v1",
+    "rules": "OnlyexistingofficialCharadesTrain2000 andderivedpaireddepth. SourceRGBteacher neverseescompetitionTrain/Test; noTestpseudo/labels. SameCharadesnoncommerciallicense/VDASmallApache2/genericR34sourceobligations retained. Derivedmedia/checkpoints keptprivate. Alltargetreadouts actualnestedpersonexclusion. Generalexternalpermission officialrulesreview retained, KUNOuncertainty remains.",
+    "sources": {
+      "depth": {
+        "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260915_charades_extended_training_v1/source/depth/model.pt",
+        "sha256": "1387fdef5caea1f49f395358265c0651946141b5c3c4e4e011af161c8ad8d4e2"
+      },
+      "rgb": {
+        "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260915_charades_extended_training_v1/source/rgb/model.pt",
+        "sha256": "c9b614876b6285bf9f56bd5ecbd9e56e8ca4f40ed632a71fdebe27ab559b1cd7"
+      }
+    },
+    "status": "predeclared_before_new_source_training",
+    "storage": {
+      "D_reserve_bytes": 8589934592,
+      "local_added_budget_bytes": 1610612736,
+      "policy": "Noadditionalmedia/env. Remote twooptimizers+twomodels+smallteacherfeaturecache budget; localinitiallymodelsonly+features+heads, optimizersremainremoteSHA-boundiflocalbudgetinsufficient. Do notclaimlocaloptimizerrecovery.",
+      "remote_added_budget_bytes": 1677721600,
+      "remote_reserve_bytes": 21474836480
+    }
+  },
+  "source_identity_audit": "runs/20260915_source_packed_cache_v1/sampling_audit/report.json",
+  "substantive_change": "Source positive class-person pairs4674->10083,min support10->19. Training updates834->2640 at fixed3epochs, not a pure data-size ablation. Same matched RGB/depth supervision and target recipe; no source seed/LR/epoch grid.",
+  "target_transfer": "Discard157head. Each source backbone produces its own frozen HARn pool512; same20epoch excluded-person44headwarmup and4epoch lr1e-6 targetR adaptation as completed E0. Warmed head values can differ because features differ.",
+  "trainable": "layer3+layer4+new157head",
+  "weight_decay": 0.01,
+  "weights": "/root/workspace/CUHK-X/data/external/ig65m-r2plus1d34-kinetics-v1/r2plus1d_34_clip32_ft_kinetics_from_ig65m-ade133f1.pth"
+}

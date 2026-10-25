@@ -1,0 +1,306 @@
+{
+  "seed": 20260905,
+  "train_csv": "data/raw/kaggle/training_qa.csv",
+  "option_control": "runs/20260905_action_generic_nested_v1/oof_predictions.csv",
+  "presence": {
+    "std_floor": 0.001,
+    "device": "cpu",
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "epochs": 40,
+    "batch_size": 32,
+    "temperature": 0.5,
+    "gradient_clip": 5.0,
+    "auxiliary_weight": 0.25,
+    "hidden": 128,
+    "dropout": 0.1,
+    "channels": 512
+  },
+  "frequency": {
+    "n_estimators": 200,
+    "min_samples_leaf": 5,
+    "max_depth": 12,
+    "max_features": 0.3,
+    "class_weight": "balanced"
+  },
+  "inner_folds": 3,
+  "expected_models": 76,
+  "expected_qa": 2408,
+  "decoders": [
+    {
+      "name": "option_only",
+      "branch": "visual",
+      "likelihood": "minimal_set",
+      "visual_weight": 0.0,
+      "option_weight": 1.0
+    },
+    {
+      "name": "prior_marginal_w005",
+      "branch": "prior",
+      "likelihood": "marginal",
+      "visual_weight": 0.05,
+      "option_weight": 1.0
+    },
+    {
+      "name": "prior_marginal_w025",
+      "branch": "prior",
+      "likelihood": "marginal",
+      "visual_weight": 0.25,
+      "option_weight": 1.0
+    },
+    {
+      "name": "prior_marginal_w1",
+      "branch": "prior",
+      "likelihood": "marginal",
+      "visual_weight": 1.0,
+      "option_weight": 1.0
+    },
+    {
+      "name": "prior_minimal",
+      "branch": "prior",
+      "likelihood": "minimal_set",
+      "visual_weight": 1.0,
+      "option_weight": 0.0
+    },
+    {
+      "name": "prior_minimal_option005",
+      "branch": "prior",
+      "likelihood": "minimal_set",
+      "visual_weight": 1.0,
+      "option_weight": 0.05
+    },
+    {
+      "name": "prior_marginal",
+      "branch": "prior",
+      "likelihood": "marginal",
+      "visual_weight": 1.0,
+      "option_weight": 0.0
+    },
+    {
+      "name": "visual_marginal_w005",
+      "branch": "visual",
+      "likelihood": "marginal",
+      "visual_weight": 0.05,
+      "option_weight": 1.0
+    },
+    {
+      "name": "visual_marginal_w025",
+      "branch": "visual",
+      "likelihood": "marginal",
+      "visual_weight": 0.25,
+      "option_weight": 1.0
+    },
+    {
+      "name": "visual_marginal_w1",
+      "branch": "visual",
+      "likelihood": "marginal",
+      "visual_weight": 1.0,
+      "option_weight": 1.0
+    },
+    {
+      "name": "visual_minimal",
+      "branch": "visual",
+      "likelihood": "minimal_set",
+      "visual_weight": 1.0,
+      "option_weight": 0.0
+    },
+    {
+      "name": "visual_minimal_option005",
+      "branch": "visual",
+      "likelihood": "minimal_set",
+      "visual_weight": 1.0,
+      "option_weight": 0.05
+    },
+    {
+      "name": "visual_marginal",
+      "branch": "visual",
+      "likelihood": "marginal",
+      "visual_weight": 1.0,
+      "option_weight": 0.0
+    }
+  ],
+  "control_policies": {
+    "without_visual": [
+      "prior"
+    ],
+    "visual_and_option": [
+      "visual"
+    ]
+  },
+  "selection_order": [
+    "highest inner pooled exact QA accuracy",
+    "highest inner worst-subject accuracy",
+    "earliest declared recipe; option_only first"
+  ],
+  "kind": "cuhkx_action_r34_source_nested_v1",
+  "arm": "rgb",
+  "windows": 8,
+  "window_bank": "/root/workspace/CUHK-X/runs/20260915_source_hau_pools_v1",
+  "auxiliary_bank": "/root/workspace/CUHK-X-integration-20260912/runs/20260914_external_rgb_warmup_cloud_v1",
+  "declaration": "/root/workspace/CUHK-X/runs/20260915_source_hau_direct_v1/plan.json",
+  "limits": [
+    "All18people historically exposed",
+    "NoTest",
+    "Action2408 only; fullsystem required for candidate"
+  ],
+  "inputs": [
+    {
+      "path": "/root/workspace/CUHK-X/data/raw/kaggle/training_qa.csv",
+      "sha256": "2509ed00f9305d552378618d8987559bdff7a4b56241c630ba99dc4051f535bc"
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260905_action_generic_nested_v1/oof_predictions.csv",
+      "sha256": "720a3134e42ca2a3f28865fe35d1bdb4ea0ea69e6926e988dcbc22bd4da0c113"
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260915_source_hau_pools_v1/manifest.json",
+      "sha256": "12e3929c3cf544353cc4ec8bf44902c51684b8e2ca0396540fcff2a59b587384"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260914_external_rgb_warmup_cloud_v1/extraction_report.json",
+      "sha256": "59e0cb7570488c77c462dd2ea4964cb39ea4645461cfbfaa1f5ded15488a40e4"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260914_external_rgb_warmup_cloud_v1/rows.json",
+      "sha256": "f48af6d877c82997ef1ccd815c16eaab97fc530440831385710d4efcdcc2c65a"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260914_external_rgb_warmup_cloud_v1/features.npy",
+      "sha256": "68c0f355327d33059cb41fe28483a1112bbb3a6654a59be05158e97f4cf69785"
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260915_source_hau_direct_v1/plan.json",
+      "sha256": "14cca55a740f565c19af6ee02e522e48f177ffc74b69507cb5fd8f0ee4315ed4"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260914_external_rgb_warmup_cloud_v1/external_source.json",
+      "sha256": "023b334be5b241bb837209eefe98c98b57b6444bc61a05b2d926bb4421e4a717"
+    }
+  ],
+  "implementation": [
+    {
+      "path": "scripts/run_action_generic_nested.py",
+      "sha256": "fb1c792e8bdc88d73c07f5f225eefcf827153e99cc55b7c078def3be8e5dc1ca"
+    },
+    {
+      "path": "scripts/run_action_joint_harn_window_nested.py",
+      "sha256": "0d10c6fb337452092db864236a9aa2bfbd374ec35e293e8241f25c868352f01b"
+    },
+    {
+      "path": "scripts/run_action_nonlinear_joint_window.py",
+      "sha256": "f7177595da2701cb47370bc64b50838d51ab9711a8c7b5263889a05bca0f62af"
+    },
+    {
+      "path": "scripts/run_action_r34_source_nested.py",
+      "sha256": "eb7c6279dbc1114f5aeb46af06ce8c0a421940397d8cf0c32351b2b27a4e15e6"
+    },
+    {
+      "path": "scripts/run_action_window_nested.py",
+      "sha256": "1d458c91db2ff9e0da07392c0929a31e24ef72d73accba3e47846d1bdc1d92a0"
+    },
+    {
+      "path": "src/cuhkx/action_compiled_likelihood.py",
+      "sha256": "0bc720b0dac80e8e328b6b3b9693fc46fd69ebe697d131ec9a7e73df8eda4235"
+    },
+    {
+      "path": "src/cuhkx/action_generic_nested.py",
+      "sha256": "975d2ee87ebb4b0fee00c29563e732d1761c39e9cca8475181c5061ad3c7248b"
+    },
+    {
+      "path": "src/cuhkx/action_joint_harn_head.py",
+      "sha256": "fa5a6fb6577aa88c64809f2ac431ca85f7c74e35b148229e4c7a80764e242762"
+    },
+    {
+      "path": "src/cuhkx/action_mil.py",
+      "sha256": "8e645408b113d0c4d3e50a34d88e86293952ecc476fa95038f41cf4b2e343562"
+    },
+    {
+      "path": "src/cuhkx/action_mil_training.py",
+      "sha256": "c905073efc7be0289a9a883487d20cec7e783d3d389410049ff7886da3f06bcb"
+    },
+    {
+      "path": "src/cuhkx/action_nonlinear_joint_head.py",
+      "sha256": "69b24793b7af6c595670c09375cafbba9ef27fd1d3b095a0387625a5d6efe2ce"
+    },
+    {
+      "path": "src/cuhkx/action_partial_likelihood.py",
+      "sha256": "3d98445478ad6833397c1cb88306f9c6070193c3116275490550bdc10c69a35d"
+    },
+    {
+      "path": "src/cuhkx/action_r34_source_bank.py",
+      "sha256": "5d9fd9c8edd707bcc2654fd01391d82a1c99b21615a82ffabcf301cd83232ef2"
+    },
+    {
+      "path": "src/cuhkx/action_variable_window_head.py",
+      "sha256": "369e69905872a66706f326cbf3d403f1bca116153186029b867cc7d7898d092b"
+    },
+    {
+      "path": "src/cuhkx/action_videomae_bank.py",
+      "sha256": "65ea097b98f4097b9a7b5bd6cfe46228bdba52f8c87df47b0750baa9dec4d3cf"
+    },
+    {
+      "path": "src/cuhkx/action_window_decoding.py",
+      "sha256": "d35161de2fdc72f5045e08688095f282ad6499557ea758a999c35ebdf8931ebd"
+    },
+    {
+      "path": "src/cuhkx/action_window_head.py",
+      "sha256": "09b6533348ba03d8a9258f4bf6562359111e67cbc7a0ec0a5a8efed208a0391d"
+    },
+    {
+      "path": "src/cuhkx/actions.py",
+      "sha256": "bad55a7051da5a8208158c97ff25fbe55a43cf64de9d47e492558da2e58f1e43"
+    },
+    {
+      "path": "src/cuhkx/clip_constraints.py",
+      "sha256": "52393f64d61d4c589fd2ebea6dc91cae7f3aa2b5a170e94dd264761b471f7a86"
+    },
+    {
+      "path": "src/cuhkx/emotion_nested.py",
+      "sha256": "aec1d649d0d72eab48901625e71f2fb22a55fa1cfa86681dac531df8724a5259"
+    },
+    {
+      "path": "src/cuhkx/harn.py",
+      "sha256": "8365ff27887bbd1f95c60941ecb0b7b04c123e2182036c3a68fd9378ba5cfd37"
+    },
+    {
+      "path": "src/cuhkx/harn_tail.py",
+      "sha256": "bc942ae2e1fa475542668150af32b20d486513c7cbca5d368b3b040d223125be"
+    },
+    {
+      "path": "src/cuhkx/joint_actions.py",
+      "sha256": "68bc7604754d7e744e585b35649eff04e11657588421871033d4487c76febfd4"
+    },
+    {
+      "path": "src/cuhkx/metadata.py",
+      "sha256": "a6bff37df1866546708e759f510beb97f1efdebd204a4e9331810df1437c0ad1"
+    },
+    {
+      "path": "src/cuhkx/option_frequency.py",
+      "sha256": "609bef65ee0ff04fdf920c0da1e3cf8d3619d2256227100347b2440e74cfec8d"
+    },
+    {
+      "path": "src/cuhkx/sequence_skeleton_nested.py",
+      "sha256": "167077050125718694f105fe53740021e0eca44e9481d5a80fa23cb60bbe0f53"
+    },
+    {
+      "path": "src/cuhkx/submission.py",
+      "sha256": "4075bd93a078357a545522389a2bcfa69b97f0ff4c76a784a2620e545b7f126e"
+    },
+    {
+      "path": "src/cuhkx/validation.py",
+      "sha256": "e1f3f3cf4b626c48dcb113978d22249275c64d5c5737d9762a442264ef20ac98"
+    },
+    {
+      "path": "tests/test_action_joint_harn_head.py",
+      "sha256": "16682c73e32938ac93c6bd85cd19f640f47fb13d974225c6b9be8ae1cdf63f07"
+    },
+    {
+      "path": "tests/test_action_nonlinear_joint_head.py",
+      "sha256": "9eac897c1797af09209fec27da79810b02e0ff7bad90dea42ec4251a18ab3dfb"
+    },
+    {
+      "path": "tests/test_action_window_nested.py",
+      "sha256": "55a00e655a18884bf533e9cad6ff580a12de45468346e313fc835c01c0468713"
+    }
+  ]
+}

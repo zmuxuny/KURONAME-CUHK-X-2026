@@ -1,0 +1,161 @@
+{
+  "weights": "/root/workspace/CUHK-X/data/external/vda-small-4f5ae23172ba/video_depth_anything_vits.pth",
+  "weights_sha256": "13379300b739e659f076a59d52e9801bd8d38c541a7e71f73bbca4dcfb013609",
+  "source_root": "/root/workspace/CUHK-X/data/external/vda-small-4f5ae23172ba/author/Video-Depth-Anything-4f5ae23172ba60fd7bc11ef671cca678842c7072",
+  "source_commit": "4f5ae23172ba60fd7bc11ef671cca678842c7072",
+  "model_commit": "256875362cff76724b920335dfb4b29dd611f66e",
+  "dependency_target": "/root/cuhkx-runtime/vjepa21_vendor_v1",
+  "source_files": [
+    {
+      "path": "app.py",
+      "sha256": "64fed16c928314021971438b38ce491fafc938f1ca4d8320be98f9c42870c27a"
+    },
+    {
+      "path": "benchmark/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "benchmark/dataset_extract/dataset_extract_bonn.py",
+      "sha256": "6bbcd75f0067f79815babecc406c1b438a136e161fcf326563f0cccd60b2288b"
+    },
+    {
+      "path": "benchmark/dataset_extract/dataset_extract_kitti.py",
+      "sha256": "1aa6aced86b71f999d405249999e7753a56bec55aa6b9df43395a163c86a3ab1"
+    },
+    {
+      "path": "benchmark/dataset_extract/dataset_extract_nyuv2.py",
+      "sha256": "22eb27d56390e8d275e1154998e437a7901b562001b337ddaf2811507ec44356"
+    },
+    {
+      "path": "benchmark/dataset_extract/dataset_extract_scannet.py",
+      "sha256": "d6b0104874547983922ddad7f5ee92f6145b9e98f87e866fada0621087abef4d"
+    },
+    {
+      "path": "benchmark/dataset_extract/dataset_extract_sintel.py",
+      "sha256": "b423c80e1a0e4e71247bc7b5d4690b2906a66b17aa4141b5a0eec8130b94c2fe"
+    },
+    {
+      "path": "benchmark/dataset_extract/eval_utils.py",
+      "sha256": "a6fd1ca2744e123b5c8f9fe8cc1d2d7af0e887c623fa46da1a8a714d452645cf"
+    },
+    {
+      "path": "benchmark/eval/eval.py",
+      "sha256": "d6bf7d1531a493c3a06261e8fec8f19f9849539004fac7c6d4580025664f8756"
+    },
+    {
+      "path": "benchmark/eval/eval_tae.py",
+      "sha256": "8e481e94a4709c5ae945c81d8343170a38c253b6b7dac2a926d5bafc7de9606c"
+    },
+    {
+      "path": "benchmark/eval/metric.py",
+      "sha256": "08cb8766b15571e7560bc7f3cf70e609aa084f5a2f9d2cdf495c1b685a66cd05"
+    },
+    {
+      "path": "benchmark/infer/infer.py",
+      "sha256": "b3d9502f3a16dd262f59177945700dae4fabfcd33a467d125b22ff383fad4480"
+    },
+    {
+      "path": "loss/loss.py",
+      "sha256": "26b9e51efd97f6d2cc5b8d6994f4a28d00c99e90ed8b925b696c9aea6828edfd"
+    },
+    {
+      "path": "loss/test_loss.py",
+      "sha256": "faa3fd230539f8c020170b0937603770d1cb0e3f4d2d620af9c21ee1edc353f3"
+    },
+    {
+      "path": "run.py",
+      "sha256": "717121f2d6d95af856813314b5816c8ad45d53c4376ccaabf7d5f3899d929460"
+    },
+    {
+      "path": "run_streaming.py",
+      "sha256": "3a7d62d5103ecd2fc8c77d6d4f65855717f695ad828f8db80af28870c94b0e71"
+    },
+    {
+      "path": "utils/dc_utils.py",
+      "sha256": "45103ac573780e51ae54bbc3a010e391003c0e8bbd02746cb5f493d60d4e7907"
+    },
+    {
+      "path": "utils/util.py",
+      "sha256": "f02cf85f5a9543ce0f832a4fde1492076026650c8eb25c6a8cc4315bf67a8ed2"
+    },
+    {
+      "path": "video_depth_anything/dinov2.py",
+      "sha256": "d22df8d0da44c8525ebed898fd9c33b3acfcda919a84d577cc2a08bfd3d50ac1"
+    },
+    {
+      "path": "video_depth_anything/dinov2_layers/__init__.py",
+      "sha256": "e3c28c7b775165b6844000eb69f44d104d6c3803ac7da5d59f6ac3ecfb46d9d8"
+    },
+    {
+      "path": "video_depth_anything/dinov2_layers/attention.py",
+      "sha256": "0d2410ce8b8b4499a6b0cdab939ae2bceab8971efd8660d999b0f3088f28cbf7"
+    },
+    {
+      "path": "video_depth_anything/dinov2_layers/block.py",
+      "sha256": "093266ea08084c7cce7b8ddd779ecfaaa13055735faa8a7d68b5924f385b395b"
+    },
+    {
+      "path": "video_depth_anything/dinov2_layers/drop_path.py",
+      "sha256": "949100aac4d9c19c9d65319dbd362886c5d46a72d7586ba4fd500e9f1d51570c"
+    },
+    {
+      "path": "video_depth_anything/dinov2_layers/layer_scale.py",
+      "sha256": "356817b5d1390737128cbcc03a5333fd3060b73beae478772282ccb851d0ef85"
+    },
+    {
+      "path": "video_depth_anything/dinov2_layers/mlp.py",
+      "sha256": "c18c5b3f021408597a473bb710070ec3fb3b39f5a2e42e88ae83ced425a608b5"
+    },
+    {
+      "path": "video_depth_anything/dinov2_layers/patch_embed.py",
+      "sha256": "b3f82e19926c9cfb63f10136aca5e8a723bde1ad62dae1d04f90d405f9439baf"
+    },
+    {
+      "path": "video_depth_anything/dinov2_layers/swiglu_ffn.py",
+      "sha256": "df81d9901240214edc1831ce1b77558dcd6227b29a2f000fc5f546df55d2d09a"
+    },
+    {
+      "path": "video_depth_anything/dpt.py",
+      "sha256": "4751fac16206892889d74fd7f564f275e0efa3a903172c9350a1b55ed850c7d8"
+    },
+    {
+      "path": "video_depth_anything/dpt_temporal.py",
+      "sha256": "b80c448f4fe66d0ca7092be887c0ea3925a4ce7c03cffa0083480e7e2f55805d"
+    },
+    {
+      "path": "video_depth_anything/motion_module/attention.py",
+      "sha256": "15e4049641f04f73027ea520ada3ba2c81196cea1339f0d6a6063d944df61c8b"
+    },
+    {
+      "path": "video_depth_anything/motion_module/motion_module.py",
+      "sha256": "73d6a9cee40681532ae2603dd426405e840dc5c592a313005fa367f6fe4c69e8"
+    },
+    {
+      "path": "video_depth_anything/util/blocks.py",
+      "sha256": "8a9fde84bddbfa2498b5f5ef06895ddc941c1fc12c5919e9891fad481997b7dd"
+    },
+    {
+      "path": "video_depth_anything/util/transform.py",
+      "sha256": "a97df1dbb687457a40c387fdc3482edee7ddc5c142c7d2735ca6235a8ae2885f"
+    },
+    {
+      "path": "video_depth_anything/video_depth.py",
+      "sha256": "208e882d60a41434b3a0d9935a7025b01cce0756c17b3d889c6db0c4c945eb29"
+    },
+    {
+      "path": "video_depth_anything/video_depth_stream.py",
+      "sha256": "23ebab70525f318cf0bfeba38dfcac3f1c345ba50aaa1bb5c6dbae671b0caa6d"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1"
+    }
+  ],
+  "input_size": 280,
+  "max_resolution": 448,
+  "target_fps": 4,
+  "model_license": "Apache-2.0",
+  "source_data_license": "Charades non-commercial research/evaluation; no redistribution of media or transformed data",
+  "depth_storage": "Full continuous raw floating-point relative depth and actual PTS before child windows; no per-frame scale normalization",
+  "spatial_scope": "Project280 input resource configuration, not author518 benchmark"
+}

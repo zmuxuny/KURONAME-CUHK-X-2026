@@ -1,0 +1,9 @@
+{
+  "submission_id": "56258762",
+  "base": "configs/submission_56239668.json",
+  "target_seed": 20262905,
+  "target_model": "artifacts/target_model/final_R.pt",
+  "d1_model": "artifacts/d1_model/model.joblib",
+  "d10_model": "artifacts/d10_model/model.json",
+  "temporal_residual": "artifacts/temporal_residual/model.npz"
+}

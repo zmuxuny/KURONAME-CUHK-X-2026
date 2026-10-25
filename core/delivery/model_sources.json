@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "profile": "configs/checkpoint_inference_emotion_v6_harn_seed_ensemble_v1.json",
+  "verified_raw_execution": "runs/20260906_finalist_pipeline_execution_v3/completion.json",
+  "verified_contract_sha256": "5be2fccde953413c427b9e4ad2101ed2008ec57a78ed31acf1f1b0c3aa6fa6f7",
+  "completed_raw_profile_dependencies": [
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260905_hau_action_checkpoint_v1/checkpoint.json",
+      "sha256": "534f754d85cf455a045c36dd80087f212ffa5cf0bad958f1849e06595ac6c5c3",
+      "bytes": 16904
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260905_kuno_presence_checkpoint_v1/models.joblib",
+      "sha256": "83e52b30c8910fb29161d4f5bb9b97bb64c71391ebd80482bfad04a3299c0487",
+      "bytes": 34100488
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260905_option_frequency_checkpoint_v1/models.joblib",
+      "sha256": "6cfb9334f62614d1fa4e6a4554e017dfc3ccd86d4cc9cf2927ac14021516690f",
+      "bytes": 8719031
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260905_hau_skeleton_transfer_checkpoint_v1/checkpoint.json",
+      "sha256": "2c80fcb0cb09da5f5671ea46e313de92ff223a88f08d25e22f9f25694d69ee76",
+      "bytes": 1998
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260905_hau_skeleton_transfer_checkpoint_v1/models_seed20260904.joblib",
+      "sha256": "e524a3de6114cd4ed293538efa775403fe562abaa52534fef8c2dd479a2e3200",
+      "bytes": 210003001
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260905_hau_skeleton_transfer_checkpoint_v1/models_seed20260905.joblib",
+      "sha256": "91fdfc20d9a9162cfc41b4483e46785e1c3bb009159817f95c9e8f21179dbf9d",
+      "bytes": 209706539
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260905_hau_skeleton_transfer_checkpoint_v1/models_seed20260906.joblib",
+      "sha256": "2fee1c121231157f56b8b24d3304a84440b9181b3658eeddf005f78ea595447a",
+      "bytes": 210008594
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260905_hau_complete_set_kuno_s8s16_leaf2_seed20260904_v1/models.joblib",
+      "sha256": "21287fee31d7b4e5165638678636ec28bad2e51cee407d70e791558d75325514",
+      "bytes": 26574167
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260905_hau_complete_set_kuno_s8s16_leaf2_v1/models.joblib",
+      "sha256": "49d9d5cba20a0cda3d41af9e9929027dbbbc5f253966f4306a908af788b6f317",
+      "bytes": 26611870
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260905_hau_complete_set_kuno_s8s16_leaf2_seed20260906_v1/models.joblib",
+      "sha256": "a4ba7e66ff0c4dd00d9c367a01bb59fbc521a7b51cc324695d6d0644ce3e4745",
+      "bytes": 26576462
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260905_emotion_recipe_nested_v6/inference_policy.json",
+      "sha256": "9ba5f88e9982570ce6ecf591179cc6900d67b4122d10cb1dac9bedb2fb13e24e",
+      "bytes": 13320
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260905_emotion_recipe_nested_v6/model_source_manifest.json",
+      "sha256": "ea0bca2d1da68a43e2cc84cd71f5d67325ae0405e407268f89823d83e3b67b52",
+      "bytes": 77790
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/models.joblib",
+      "sha256": "7fa05327141de05f1e9815007adbe39b3614d19b40e125ff2d23b1ef7cfafdc9",
+      "bytes": 5927619
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/final_training_scope.json",
+      "sha256": "bbb372192f55d3994dfc9adfe7971d101e1f0f0c02fabec9e6dfedf75a6fc7c0",
+      "bytes": 170291
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260905_temporal_checkpoint_v1/checkpoint.json",
+      "sha256": "832c5d2102fe7ce4511e0f0ec2b17ef090f320d4d2200c2ebfb49f8fee575643",
+      "bytes": 13338
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260905_hau_pairwise_temporal_scores_v2/models.joblib",
+      "sha256": "c8f6edc75ec37db91a2c1e3871a7f17ce0848be41531ad804edd0e783fad1d68",
+      "bytes": 20707378
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260905_harn_seed_ensemble_nested_v1/checkpoint.json",
+      "sha256": "9e60c349c95ca591b9c76e0b6d5a3ed5ce12e7db265c18f0f51d3fd9e433bde4",
+      "bytes": 7210
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260905_harn_tail_nested_v1/models.joblib",
+      "sha256": "c6074c98853df567abcaecc63306060669d2395b97b10112bcb9339e0ddba814",
+      "bytes": 101444364
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260905_harn_tail_seed_repeat_v1/models.joblib",
+      "sha256": "917d8a4cd8d9108ac31bc1bdd34184d0da78b7da78a9f75514537a210dd86c1b",
+      "bytes": 101456186
+    },
+    {
+      "path": "/root/workspace/CUHK-X/data/external/k-kuno-lb-0-711-r2plus1d-model/ensemble_packed.pt",
+      "sha256": "1bef2e215fc100acf571b90370a8353574fdad6951b0f75f6e3404521643322f",
+      "bytes": 88074378
+    },
+    {
+      "path": "/root/workspace/CUHK-X/data/external/k-kuno-lb-0-711-r2plus1d-model/yolo11n.pt",
+      "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "bytes": 5613764
+    },
+    {
+      "path": "/root/.cache/torch/hub/checkpoints/r2plus1d_18-91a641e6.pth",
+      "sha256": "91a641e6c2ab531d1aca5f4321b4d802ec5c3babc15df855cdb6e39c6a1107c8",
+      "bytes": 126162996
+    },
+    {
+      "path": "/root/workspace/CUHK-X/configs/generic_hau_r2plus1d_windows8_v1.json",
+      "sha256": "ddc03930d0f73605b3a3c2bf922c04f7110184d709d3d794fcae585ac7b01e80",
+      "bytes": 2022
+    }
+  ],
+  "new_generic_r34_initialization": {
+    "path": "/root/workspace/CUHK-X/data/external/ig65m-r2plus1d34-kinetics-v1/r2plus1d_34_clip32_ft_kinetics_from_ig65m-ade133f1.pth",
+    "bytes": 255061555,
+    "sha256": "ade133f18548b59da3a36d6a70d44a4a7cc4b90460654c338cb8a023e9a3e0e1",
+    "training_scope": "Generic2019IG65MthenKinetics400; newCUHKfitsretainedseparately",
+    "receipt": "runs/20260906_r34_asset_acquisition_v1/completion.json"
+  },
+  "notices": [
+    {
+      "file": "delivery/licenses/VMZ_LICENSE.txt",
+      "sha256": "4d10fe5f3aa176b05b229a248866bad70b834c173f1252a814ff4748d8a13837",
+      "source_file": "runs/20260906_finalist_notices_v1/VMZ_LICENSE.txt"
+    },
+    {
+      "file": "delivery/licenses/torchvision_LICENSE.txt",
+      "sha256": "6502f676851cfe25f8af75531dfb32375b7325b73c37e7b43741fa422893e71d",
+      "source_file": "runs/20260906_finalist_notices_v1/torchvision_LICENSE.txt"
+    },
+    {
+      "file": "delivery/licenses/CUHK_X_LICENSE_v2.txt",
+      "sha256": "f91f3c1aee1491a919a88cf2cdcd247532ef0d21b2b412882163ccac5ea06a03",
+      "source_file": "runs/20260906_finalist_notices_v1/CUHK_X_LICENSE_v2.txt"
+    },
+    {
+      "file": "delivery/licenses/Ultralytics_LICENSE.txt",
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "source_file": "runs/20260906_finalist_notices_v1/Ultralytics_LICENSE.txt"
+    },
+    {
+      "file": "delivery/licenses/IG65M_LICENSE.md",
+      "sha256": "be583eb3b70981c238ac0e8779f7da8151fbfe20cfada64c4b1bac75d3c8efd9",
+      "source_file": "data/external/ig65m-r2plus1d34-kinetics-v1/LICENSE.md"
+    },
+    {
+      "file": "delivery/licenses/K_KUNO_LICENSES.md",
+      "sha256": "e60ad7856f82ea980dd4f8b73875292ff8eaa8406533d1fb1374ed29ada19c8d",
+      "source_file": "data/external/k-kuno-lb-0-711-r2plus1d-model/LICENSES.md"
+    },
+    {
+      "file": "delivery/licenses/K_KUNO_MODEL_CARD.md",
+      "sha256": "a7594b0d59801a0e0eb1bb0fc6967b425779f4011d23466d07a6be4b73b86e40",
+      "source_file": "data/external/k-kuno-lb-0-711-r2plus1d-model/MODEL_CARD.md"
+    }
+  ],
+  "external_prediction_tables": false,
+  "unresolved": [
+    "K-KUNO trained fold membership",
+    "All selected components full training from raw data in a clean environment",
+    "Self-contained relocated checkpoint descriptors",
+    "Finalist redistribution terms and account/honor verification at delivery"
+  ]
+}

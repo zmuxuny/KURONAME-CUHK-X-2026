@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "kind": "cuhkx_generic_r34_layer4_1_v1",
+  "weights": "assets/ade133f18548b59da3a36d6a70d44a4a7cc4b90460654c338cb8a023e9a3e0e1/r2plus1d_34_clip32_ft_kinetics_from_ig65m-ade133f1.pth",
+  "weights_sha256": "ade133f18548b59da3a36d6a70d44a4a7cc4b90460654c338cb8a023e9a3e0e1",
+  "weights_bytes": 255061555,
+  "pretrained_release": "https://github.com/moabitcoin/ig65m-pytorch/releases/download/v1.0.0/r2plus1d_34_clip32_ft_kinetics_from_ig65m-ade133f1.pth",
+  "pretrained_release_date": "2019-09-27",
+  "architecture_reference": {
+    "path": "delivery/provenance/r34/author_models.py",
+    "sha256": "4dc243ff4048db3fc9c9ad4473bfa3b10c61d2c3f6e9fd61a6c0291ee12fdc36",
+    "commit": "fc749e2ee354c3e4ddbb144cf511bb868b008f61",
+    "url": "https://raw.githubusercontent.com/moabitcoin/ig65m-pytorch/fc749e2ee354c3e4ddbb144cf511bb868b008f61/ig65m/models.py"
+  },
+  "provenance_files": [
+    "delivery/provenance/r34/README.md",
+    "delivery/provenance/r34/LICENSE.md"
+  ],
+  "modalities": [
+    "Depth_Color",
+    "IR"
+  ],
+  "frames": 32,
+  "hau_windows": 8,
+  "hau_window_seconds": 2.5,
+  "alignment_tolerance_frames": 1.0,
+  "batch_size": 2,
+  "workers": 2,
+  "torch_threads": 2,
+  "opencv_threads": 1,
+  "device": "cuda",
+  "autocast": "float16",
+  "cudnn_benchmark": false,
+  "cudnn_deterministic": true,
+  "matmul_precision": "high",
+  "storage": "float16",
+  "invalid_metadata_policy": "mask_with_recorded_error",
+  "missing_modality_policy": "keep_zero_row_no_Depth_substitution",
+  "roi_policy": "explicit_SHA256_pinned_YOLO_cache_required_for_available_video",
+  "scope": "Frozen generic preprocessing only; HARn labels are consumed later by subject-excluding training code"
+}

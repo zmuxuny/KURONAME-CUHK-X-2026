@@ -1,0 +1,24 @@
+{
+  "BN": "all running buffers frozen; selected affine weights learned",
+  "backbone_lr": 1e-06,
+  "batch_windows": 16,
+  "epochs": 3,
+  "head_lr": 0.001,
+  "license": "Charades noncommercial research/evaluation; source media/derivatives not redistributed",
+  "loss": "157-axis occupied sampled-frame fraction soft BCE; invalid annotation classes masked; sqrt negative/positive prevalence positive-weight clipped[1,20],computed external source only",
+  "optimization_decision": {
+    "evidence": "runs/20260914_r34_head_stability_lr1e6_v1/report.json",
+    "head_initialization": "same seeded random157head in bothsourcearms; no target-derived source head",
+    "reason": "The same R34 trainable backbone and fixed BN lost positive features at1e-4 on target CE. Use the already justified small backbone step for both matched source arms before observing any target validation; source softBCE is a different objective, so record its entire feature/loss trajectory against the source constant predictor. Original sourcev1 was prepared but never fitted."
+  },
+  "precision": "BF16 autocast, fp32 master weights; retain fp32 source learned weights and independently reload before target adaptation, matching the E0 generic initialization precision; target deployment retention is separately fp16",
+  "sampling": "replacement N4436 annotation windows per epoch; equal expected person then unique rawSHA clip then annotation record then window; identical RGB/depth indices. Two duplicate pairs share mass, all annotations retained.",
+  "sampling_unit": "unique_raw_sha256_per_person",
+  "seed": 20267914,
+  "source": "same625officialCharadesTrainvideos; allpairedactualPTS8secondsstride4 windows",
+  "source_identity_audit": "runs/20260914_external_warm_protocol_v1/source_identity_audit.json",
+  "target_transfer": "Discard157head. Each source backbone produces its own frozen HARn pool512; same20epoch excluded-person44headwarmup and4epoch lr1e-6 targetR adaptation as completed E0. Warmed head values can differ because features differ.",
+  "trainable": "layer3+layer4+new157head",
+  "weight_decay": 0.01,
+  "weights": "core/assets/ade133f18548b59da3a36d6a70d44a4a7cc4b90460654c338cb8a023e9a3e0e1/r2plus1d_34_clip32_ft_kinetics_from_ig65m-ade133f1.pth"
+}

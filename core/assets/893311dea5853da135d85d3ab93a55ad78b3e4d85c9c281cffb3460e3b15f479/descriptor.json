@@ -1,0 +1,250 @@
+{
+  "kind": "cuhkx_local_emotion_full_state_fusion_final_v1",
+  "parent_policy": {
+    "path": "/root/workspace/CUHK-X/runs/20260905_emotion_recipe_nested_v6/inference_policy.json",
+    "sha256": "9ba5f88e9982570ce6ecf591179cc6900d67b4122d10cb1dac9bedb2fb13e24e",
+    "bytes": 13320
+  },
+  "students": {
+    "A": {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/A.pt",
+      "sha256": "c4e1e9bd383654ef185af5c448119cd801b81b318e42b6b37996bfa78a7c4e07",
+      "bytes": 2687803
+    },
+    "B": {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/B.pt",
+      "sha256": "89c53ae6703cece381d4d2a048dbd1fe53a08cba81e3f99a2e55d49452e95231",
+      "bytes": 2687803
+    }
+  },
+  "normalizer": {
+    "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/normalizer.joblib",
+    "sha256": "42af66dc16699cf8a4d32e2fbd02459c5900c601c5b582b2ea869c588e15373b",
+    "bytes": 26737
+  },
+  "student_scope": {
+    "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/scope.json",
+    "sha256": "ad26893ec95cbdb1ce9bf62aa7969e56ebe53e0c61d90d465c7b6c57a7a8825a",
+    "bytes": 43352
+  },
+  "parent_weight": 0.5,
+  "student_weight": 0.5,
+  "sources": [
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/configs/local_emotion_distillation_v1.json",
+      "sha256": "63863ac0709536b5c2a771b2280b9655ea23643c31ac29dfd5c353ce28ad5031",
+      "bytes": 3809
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/configs/local_emotion_full_fusion_v1.json",
+      "sha256": "b679ec6756c7810c62ec2fdd6bd46c28d4d315e782b60402d00d8ba008ae4d71",
+      "bytes": 1480
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/completion_freeze.json",
+      "sha256": "36718af1eeb707af0366bd4e70f6a6c50c6f08394a6d4582320503b8a872adf5",
+      "bytes": 104470
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/report.json",
+      "sha256": "24877a7200ecd9ba73601199c60af28cd4aa3997fc2f5b83684d62fad29c8fb5",
+      "bytes": 28815
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_full_fusion_replay_v1/report.json",
+      "sha256": "39bc8dbc62fe5cc60601e24c527ee318e915be3ce3f68d6a4b39abdfa3b31879",
+      "bytes": 36787
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_full_fusion_v1/report.json",
+      "sha256": "12883dfceca74f9f2c54f582318e645c1f3f69a97c8a64bbece0ab24c398835c",
+      "bytes": 36747
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_replay_v1/report.json",
+      "sha256": "ad75732f40596f11b593395ff473cb1bc97e5369ff9e7751b2533f7024a9063a",
+      "bytes": 9863
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/assess_local_emotion_full_fusion_v2.py",
+      "sha256": "c839e3e3345fda80978032bdac2d325fbdbd69c47166b1637e2ec9897cbeda14",
+      "bytes": 10388
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/audit_emotion_nested_provenance.py",
+      "sha256": "a43c67b9229bd8fa931d22606934b19771dc7bc3b500051a5f01738395457b30",
+      "bytes": 21095
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/audit_emotion_visual_nested.py",
+      "sha256": "295b26462d12b578c196218c60925d295649dbbaa453184f8c21aed6dd45b7ec",
+      "bytes": 10842
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/evaluate_local_predictions.py",
+      "sha256": "43d9d091dfaaf7738a2aead3134c229318f4d3940eb1659b9924dd64773baf61",
+      "bytes": 5707
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/extract_generic_hau_windows.py",
+      "sha256": "84da581525e95fd850a564e5576ff28728cd47b5142838d5859ffdc5db63b2ab",
+      "bytes": 18736
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/extract_video_embeddings.py",
+      "sha256": "60985de5e5d6cac1d3c2c514dfede47a711fe52e1969f46de0b4fedfc34134f7",
+      "bytes": 6204
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/infer_local_emotion_full_fusion_v2.py",
+      "sha256": "a51019d1af8db959f6f8e50f1f65972928e1fe690f79a66131dcabb00e30fc3a",
+      "bytes": 11571
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/pack_emotion_generic_visual.py",
+      "sha256": "77eb5dc77c9356ffc7c30acd50c337bb0483d898e9a34090d25421fc63b36391",
+      "bytes": 3099
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/prepare_local_emotion_final_inference_v2.py",
+      "sha256": "9769a903c482b91d0c8a69067a629c039f7fc25ea572f4dcd21c112ffb8b579d",
+      "bytes": 4466
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/research_write_guard.py",
+      "sha256": "30782fbe6cdf7fbc64bc373af42cbeb72bdfadf3592207e536f185666862299b",
+      "bytes": 1286
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/run_emotion_nested.py",
+      "sha256": "1f5d9b7e84e830f88779d458a448ce46b96e178e79f4eb042a5d4709ba542d9e",
+      "bytes": 13693
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/run_emotion_recipe_nested.py",
+      "sha256": "12b72f371e8b81534c3c84687b806bb6b00a4489b46f520803e62e747285b6e0",
+      "bytes": 24376
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/run_emotion_template_nested.py",
+      "sha256": "6463f4840844920ef0c136c3cc0a7a02f306f789d03615d541c2e0f0bf3dec16",
+      "bytes": 6193
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/run_emotion_visual_nested.py",
+      "sha256": "d8ace4a9f2fe3f0b502c0cbfa3e982a1905b6553ecedb52e744a917ef7ca2178",
+      "bytes": 16328
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/run_local_emotion_distillation.py",
+      "sha256": "5acfee8b8d0687131b664f6c0a91169519f76748c282e07ecd60351ffa8b40ab",
+      "bytes": 25959
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/acquisition.py",
+      "sha256": "3ba51d16f2b449b91c5ab82569f8e35201305524dbcfdf635e9a94e5ad3bd5d2",
+      "bytes": 3059
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/acquisition_v2.py",
+      "sha256": "6017634c9cc07f043af27183c1a2a2ce11ebf645312c457a70bf228efebee0a5",
+      "bytes": 7263
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/actions.py",
+      "sha256": "bad55a7051da5a8208158c97ff25fbe55a43cf64de9d47e492558da2e58f1e43",
+      "bytes": 1580
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/clip_constraints.py",
+      "sha256": "52393f64d61d4c589fd2ebea6dc91cae7f3aa2b5a170e94dd264761b471f7a86",
+      "bytes": 11053
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_fusion_nested.py",
+      "sha256": "b172c095a14dfa69872f15501ecc047d91384572c89ad18fd831922dd85a902e",
+      "bytes": 4674
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_nested.py",
+      "sha256": "aec1d649d0d72eab48901625e71f2fb22a55fa1cfa86681dac531df8724a5259",
+      "bytes": 15734
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_recipe_nested.py",
+      "sha256": "9f8d2a90c8d4aae77f392ce3fc5fd10ae74cc3633f2e20b68e13535cabdd085b",
+      "bytes": 3569
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_relative.py",
+      "sha256": "b92a0756679786e3e0d4320307d8a0411102b00b42981535faff3ba39b740570",
+      "bytes": 1749
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_template_nested.py",
+      "sha256": "cb92b179a53690bbe75dc703e70543ff935f8d83fea868d2a86a407c249286ee",
+      "bytes": 6476
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_visual_nested.py",
+      "sha256": "7ebc595c81128f4f6f3aaeb36e7ac6ca1ce628ee436db6b5eb08041629d5ef39",
+      "bytes": 8098
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/generic_video_windows.py",
+      "sha256": "ccc3adb237eee7d920a16bd79b4a5821b05858b5c2598395a49a44965e2bffa8",
+      "bytes": 3656
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/inference.py",
+      "sha256": "0d9ae78a01ba15545fb8e62d980305703b17413de627204bc8a968e141ece2aa",
+      "bytes": 5450
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/local_emotion_student.py",
+      "sha256": "d514312502460edc73fb30f14ff7e190588cfeb6e440ac922ef3ed767f9e5973",
+      "bytes": 6122
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/local_emotion_teacher.py",
+      "sha256": "7526376c70ddc03eeb2da834f6111930214b9117a753fb7a822a86e205333ad3",
+      "bytes": 3105
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/metadata.py",
+      "sha256": "a6bff37df1866546708e759f510beb97f1efdebd204a4e9331810df1437c0ad1",
+      "bytes": 1600
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/submission.py",
+      "sha256": "4075bd93a078357a545522389a2bcfa69b97f0ff4c76a784a2620e545b7f126e",
+      "bytes": 5643
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/validation.py",
+      "sha256": "e1f3f3cf4b626c48dcb113978d22249275c64d5c5737d9762a442264ef20ac98",
+      "bytes": 15168
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/video.py",
+      "sha256": "9940a91c2560780682b8d673c3bd8f4092ee602a1c0ffd377f24cf34c70cb218",
+      "bytes": 6459
+    }
+  ],
+  "default_candidate": "A",
+  "B": "predeclared control retained, no weight search",
+  "selection_evidence": {
+    "local_A": "339/809",
+    "local_B": "341/809",
+    "full_parent": "749/809",
+    "full_A": "752/809",
+    "full_B": "750/809",
+    "all_CIs_cross_zero": true
+  },
+  "decision_before_Test_component": "2026-09-12T12:18:35.507810+00:00",
+  "pseudo_dependency": {
+    "training": false,
+    "tuning": false,
+    "selection": false
+  }
+}

@@ -1,0 +1,914 @@
+{
+  "kind": "cuhkx_relocatable_current_decision_v1",
+  "files": [
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/configs/local_emotion_distillation_v1.json",
+      "bytes": 3809,
+      "sha256": "63863ac0709536b5c2a771b2280b9655ea23643c31ac29dfd5c353ce28ad5031",
+      "relative": "assets/63863ac0709536b5c2a771b2280b9655ea23643c31ac29dfd5c353ce28ad5031/local_emotion_distillation_v1.json",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/configs/local_emotion_full_fusion_v1.json",
+      "bytes": 1480,
+      "sha256": "b679ec6756c7810c62ec2fdd6bd46c28d4d315e782b60402d00d8ba008ae4d71",
+      "relative": "assets/b679ec6756c7810c62ec2fdd6bd46c28d4d315e782b60402d00d8ba008ae4d71/local_emotion_full_fusion_v1.json",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/configs/sat_min_edit_explicit_v1.json",
+      "bytes": 1234,
+      "sha256": "486c63011ed913c6dc026e28c95a165750e8fd49ab273b03a3a4ce4d274cd679",
+      "relative": "assets/486c63011ed913c6dc026e28c95a165750e8fd49ab273b03a3a4ce4d274cd679/sat_min_edit_explicit_v1.json",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/apply_explicit_group_sat.py",
+      "bytes": 5382,
+      "sha256": "c09790d97d029503e172743f1d81daf5fd23c70f3e2611d3054e6e3b80c886af",
+      "relative": "assets/c09790d97d029503e172743f1d81daf5fd23c70f3e2611d3054e6e3b80c886af/apply_explicit_group_sat.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/apply_scored_sat_v3.py",
+      "bytes": 6779,
+      "sha256": "7760f6f83b8b957d054cf313ca0eeafab4d023b3e9a15dc7ef34a581911de917",
+      "relative": "assets/7760f6f83b8b957d054cf313ca0eeafab4d023b3e9a15dc7ef34a581911de917/apply_scored_sat_v3.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/assess_local_emotion_full_fusion_v2.py",
+      "bytes": 10388,
+      "sha256": "c839e3e3345fda80978032bdac2d325fbdbd69c47166b1637e2ec9897cbeda14",
+      "relative": "assets/c839e3e3345fda80978032bdac2d325fbdbd69c47166b1637e2ec9897cbeda14/assess_local_emotion_full_fusion_v2.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/audit_emotion_nested_provenance.py",
+      "bytes": 21095,
+      "sha256": "a43c67b9229bd8fa931d22606934b19771dc7bc3b500051a5f01738395457b30",
+      "relative": "assets/a43c67b9229bd8fa931d22606934b19771dc7bc3b500051a5f01738395457b30/audit_emotion_nested_provenance.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/audit_emotion_visual_nested.py",
+      "bytes": 10842,
+      "sha256": "295b26462d12b578c196218c60925d295649dbbaa453184f8c21aed6dd45b7ec",
+      "relative": "assets/295b26462d12b578c196218c60925d295649dbbaa453184f8c21aed6dd45b7ec/audit_emotion_visual_nested.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/build_current_decision_package.py",
+      "bytes": 4693,
+      "sha256": "0e1f5257c9b94416e69da072e09445a8234069718a3779024567bc11618b115e",
+      "relative": "assets/0e1f5257c9b94416e69da072e09445a8234069718a3779024567bc11618b115e/build_current_decision_package.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/evaluate_local_predictions.py",
+      "bytes": 5707,
+      "sha256": "43d9d091dfaaf7738a2aead3134c229318f4d3940eb1659b9924dd64773baf61",
+      "relative": "assets/43d9d091dfaaf7738a2aead3134c229318f4d3940eb1659b9924dd64773baf61/evaluate_local_predictions.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/extract_generic_hau_windows.py",
+      "bytes": 18736,
+      "sha256": "84da581525e95fd850a564e5576ff28728cd47b5142838d5859ffdc5db63b2ab",
+      "relative": "assets/84da581525e95fd850a564e5576ff28728cd47b5142838d5859ffdc5db63b2ab/extract_generic_hau_windows.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/extract_kuno_transfer_logits.py",
+      "bytes": 15091,
+      "sha256": "855db6795b5d4b888d4b69b0fdf44aafecf0de2515e403aeaa4fb6ff9d537622",
+      "relative": "assets/855db6795b5d4b888d4b69b0fdf44aafecf0de2515e403aeaa4fb6ff9d537622/extract_kuno_transfer_logits.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/extract_video_embeddings.py",
+      "bytes": 6204,
+      "sha256": "60985de5e5d6cac1d3c2c514dfede47a711fe52e1969f46de0b4fedfc34134f7",
+      "relative": "assets/60985de5e5d6cac1d3c2c514dfede47a711fe52e1969f46de0b4fedfc34134f7/extract_video_embeddings.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/infer_local_emotion_full_fusion_v2.py",
+      "bytes": 11571,
+      "sha256": "a51019d1af8db959f6f8e50f1f65972928e1fe690f79a66131dcabb00e30fc3a",
+      "relative": "assets/a51019d1af8db959f6f8e50f1f65972928e1fe690f79a66131dcabb00e30fc3a/infer_local_emotion_full_fusion_v2.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/pack_emotion_generic_visual.py",
+      "bytes": 3099,
+      "sha256": "77eb5dc77c9356ffc7c30acd50c337bb0483d898e9a34090d25421fc63b36391",
+      "relative": "assets/77eb5dc77c9356ffc7c30acd50c337bb0483d898e9a34090d25421fc63b36391/pack_emotion_generic_visual.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/prepare_local_emotion_final_inference_v2.py",
+      "bytes": 4466,
+      "sha256": "9769a903c482b91d0c8a69067a629c039f7fc25ea572f4dcd21c112ffb8b579d",
+      "relative": "assets/9769a903c482b91d0c8a69067a629c039f7fc25ea572f4dcd21c112ffb8b579d/prepare_local_emotion_final_inference_v2.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/reproduce_raw_test_clean_cuda.py",
+      "bytes": 2723,
+      "sha256": "e8d06a0f343d694c819feae251daec2946625bc4ea10bfd5266a21eca9b0b747",
+      "relative": "assets/e8d06a0f343d694c819feae251daec2946625bc4ea10bfd5266a21eca9b0b747/reproduce_raw_test_clean_cuda.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/reproduce_raw_test_features.py",
+      "bytes": 21624,
+      "sha256": "45478a503c40385dbed251b162819a795140f0a1eba7f6632d027cf8c5e95d74",
+      "relative": "assets/45478a503c40385dbed251b162819a795140f0a1eba7f6632d027cf8c5e95d74/reproduce_raw_test_features.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/research_write_guard.py",
+      "bytes": 1286,
+      "sha256": "30782fbe6cdf7fbc64bc373af42cbeb72bdfadf3592207e536f185666862299b",
+      "relative": "assets/30782fbe6cdf7fbc64bc373af42cbeb72bdfadf3592207e536f185666862299b/research_write_guard.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/run_current_decision_package.py",
+      "bytes": 7242,
+      "sha256": "385536dd7f8796be22ede8b09e8a188932f73fea5979188e4efee27bf59f7835",
+      "relative": "assets/385536dd7f8796be22ede8b09e8a188932f73fea5979188e4efee27bf59f7835/run_current_decision_package.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/run_emotion_nested.py",
+      "bytes": 13693,
+      "sha256": "1f5d9b7e84e830f88779d458a448ce46b96e178e79f4eb042a5d4709ba542d9e",
+      "relative": "assets/1f5d9b7e84e830f88779d458a448ce46b96e178e79f4eb042a5d4709ba542d9e/run_emotion_nested.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/run_emotion_recipe_nested.py",
+      "bytes": 24376,
+      "sha256": "12b72f371e8b81534c3c84687b806bb6b00a4489b46f520803e62e747285b6e0",
+      "relative": "assets/12b72f371e8b81534c3c84687b806bb6b00a4489b46f520803e62e747285b6e0/run_emotion_recipe_nested.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/run_emotion_template_nested.py",
+      "bytes": 6193,
+      "sha256": "6463f4840844920ef0c136c3cc0a7a02f306f789d03615d541c2e0f0bf3dec16",
+      "relative": "assets/6463f4840844920ef0c136c3cc0a7a02f306f789d03615d541c2e0f0bf3dec16/run_emotion_template_nested.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/run_emotion_visual_nested.py",
+      "bytes": 16328,
+      "sha256": "d8ace4a9f2fe3f0b502c0cbfa3e982a1905b6553ecedb52e744a917ef7ca2178",
+      "relative": "assets/d8ace4a9f2fe3f0b502c0cbfa3e982a1905b6553ecedb52e744a917ef7ca2178/run_emotion_visual_nested.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/run_finalist_pipeline.py",
+      "bytes": 33575,
+      "sha256": "8f6c60b7023ede97e89e8c787fb4cb40c87153a421070720e9ca444bfbb60d3c",
+      "relative": "assets/8f6c60b7023ede97e89e8c787fb4cb40c87153a421070720e9ca444bfbb60d3c/run_finalist_pipeline.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/run_local_emotion_distillation.py",
+      "bytes": 25959,
+      "sha256": "5acfee8b8d0687131b664f6c0a91169519f76748c282e07ecd60351ffa8b40ab",
+      "relative": "assets/5acfee8b8d0687131b664f6c0a91169519f76748c282e07ecd60351ffa8b40ab/run_local_emotion_distillation.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/run_relocated_python.py",
+      "bytes": 1651,
+      "sha256": "746d71fbc91afa5565848fefccc1bb4cb559f12bb950b5f7eb78774cb772344c",
+      "relative": "assets/746d71fbc91afa5565848fefccc1bb4cb559f12bb950b5f7eb78774cb772344c/run_relocated_python.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/__init__.py",
+      "bytes": 66,
+      "sha256": "d15d107c2c47159a93ae1b3dd84abea72d08e80abf00c817d7aa96cc8b2fb85e",
+      "relative": "assets/d15d107c2c47159a93ae1b3dd84abea72d08e80abf00c817d7aa96cc8b2fb85e/__init__.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/acquisition.py",
+      "bytes": 3059,
+      "sha256": "3ba51d16f2b449b91c5ab82569f8e35201305524dbcfdf635e9a94e5ad3bd5d2",
+      "relative": "assets/3ba51d16f2b449b91c5ab82569f8e35201305524dbcfdf635e9a94e5ad3bd5d2/acquisition.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/acquisition_v2.py",
+      "bytes": 7263,
+      "sha256": "6017634c9cc07f043af27183c1a2a2ce11ebf645312c457a70bf228efebee0a5",
+      "relative": "assets/6017634c9cc07f043af27183c1a2a2ce11ebf645312c457a70bf228efebee0a5/acquisition_v2.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/actions.py",
+      "bytes": 1580,
+      "sha256": "bad55a7051da5a8208158c97ff25fbe55a43cf64de9d47e492558da2e58f1e43",
+      "relative": "assets/bad55a7051da5a8208158c97ff25fbe55a43cf64de9d47e492558da2e58f1e43/actions.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/clip_constraints.py",
+      "bytes": 11053,
+      "sha256": "52393f64d61d4c589fd2ebea6dc91cae7f3aa2b5a170e94dd264761b471f7a86",
+      "relative": "assets/52393f64d61d4c589fd2ebea6dc91cae7f3aa2b5a170e94dd264761b471f7a86/clip_constraints.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_fusion_nested.py",
+      "bytes": 4674,
+      "sha256": "b172c095a14dfa69872f15501ecc047d91384572c89ad18fd831922dd85a902e",
+      "relative": "assets/b172c095a14dfa69872f15501ecc047d91384572c89ad18fd831922dd85a902e/emotion_fusion_nested.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_nested.py",
+      "bytes": 15734,
+      "sha256": "aec1d649d0d72eab48901625e71f2fb22a55fa1cfa86681dac531df8724a5259",
+      "relative": "assets/aec1d649d0d72eab48901625e71f2fb22a55fa1cfa86681dac531df8724a5259/emotion_nested.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_recipe_nested.py",
+      "bytes": 3569,
+      "sha256": "9f8d2a90c8d4aae77f392ce3fc5fd10ae74cc3633f2e20b68e13535cabdd085b",
+      "relative": "assets/9f8d2a90c8d4aae77f392ce3fc5fd10ae74cc3633f2e20b68e13535cabdd085b/emotion_recipe_nested.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_relative.py",
+      "bytes": 1749,
+      "sha256": "b92a0756679786e3e0d4320307d8a0411102b00b42981535faff3ba39b740570",
+      "relative": "assets/b92a0756679786e3e0d4320307d8a0411102b00b42981535faff3ba39b740570/emotion_relative.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_scene_robustness.py",
+      "bytes": 3667,
+      "sha256": "37939d10521f1e06ffba4c3b377875ce58d505a673c185601495bec821e15661",
+      "relative": "assets/37939d10521f1e06ffba4c3b377875ce58d505a673c185601495bec821e15661/emotion_scene_robustness.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_template_nested.py",
+      "bytes": 6476,
+      "sha256": "cb92b179a53690bbe75dc703e70543ff935f8d83fea868d2a86a407c249286ee",
+      "relative": "assets/cb92b179a53690bbe75dc703e70543ff935f8d83fea868d2a86a407c249286ee/emotion_template_nested.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_visual_nested.py",
+      "bytes": 8098,
+      "sha256": "7ebc595c81128f4f6f3aaeb36e7ac6ca1ce628ee436db6b5eb08041629d5ef39",
+      "relative": "assets/7ebc595c81128f4f6f3aaeb36e7ac6ca1ce628ee436db6b5eb08041629d5ef39/emotion_visual_nested.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/generic_video_windows.py",
+      "bytes": 3656,
+      "sha256": "ccc3adb237eee7d920a16bd79b4a5821b05858b5c2598395a49a44965e2bffa8",
+      "relative": "assets/ccc3adb237eee7d920a16bd79b4a5821b05858b5c2598395a49a44965e2bffa8/generic_video_windows.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/inference.py",
+      "bytes": 5450,
+      "sha256": "0d9ae78a01ba15545fb8e62d980305703b17413de627204bc8a968e141ece2aa",
+      "relative": "assets/0d9ae78a01ba15545fb8e62d980305703b17413de627204bc8a968e141ece2aa/inference.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/local_emotion_student.py",
+      "bytes": 6122,
+      "sha256": "d514312502460edc73fb30f14ff7e190588cfeb6e440ac922ef3ed767f9e5973",
+      "relative": "assets/d514312502460edc73fb30f14ff7e190588cfeb6e440ac922ef3ed767f9e5973/local_emotion_student.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/local_emotion_teacher.py",
+      "bytes": 3105,
+      "sha256": "7526376c70ddc03eeb2da834f6111930214b9117a753fb7a822a86e205333ad3",
+      "relative": "assets/7526376c70ddc03eeb2da834f6111930214b9117a753fb7a822a86e205333ad3/local_emotion_teacher.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/metadata.py",
+      "bytes": 1600,
+      "sha256": "a6bff37df1866546708e759f510beb97f1efdebd204a4e9331810df1437c0ad1",
+      "relative": "assets/a6bff37df1866546708e759f510beb97f1efdebd204a4e9331810df1437c0ad1/metadata.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/structural.py",
+      "bytes": 10131,
+      "sha256": "6560a6c93e1a872467fd11a73679dbe8b0f93c4c29705ad759304f9f76f1f233",
+      "relative": "assets/6560a6c93e1a872467fd11a73679dbe8b0f93c4c29705ad759304f9f76f1f233/structural.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/submission.py",
+      "bytes": 5643,
+      "sha256": "4075bd93a078357a545522389a2bcfa69b97f0ff4c76a784a2620e545b7f126e",
+      "relative": "assets/4075bd93a078357a545522389a2bcfa69b97f0ff4c76a784a2620e545b7f126e/submission.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/validation.py",
+      "bytes": 15168,
+      "sha256": "e1f3f3cf4b626c48dcb113978d22249275c64d5c5737d9762a442264ef20ac98",
+      "relative": "assets/e1f3f3cf4b626c48dcb113978d22249275c64d5c5737d9762a442264ef20ac98/validation.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/video.py",
+      "bytes": 6459,
+      "sha256": "9940a91c2560780682b8d673c3bd8f4092ee602a1c0ffd377f24cf34c70cb218",
+      "relative": "assets/9940a91c2560780682b8d673c3bd8f4092ee602a1c0ffd377f24cf34c70cb218/video.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/vendor/server_sat_v1/consistency_repair.py",
+      "bytes": 4088,
+      "sha256": "ae8cd38573bf931a691fbe32f8dedae4a3a8d19237ea900fe8924e6c08729c71",
+      "relative": "assets/ae8cd38573bf931a691fbe32f8dedae4a3a8d19237ea900fe8924e6c08729c71/consistency_repair.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/vendor/server_sat_v1/frequency_model.py",
+      "bytes": 5334,
+      "sha256": "c9f67f33c6075f5be018c1de275a1908b9015662048a3ba8200db6f2cdf8823b",
+      "relative": "assets/c9f67f33c6075f5be018c1de275a1908b9015662048a3ba8200db6f2cdf8823b/frequency_model.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/vendor/server_sat_v1/global_sat.py",
+      "bytes": 7297,
+      "sha256": "4fc301fa4a2415465558522ca9a27ee294e04b852296b015bc00e856d15a4509",
+      "relative": "assets/4fc301fa4a2415465558522ca9a27ee294e04b852296b015bc00e856d15a4509/global_sat.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/vendor/server_sat_v1/posterior_decode.py",
+      "bytes": 5717,
+      "sha256": "8448a94eadddfd4e34bfecc2131942ccd7c301937669d8fc13ed2ad74dcf00a5",
+      "relative": "assets/8448a94eadddfd4e34bfecc2131942ccd7c301937669d8fc13ed2ad74dcf00a5/posterior_decode.py",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260905_emotion_recipe_nested_v6/inference_policy.json",
+      "bytes": 13320,
+      "sha256": "9ba5f88e9982570ce6ecf591179cc6900d67b4122d10cb1dac9bedb2fb13e24e",
+      "relative": "assets/9ba5f88e9982570ce6ecf591179cc6900d67b4122d10cb1dac9bedb2fb13e24e/inference_policy.json",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260905_emotion_recipe_nested_v6/model_source_manifest.json",
+      "bytes": 77790,
+      "sha256": "ea0bca2d1da68a43e2cc84cd71f5d67325ae0405e407268f89823d83e3b67b52",
+      "relative": "assets/ea0bca2d1da68a43e2cc84cd71f5d67325ae0405e407268f89823d83e3b67b52/model_source_manifest.json",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/final_training_scope.json",
+      "bytes": 170291,
+      "sha256": "bbb372192f55d3994dfc9adfe7971d101e1f0f0c02fabec9e6dfedf75a6fc7c0",
+      "relative": "assets/bbb372192f55d3994dfc9adfe7971d101e1f0f0c02fabec9e6dfedf75a6fc7c0/final_training_scope.json",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/models.joblib",
+      "bytes": 5927619,
+      "sha256": "7fa05327141de05f1e9815007adbe39b3614d19b40e125ff2d23b1ef7cfafdc9",
+      "relative": "assets/7fa05327141de05f1e9815007adbe39b3614d19b40e125ff2d23b1ef7cfafdc9/models.joblib",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260912_local_emotion_distillation_v1/completion_freeze.json",
+      "bytes": 104470,
+      "sha256": "36718af1eeb707af0366bd4e70f6a6c50c6f08394a6d4582320503b8a872adf5",
+      "relative": "assets/36718af1eeb707af0366bd4e70f6a6c50c6f08394a6d4582320503b8a872adf5/completion_freeze.json",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260912_local_emotion_distillation_v1/report.json",
+      "bytes": 28815,
+      "sha256": "24877a7200ecd9ba73601199c60af28cd4aa3997fc2f5b83684d62fad29c8fb5",
+      "relative": "assets/24877a7200ecd9ba73601199c60af28cd4aa3997fc2f5b83684d62fad29c8fb5/report.json",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260912_local_emotion_distillation_v1/scopes/final/A.pt",
+      "bytes": 2687803,
+      "sha256": "c4e1e9bd383654ef185af5c448119cd801b81b318e42b6b37996bfa78a7c4e07",
+      "relative": "assets/c4e1e9bd383654ef185af5c448119cd801b81b318e42b6b37996bfa78a7c4e07/A.pt",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260912_local_emotion_distillation_v1/scopes/final/B.pt",
+      "bytes": 2687803,
+      "sha256": "89c53ae6703cece381d4d2a048dbd1fe53a08cba81e3f99a2e55d49452e95231",
+      "relative": "assets/89c53ae6703cece381d4d2a048dbd1fe53a08cba81e3f99a2e55d49452e95231/B.pt",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260912_local_emotion_distillation_v1/scopes/final/normalizer.joblib",
+      "bytes": 26737,
+      "sha256": "42af66dc16699cf8a4d32e2fbd02459c5900c601c5b582b2ea869c588e15373b",
+      "relative": "assets/42af66dc16699cf8a4d32e2fbd02459c5900c601c5b582b2ea869c588e15373b/normalizer.joblib",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260912_local_emotion_distillation_v1/scopes/final/scope.json",
+      "bytes": 43352,
+      "sha256": "ad26893ec95cbdb1ce9bf62aa7969e56ebe53e0c61d90d465c7b6c57a7a8825a",
+      "relative": "assets/ad26893ec95cbdb1ce9bf62aa7969e56ebe53e0c61d90d465c7b6c57a7a8825a/scope.json",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260912_local_emotion_final_component_v2/descriptor.json",
+      "bytes": 10462,
+      "sha256": "893311dea5853da135d85d3ab93a55ad78b3e4d85c9c281cffb3460e3b15f479",
+      "relative": "assets/893311dea5853da135d85d3ab93a55ad78b3e4d85c9c281cffb3460e3b15f479/descriptor.json",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260912_local_emotion_full_fusion_replay_v1/report.json",
+      "bytes": 36787,
+      "sha256": "39bc8dbc62fe5cc60601e24c527ee318e915be3ce3f68d6a4b39abdfa3b31879",
+      "relative": "assets/39bc8dbc62fe5cc60601e24c527ee318e915be3ce3f68d6a4b39abdfa3b31879/report.json",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260912_local_emotion_full_fusion_v1/report.json",
+      "bytes": 36747,
+      "sha256": "12883dfceca74f9f2c54f582318e645c1f3f69a97c8a64bbece0ab24c398835c",
+      "relative": "assets/12883dfceca74f9f2c54f582318e645c1f3f69a97c8a64bbece0ab24c398835c/report.json",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/20260912_local_emotion_replay_v1/report.json",
+      "bytes": 9863,
+      "sha256": "ad75732f40596f11b593395ff473cb1bc97e5369ff9e7751b2533f7024a9063a",
+      "relative": "assets/ad75732f40596f11b593395ff473cb1bc97e5369ff9e7751b2533f7024a9063a/report.json",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/incoming/server_20260912_v1/sat_v1_verified_20260912_extracted/sat_v1_verified_20260912/models/frequency_loso_v1/leaf10_final.joblib",
+      "bytes": 2159461,
+      "sha256": "db6a779671d5afb9d106116073e86765ee1deb48fffd97391281db14defe5b3a",
+      "relative": "assets/db6a779671d5afb9d106116073e86765ee1deb48fffd97391281db14defe5b3a/leaf10_final.joblib",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/incoming/server_20260912_v1/sat_v1_verified_20260912_extracted/sat_v1_verified_20260912/models/frequency_loso_v1/leaf2_final.joblib",
+      "bytes": 3670594,
+      "sha256": "4b486aa3eef40e7d77a0319c8203068f22496218b7a0e839f44f35571bfcf346",
+      "relative": "assets/4b486aa3eef40e7d77a0319c8203068f22496218b7a0e839f44f35571bfcf346/leaf2_final.joblib",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X/runs/incoming/server_20260912_v1/sat_v1_verified_20260912_extracted/sat_v1_verified_20260912/models/frequency_loso_v1/leaf5_final.joblib",
+      "bytes": 2904074,
+      "sha256": "b666a2a157706c85805c639fb83afbbfbb7b72f2a9d6377b8f1b762311204c54",
+      "relative": "assets/b666a2a157706c85805c639fb83afbbfbb7b72f2a9d6377b8f1b762311204c54/leaf5_final.joblib",
+      "role": "immutable_dependency"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/apply_explicit_group_sat.py",
+      "bytes": 5382,
+      "sha256": "c09790d97d029503e172743f1d81daf5fd23c70f3e2611d3054e6e3b80c886af",
+      "relative": "scripts/apply_explicit_group_sat.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/apply_scored_sat_v3.py",
+      "bytes": 6779,
+      "sha256": "7760f6f83b8b957d054cf313ca0eeafab4d023b3e9a15dc7ef34a581911de917",
+      "relative": "scripts/apply_scored_sat_v3.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/assess_local_emotion_full_fusion_v2.py",
+      "bytes": 10388,
+      "sha256": "c839e3e3345fda80978032bdac2d325fbdbd69c47166b1637e2ec9897cbeda14",
+      "relative": "scripts/assess_local_emotion_full_fusion_v2.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/audit_emotion_nested_provenance.py",
+      "bytes": 21095,
+      "sha256": "a43c67b9229bd8fa931d22606934b19771dc7bc3b500051a5f01738395457b30",
+      "relative": "scripts/audit_emotion_nested_provenance.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/build_current_decision_package.py",
+      "bytes": 4693,
+      "sha256": "0e1f5257c9b94416e69da072e09445a8234069718a3779024567bc11618b115e",
+      "relative": "scripts/build_current_decision_package.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/evaluate_local_predictions.py",
+      "bytes": 5707,
+      "sha256": "43d9d091dfaaf7738a2aead3134c229318f4d3940eb1659b9924dd64773baf61",
+      "relative": "scripts/evaluate_local_predictions.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/extract_generic_hau_windows.py",
+      "bytes": 18736,
+      "sha256": "84da581525e95fd850a564e5576ff28728cd47b5142838d5859ffdc5db63b2ab",
+      "relative": "scripts/extract_generic_hau_windows.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/extract_kuno_transfer_logits.py",
+      "bytes": 15091,
+      "sha256": "855db6795b5d4b888d4b69b0fdf44aafecf0de2515e403aeaa4fb6ff9d537622",
+      "relative": "scripts/extract_kuno_transfer_logits.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/infer_local_emotion_full_fusion_v2.py",
+      "bytes": 11571,
+      "sha256": "a51019d1af8db959f6f8e50f1f65972928e1fe690f79a66131dcabb00e30fc3a",
+      "relative": "scripts/infer_local_emotion_full_fusion_v2.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/reproduce_raw_test_clean_cuda.py",
+      "bytes": 2723,
+      "sha256": "e8d06a0f343d694c819feae251daec2946625bc4ea10bfd5266a21eca9b0b747",
+      "relative": "scripts/reproduce_raw_test_clean_cuda.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/reproduce_raw_test_features.py",
+      "bytes": 21624,
+      "sha256": "45478a503c40385dbed251b162819a795140f0a1eba7f6632d027cf8c5e95d74",
+      "relative": "scripts/reproduce_raw_test_features.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/research_write_guard.py",
+      "bytes": 1286,
+      "sha256": "30782fbe6cdf7fbc64bc373af42cbeb72bdfadf3592207e536f185666862299b",
+      "relative": "scripts/research_write_guard.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/run_current_decision_package.py",
+      "bytes": 7242,
+      "sha256": "385536dd7f8796be22ede8b09e8a188932f73fea5979188e4efee27bf59f7835",
+      "relative": "scripts/run_current_decision_package.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/run_finalist_pipeline.py",
+      "bytes": 33575,
+      "sha256": "8f6c60b7023ede97e89e8c787fb4cb40c87153a421070720e9ca444bfbb60d3c",
+      "relative": "scripts/run_finalist_pipeline.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/run_local_emotion_distillation.py",
+      "bytes": 25959,
+      "sha256": "5acfee8b8d0687131b664f6c0a91169519f76748c282e07ecd60351ffa8b40ab",
+      "relative": "scripts/run_local_emotion_distillation.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/run_relocated_python.py",
+      "bytes": 1651,
+      "sha256": "746d71fbc91afa5565848fefccc1bb4cb559f12bb950b5f7eb78774cb772344c",
+      "relative": "scripts/run_relocated_python.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/__init__.py",
+      "bytes": 66,
+      "sha256": "d15d107c2c47159a93ae1b3dd84abea72d08e80abf00c817d7aa96cc8b2fb85e",
+      "relative": "src/cuhkx/__init__.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/acquisition.py",
+      "bytes": 3059,
+      "sha256": "3ba51d16f2b449b91c5ab82569f8e35201305524dbcfdf635e9a94e5ad3bd5d2",
+      "relative": "src/cuhkx/acquisition.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/acquisition_v2.py",
+      "bytes": 7263,
+      "sha256": "6017634c9cc07f043af27183c1a2a2ce11ebf645312c457a70bf228efebee0a5",
+      "relative": "src/cuhkx/acquisition_v2.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/actions.py",
+      "bytes": 1580,
+      "sha256": "bad55a7051da5a8208158c97ff25fbe55a43cf64de9d47e492558da2e58f1e43",
+      "relative": "src/cuhkx/actions.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/clip_constraints.py",
+      "bytes": 11053,
+      "sha256": "52393f64d61d4c589fd2ebea6dc91cae7f3aa2b5a170e94dd264761b471f7a86",
+      "relative": "src/cuhkx/clip_constraints.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_fusion_nested.py",
+      "bytes": 4674,
+      "sha256": "b172c095a14dfa69872f15501ecc047d91384572c89ad18fd831922dd85a902e",
+      "relative": "src/cuhkx/emotion_fusion_nested.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_nested.py",
+      "bytes": 15734,
+      "sha256": "aec1d649d0d72eab48901625e71f2fb22a55fa1cfa86681dac531df8724a5259",
+      "relative": "src/cuhkx/emotion_nested.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_recipe_nested.py",
+      "bytes": 3569,
+      "sha256": "9f8d2a90c8d4aae77f392ce3fc5fd10ae74cc3633f2e20b68e13535cabdd085b",
+      "relative": "src/cuhkx/emotion_recipe_nested.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_relative.py",
+      "bytes": 1749,
+      "sha256": "b92a0756679786e3e0d4320307d8a0411102b00b42981535faff3ba39b740570",
+      "relative": "src/cuhkx/emotion_relative.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_scene_robustness.py",
+      "bytes": 3667,
+      "sha256": "37939d10521f1e06ffba4c3b377875ce58d505a673c185601495bec821e15661",
+      "relative": "src/cuhkx/emotion_scene_robustness.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_template_nested.py",
+      "bytes": 6476,
+      "sha256": "cb92b179a53690bbe75dc703e70543ff935f8d83fea868d2a86a407c249286ee",
+      "relative": "src/cuhkx/emotion_template_nested.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_visual_nested.py",
+      "bytes": 8098,
+      "sha256": "7ebc595c81128f4f6f3aaeb36e7ac6ca1ce628ee436db6b5eb08041629d5ef39",
+      "relative": "src/cuhkx/emotion_visual_nested.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/generic_video_windows.py",
+      "bytes": 3656,
+      "sha256": "ccc3adb237eee7d920a16bd79b4a5821b05858b5c2598395a49a44965e2bffa8",
+      "relative": "src/cuhkx/generic_video_windows.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/inference.py",
+      "bytes": 5450,
+      "sha256": "0d9ae78a01ba15545fb8e62d980305703b17413de627204bc8a968e141ece2aa",
+      "relative": "src/cuhkx/inference.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/local_emotion_student.py",
+      "bytes": 6122,
+      "sha256": "d514312502460edc73fb30f14ff7e190588cfeb6e440ac922ef3ed767f9e5973",
+      "relative": "src/cuhkx/local_emotion_student.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/local_emotion_teacher.py",
+      "bytes": 3105,
+      "sha256": "7526376c70ddc03eeb2da834f6111930214b9117a753fb7a822a86e205333ad3",
+      "relative": "src/cuhkx/local_emotion_teacher.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/metadata.py",
+      "bytes": 1600,
+      "sha256": "a6bff37df1866546708e759f510beb97f1efdebd204a4e9331810df1437c0ad1",
+      "relative": "src/cuhkx/metadata.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/structural.py",
+      "bytes": 10131,
+      "sha256": "6560a6c93e1a872467fd11a73679dbe8b0f93c4c29705ad759304f9f76f1f233",
+      "relative": "src/cuhkx/structural.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/submission.py",
+      "bytes": 5643,
+      "sha256": "4075bd93a078357a545522389a2bcfa69b97f0ff4c76a784a2620e545b7f126e",
+      "relative": "src/cuhkx/submission.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/validation.py",
+      "bytes": 15168,
+      "sha256": "e1f3f3cf4b626c48dcb113978d22249275c64d5c5737d9762a442264ef20ac98",
+      "relative": "src/cuhkx/validation.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/video.py",
+      "bytes": 6459,
+      "sha256": "9940a91c2560780682b8d673c3bd8f4092ee602a1c0ffd377f24cf34c70cb218",
+      "relative": "src/cuhkx/video.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/vendor/server_sat_v1/consistency_repair.py",
+      "bytes": 4088,
+      "sha256": "ae8cd38573bf931a691fbe32f8dedae4a3a8d19237ea900fe8924e6c08729c71",
+      "relative": "vendor/server_sat_v1/consistency_repair.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/vendor/server_sat_v1/frequency_model.py",
+      "bytes": 5334,
+      "sha256": "c9f67f33c6075f5be018c1de275a1908b9015662048a3ba8200db6f2cdf8823b",
+      "relative": "vendor/server_sat_v1/frequency_model.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/vendor/server_sat_v1/global_sat.py",
+      "bytes": 7297,
+      "sha256": "4fc301fa4a2415465558522ca9a27ee294e04b852296b015bc00e856d15a4509",
+      "relative": "vendor/server_sat_v1/global_sat.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/vendor/server_sat_v1/posterior_decode.py",
+      "bytes": 5717,
+      "sha256": "8448a94eadddfd4e34bfecc2131942ccd7c301937669d8fc13ed2ad74dcf00a5",
+      "relative": "vendor/server_sat_v1/posterior_decode.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/run_emotion_nested.py",
+      "bytes": 13693,
+      "sha256": "1f5d9b7e84e830f88779d458a448ce46b96e178e79f4eb042a5d4709ba542d9e",
+      "relative": "scripts/run_emotion_nested.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/run_emotion_template_nested.py",
+      "bytes": 6193,
+      "sha256": "6463f4840844920ef0c136c3cc0a7a02f306f789d03615d541c2e0f0bf3dec16",
+      "relative": "scripts/run_emotion_template_nested.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/run_emotion_visual_nested.py",
+      "bytes": 16328,
+      "sha256": "d8ace4a9f2fe3f0b502c0cbfa3e982a1905b6553ecedb52e744a917ef7ca2178",
+      "relative": "scripts/run_emotion_visual_nested.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/pack_emotion_generic_visual.py",
+      "bytes": 3099,
+      "sha256": "77eb5dc77c9356ffc7c30acd50c337bb0483d898e9a34090d25421fc63b36391",
+      "relative": "scripts/pack_emotion_generic_visual.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/audit_emotion_visual_nested.py",
+      "bytes": 10842,
+      "sha256": "295b26462d12b578c196218c60925d295649dbbaa453184f8c21aed6dd45b7ec",
+      "relative": "scripts/audit_emotion_visual_nested.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/extract_video_embeddings.py",
+      "bytes": 6204,
+      "sha256": "60985de5e5d6cac1d3c2c514dfede47a711fe52e1969f46de0b4fedfc34134f7",
+      "relative": "scripts/extract_video_embeddings.py",
+      "role": "runtime_source"
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/scripts/run_emotion_recipe_nested.py",
+      "bytes": 24376,
+      "sha256": "12b72f371e8b81534c3c84687b806bb6b00a4489b46f520803e62e747285b6e0",
+      "relative": "scripts/run_emotion_recipe_nested.py",
+      "role": "runtime_source"
+    }
+  ],
+  "locations": {
+    "/root/workspace/CUHK-X-integration-20260912/configs/local_emotion_distillation_v1.json": "assets/63863ac0709536b5c2a771b2280b9655ea23643c31ac29dfd5c353ce28ad5031/local_emotion_distillation_v1.json",
+    "/root/workspace/CUHK-X-integration-20260912/configs/local_emotion_full_fusion_v1.json": "assets/b679ec6756c7810c62ec2fdd6bd46c28d4d315e782b60402d00d8ba008ae4d71/local_emotion_full_fusion_v1.json",
+    "/root/workspace/CUHK-X-integration-20260912/configs/sat_min_edit_explicit_v1.json": "assets/486c63011ed913c6dc026e28c95a165750e8fd49ab273b03a3a4ce4d274cd679/sat_min_edit_explicit_v1.json",
+    "/root/workspace/CUHK-X-integration-20260912/scripts/apply_explicit_group_sat.py": "assets/c09790d97d029503e172743f1d81daf5fd23c70f3e2611d3054e6e3b80c886af/apply_explicit_group_sat.py",
+    "/root/workspace/CUHK-X-integration-20260912/scripts/apply_scored_sat_v3.py": "assets/7760f6f83b8b957d054cf313ca0eeafab4d023b3e9a15dc7ef34a581911de917/apply_scored_sat_v3.py",
+    "/root/workspace/CUHK-X-integration-20260912/scripts/assess_local_emotion_full_fusion_v2.py": "assets/c839e3e3345fda80978032bdac2d325fbdbd69c47166b1637e2ec9897cbeda14/assess_local_emotion_full_fusion_v2.py",
+    "/root/workspace/CUHK-X-integration-20260912/scripts/audit_emotion_nested_provenance.py": "assets/a43c67b9229bd8fa931d22606934b19771dc7bc3b500051a5f01738395457b30/audit_emotion_nested_provenance.py",
+    "/root/workspace/CUHK-X-integration-20260912/scripts/audit_emotion_visual_nested.py": "assets/295b26462d12b578c196218c60925d295649dbbaa453184f8c21aed6dd45b7ec/audit_emotion_visual_nested.py",
+    "/root/workspace/CUHK-X-integration-20260912/scripts/build_current_decision_package.py": "assets/0e1f5257c9b94416e69da072e09445a8234069718a3779024567bc11618b115e/build_current_decision_package.py",
+    "/root/workspace/CUHK-X-integration-20260912/scripts/evaluate_local_predictions.py": "assets/43d9d091dfaaf7738a2aead3134c229318f4d3940eb1659b9924dd64773baf61/evaluate_local_predictions.py",
+    "/root/workspace/CUHK-X-integration-20260912/scripts/extract_generic_hau_windows.py": "assets/84da581525e95fd850a564e5576ff28728cd47b5142838d5859ffdc5db63b2ab/extract_generic_hau_windows.py",
+    "/root/workspace/CUHK-X-integration-20260912/scripts/extract_kuno_transfer_logits.py": "assets/855db6795b5d4b888d4b69b0fdf44aafecf0de2515e403aeaa4fb6ff9d537622/extract_kuno_transfer_logits.py",
+    "/root/workspace/CUHK-X-integration-20260912/scripts/extract_video_embeddings.py": "assets/60985de5e5d6cac1d3c2c514dfede47a711fe52e1969f46de0b4fedfc34134f7/extract_video_embeddings.py",
+    "/root/workspace/CUHK-X-integration-20260912/scripts/infer_local_emotion_full_fusion_v2.py": "assets/a51019d1af8db959f6f8e50f1f65972928e1fe690f79a66131dcabb00e30fc3a/infer_local_emotion_full_fusion_v2.py",
+    "/root/workspace/CUHK-X-integration-20260912/scripts/pack_emotion_generic_visual.py": "assets/77eb5dc77c9356ffc7c30acd50c337bb0483d898e9a34090d25421fc63b36391/pack_emotion_generic_visual.py",
+    "/root/workspace/CUHK-X-integration-20260912/scripts/prepare_local_emotion_final_inference_v2.py": "assets/9769a903c482b91d0c8a69067a629c039f7fc25ea572f4dcd21c112ffb8b579d/prepare_local_emotion_final_inference_v2.py",
+    "/root/workspace/CUHK-X-integration-20260912/scripts/reproduce_raw_test_clean_cuda.py": "assets/e8d06a0f343d694c819feae251daec2946625bc4ea10bfd5266a21eca9b0b747/reproduce_raw_test_clean_cuda.py",
+    "/root/workspace/CUHK-X-integration-20260912/scripts/reproduce_raw_test_features.py": "assets/45478a503c40385dbed251b162819a795140f0a1eba7f6632d027cf8c5e95d74/reproduce_raw_test_features.py",
+    "/root/workspace/CUHK-X-integration-20260912/scripts/research_write_guard.py": "assets/30782fbe6cdf7fbc64bc373af42cbeb72bdfadf3592207e536f185666862299b/research_write_guard.py",
+    "/root/workspace/CUHK-X-integration-20260912/scripts/run_current_decision_package.py": "assets/385536dd7f8796be22ede8b09e8a188932f73fea5979188e4efee27bf59f7835/run_current_decision_package.py",
+    "/root/workspace/CUHK-X-integration-20260912/scripts/run_emotion_nested.py": "assets/1f5d9b7e84e830f88779d458a448ce46b96e178e79f4eb042a5d4709ba542d9e/run_emotion_nested.py",
+    "/root/workspace/CUHK-X-integration-20260912/scripts/run_emotion_recipe_nested.py": "assets/12b72f371e8b81534c3c84687b806bb6b00a4489b46f520803e62e747285b6e0/run_emotion_recipe_nested.py",
+    "/root/workspace/CUHK-X-integration-20260912/scripts/run_emotion_template_nested.py": "assets/6463f4840844920ef0c136c3cc0a7a02f306f789d03615d541c2e0f0bf3dec16/run_emotion_template_nested.py",
+    "/root/workspace/CUHK-X-integration-20260912/scripts/run_emotion_visual_nested.py": "assets/d8ace4a9f2fe3f0b502c0cbfa3e982a1905b6553ecedb52e744a917ef7ca2178/run_emotion_visual_nested.py",
+    "/root/workspace/CUHK-X-integration-20260912/scripts/run_finalist_pipeline.py": "assets/8f6c60b7023ede97e89e8c787fb4cb40c87153a421070720e9ca444bfbb60d3c/run_finalist_pipeline.py",
+    "/root/workspace/CUHK-X-integration-20260912/scripts/run_local_emotion_distillation.py": "assets/5acfee8b8d0687131b664f6c0a91169519f76748c282e07ecd60351ffa8b40ab/run_local_emotion_distillation.py",
+    "/root/workspace/CUHK-X-integration-20260912/scripts/run_relocated_python.py": "assets/746d71fbc91afa5565848fefccc1bb4cb559f12bb950b5f7eb78774cb772344c/run_relocated_python.py",
+    "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/__init__.py": "assets/d15d107c2c47159a93ae1b3dd84abea72d08e80abf00c817d7aa96cc8b2fb85e/__init__.py",
+    "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/acquisition.py": "assets/3ba51d16f2b449b91c5ab82569f8e35201305524dbcfdf635e9a94e5ad3bd5d2/acquisition.py",
+    "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/acquisition_v2.py": "assets/6017634c9cc07f043af27183c1a2a2ce11ebf645312c457a70bf228efebee0a5/acquisition_v2.py",
+    "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/actions.py": "assets/bad55a7051da5a8208158c97ff25fbe55a43cf64de9d47e492558da2e58f1e43/actions.py",
+    "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/clip_constraints.py": "assets/52393f64d61d4c589fd2ebea6dc91cae7f3aa2b5a170e94dd264761b471f7a86/clip_constraints.py",
+    "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_fusion_nested.py": "assets/b172c095a14dfa69872f15501ecc047d91384572c89ad18fd831922dd85a902e/emotion_fusion_nested.py",
+    "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_nested.py": "assets/aec1d649d0d72eab48901625e71f2fb22a55fa1cfa86681dac531df8724a5259/emotion_nested.py",
+    "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_recipe_nested.py": "assets/9f8d2a90c8d4aae77f392ce3fc5fd10ae74cc3633f2e20b68e13535cabdd085b/emotion_recipe_nested.py",
+    "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_relative.py": "assets/b92a0756679786e3e0d4320307d8a0411102b00b42981535faff3ba39b740570/emotion_relative.py",
+    "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_scene_robustness.py": "assets/37939d10521f1e06ffba4c3b377875ce58d505a673c185601495bec821e15661/emotion_scene_robustness.py",
+    "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_template_nested.py": "assets/cb92b179a53690bbe75dc703e70543ff935f8d83fea868d2a86a407c249286ee/emotion_template_nested.py",
+    "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/emotion_visual_nested.py": "assets/7ebc595c81128f4f6f3aaeb36e7ac6ca1ce628ee436db6b5eb08041629d5ef39/emotion_visual_nested.py",
+    "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/generic_video_windows.py": "assets/ccc3adb237eee7d920a16bd79b4a5821b05858b5c2598395a49a44965e2bffa8/generic_video_windows.py",
+    "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/inference.py": "assets/0d9ae78a01ba15545fb8e62d980305703b17413de627204bc8a968e141ece2aa/inference.py",
+    "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/local_emotion_student.py": "assets/d514312502460edc73fb30f14ff7e190588cfeb6e440ac922ef3ed767f9e5973/local_emotion_student.py",
+    "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/local_emotion_teacher.py": "assets/7526376c70ddc03eeb2da834f6111930214b9117a753fb7a822a86e205333ad3/local_emotion_teacher.py",
+    "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/metadata.py": "assets/a6bff37df1866546708e759f510beb97f1efdebd204a4e9331810df1437c0ad1/metadata.py",
+    "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/structural.py": "assets/6560a6c93e1a872467fd11a73679dbe8b0f93c4c29705ad759304f9f76f1f233/structural.py",
+    "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/submission.py": "assets/4075bd93a078357a545522389a2bcfa69b97f0ff4c76a784a2620e545b7f126e/submission.py",
+    "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/validation.py": "assets/e1f3f3cf4b626c48dcb113978d22249275c64d5c5737d9762a442264ef20ac98/validation.py",
+    "/root/workspace/CUHK-X-integration-20260912/src/cuhkx/video.py": "assets/9940a91c2560780682b8d673c3bd8f4092ee602a1c0ffd377f24cf34c70cb218/video.py",
+    "/root/workspace/CUHK-X-integration-20260912/vendor/server_sat_v1/consistency_repair.py": "assets/ae8cd38573bf931a691fbe32f8dedae4a3a8d19237ea900fe8924e6c08729c71/consistency_repair.py",
+    "/root/workspace/CUHK-X-integration-20260912/vendor/server_sat_v1/frequency_model.py": "assets/c9f67f33c6075f5be018c1de275a1908b9015662048a3ba8200db6f2cdf8823b/frequency_model.py",
+    "/root/workspace/CUHK-X-integration-20260912/vendor/server_sat_v1/global_sat.py": "assets/4fc301fa4a2415465558522ca9a27ee294e04b852296b015bc00e856d15a4509/global_sat.py",
+    "/root/workspace/CUHK-X-integration-20260912/vendor/server_sat_v1/posterior_decode.py": "assets/8448a94eadddfd4e34bfecc2131942ccd7c301937669d8fc13ed2ad74dcf00a5/posterior_decode.py",
+    "/root/workspace/CUHK-X/runs/20260905_emotion_recipe_nested_v6/inference_policy.json": "assets/9ba5f88e9982570ce6ecf591179cc6900d67b4122d10cb1dac9bedb2fb13e24e/inference_policy.json",
+    "/root/workspace/CUHK-X/runs/20260905_emotion_recipe_nested_v6/model_source_manifest.json": "assets/ea0bca2d1da68a43e2cc84cd71f5d67325ae0405e407268f89823d83e3b67b52/model_source_manifest.json",
+    "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/final_training_scope.json": "assets/bbb372192f55d3994dfc9adfe7971d101e1f0f0c02fabec9e6dfedf75a6fc7c0/final_training_scope.json",
+    "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/models.joblib": "assets/7fa05327141de05f1e9815007adbe39b3614d19b40e125ff2d23b1ef7cfafdc9/models.joblib",
+    "/root/workspace/CUHK-X/runs/20260912_local_emotion_distillation_v1/completion_freeze.json": "assets/36718af1eeb707af0366bd4e70f6a6c50c6f08394a6d4582320503b8a872adf5/completion_freeze.json",
+    "/root/workspace/CUHK-X/runs/20260912_local_emotion_distillation_v1/report.json": "assets/24877a7200ecd9ba73601199c60af28cd4aa3997fc2f5b83684d62fad29c8fb5/report.json",
+    "/root/workspace/CUHK-X/runs/20260912_local_emotion_distillation_v1/scopes/final/A.pt": "assets/c4e1e9bd383654ef185af5c448119cd801b81b318e42b6b37996bfa78a7c4e07/A.pt",
+    "/root/workspace/CUHK-X/runs/20260912_local_emotion_distillation_v1/scopes/final/B.pt": "assets/89c53ae6703cece381d4d2a048dbd1fe53a08cba81e3f99a2e55d49452e95231/B.pt",
+    "/root/workspace/CUHK-X/runs/20260912_local_emotion_distillation_v1/scopes/final/normalizer.joblib": "assets/42af66dc16699cf8a4d32e2fbd02459c5900c601c5b582b2ea869c588e15373b/normalizer.joblib",
+    "/root/workspace/CUHK-X/runs/20260912_local_emotion_distillation_v1/scopes/final/scope.json": "assets/ad26893ec95cbdb1ce9bf62aa7969e56ebe53e0c61d90d465c7b6c57a7a8825a/scope.json",
+    "/root/workspace/CUHK-X/runs/20260912_local_emotion_final_component_v2/descriptor.json": "assets/893311dea5853da135d85d3ab93a55ad78b3e4d85c9c281cffb3460e3b15f479/descriptor.json",
+    "/root/workspace/CUHK-X/runs/20260912_local_emotion_full_fusion_replay_v1/report.json": "assets/39bc8dbc62fe5cc60601e24c527ee318e915be3ce3f68d6a4b39abdfa3b31879/report.json",
+    "/root/workspace/CUHK-X/runs/20260912_local_emotion_full_fusion_v1/report.json": "assets/12883dfceca74f9f2c54f582318e645c1f3f69a97c8a64bbece0ab24c398835c/report.json",
+    "/root/workspace/CUHK-X/runs/20260912_local_emotion_replay_v1/report.json": "assets/ad75732f40596f11b593395ff473cb1bc97e5369ff9e7751b2533f7024a9063a/report.json",
+    "/root/workspace/CUHK-X/runs/incoming/server_20260912_v1/sat_v1_verified_20260912_extracted/sat_v1_verified_20260912/models/frequency_loso_v1/leaf10_final.joblib": "assets/db6a779671d5afb9d106116073e86765ee1deb48fffd97391281db14defe5b3a/leaf10_final.joblib",
+    "/root/workspace/CUHK-X/runs/incoming/server_20260912_v1/sat_v1_verified_20260912_extracted/sat_v1_verified_20260912/models/frequency_loso_v1/leaf2_final.joblib": "assets/4b486aa3eef40e7d77a0319c8203068f22496218b7a0e839f44f35571bfcf346/leaf2_final.joblib",
+    "/root/workspace/CUHK-X/runs/incoming/server_20260912_v1/sat_v1_verified_20260912_extracted/sat_v1_verified_20260912/models/frequency_loso_v1/leaf5_final.joblib": "assets/b666a2a157706c85805c639fb83afbbfbb7b72f2a9d6377b8f1b762311204c54/leaf5_final.joblib",
+    "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_final_component_v2/descriptor.json": "assets/893311dea5853da135d85d3ab93a55ad78b3e4d85c9c281cffb3460e3b15f479/descriptor.json",
+    "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/normalizer.joblib": "assets/42af66dc16699cf8a4d32e2fbd02459c5900c601c5b582b2ea869c588e15373b/normalizer.joblib",
+    "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/scope.json": "assets/ad26893ec95cbdb1ce9bf62aa7969e56ebe53e0c61d90d465c7b6c57a7a8825a/scope.json",
+    "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/A.pt": "assets/c4e1e9bd383654ef185af5c448119cd801b81b318e42b6b37996bfa78a7c4e07/A.pt",
+    "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/B.pt": "assets/89c53ae6703cece381d4d2a048dbd1fe53a08cba81e3f99a2e55d49452e95231/B.pt",
+    "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/completion_freeze.json": "assets/36718af1eeb707af0366bd4e70f6a6c50c6f08394a6d4582320503b8a872adf5/completion_freeze.json",
+    "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/report.json": "assets/24877a7200ecd9ba73601199c60af28cd4aa3997fc2f5b83684d62fad29c8fb5/report.json",
+    "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_full_fusion_replay_v1/report.json": "assets/39bc8dbc62fe5cc60601e24c527ee318e915be3ce3f68d6a4b39abdfa3b31879/report.json",
+    "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_full_fusion_v1/report.json": "assets/12883dfceca74f9f2c54f582318e645c1f3f69a97c8a64bbece0ab24c398835c/report.json",
+    "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_replay_v1/report.json": "assets/ad75732f40596f11b593395ff473cb1bc97e5369ff9e7751b2533f7024a9063a/report.json",
+    "/root/workspace/CUHK-X-integration-20260912/runs/incoming/server_20260912_v1/sat_v1_verified_20260912_extracted/sat_v1_verified_20260912/models/frequency_loso_v1/leaf2_final.joblib": "assets/4b486aa3eef40e7d77a0319c8203068f22496218b7a0e839f44f35571bfcf346/leaf2_final.joblib",
+    "/root/workspace/CUHK-X-integration-20260912/runs/incoming/server_20260912_v1/sat_v1_verified_20260912_extracted/sat_v1_verified_20260912/models/frequency_loso_v1/leaf5_final.joblib": "assets/b666a2a157706c85805c639fb83afbbfbb7b72f2a9d6377b8f1b762311204c54/leaf5_final.joblib",
+    "/root/workspace/CUHK-X-integration-20260912/runs/incoming/server_20260912_v1/sat_v1_verified_20260912_extracted/sat_v1_verified_20260912/models/frequency_loso_v1/leaf10_final.joblib": "assets/db6a779671d5afb9d106116073e86765ee1deb48fffd97391281db14defe5b3a/leaf10_final.joblib"
+  },
+  "descriptor": "/root/workspace/CUHK-X/runs/20260912_local_emotion_final_component_v2/descriptor.json",
+  "sat_profile": "/root/workspace/CUHK-X-integration-20260912/configs/sat_min_edit_explicit_v1.json",
+  "scope": "Current A plus fixed weighted SAT component. Requires caller-provided parent predictions and current features. Full raw/four-expert relocation remains a separate required delivery step.",
+  "model_states_modified": false,
+  "data_or_feature_banks_collected": false,
+  "environment": "Caller supplies pinned research Python and separate SAT Python; no environment installation."
+}

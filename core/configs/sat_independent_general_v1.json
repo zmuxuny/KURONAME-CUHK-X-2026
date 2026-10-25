@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "kind": "cuhkx_sat_scored_postprocess_v1",
+  "mode": "sat_clip",
+  "layout": "explicit_or_independent",
+  "models": [],
+  "pseudo_dependency": false,
+  "scope": "Same-clip logical implications for arbitrary question sets; no cross-recording input or learned frequency scores."
+}

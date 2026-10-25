@@ -1,0 +1,168 @@
+{
+  "version": "1.0.0",
+  "primary": "56239668",
+  "secondary": "56258762",
+  "terms": "MODEL_LICENSE.md",
+  "archives": [
+    {
+      "name": "kuroname-models-1.tar.gz",
+      "url": "https://github.com/zmuxuny/KURONAME-CUHK-X-2026/releases/download/v1.0.0/kuroname-models-1.tar.gz",
+      "bytes": 1216642943,
+      "sha256": "a9ae594307d22c99699070bee90916fa3a9c91682679fa46ee2214e3504f19a1",
+      "files": [
+        {
+          "path": "artifacts/source_hau_head/model.joblib",
+          "bytes": 2036943
+        },
+        {
+          "path": "artifacts/target_model/final_R.pt",
+          "bytes": 119204170
+        },
+        {
+          "path": "core/assets/0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1/yolo11n.pt",
+          "bytes": 5613764
+        },
+        {
+          "path": "core/assets/1bef2e215fc100acf571b90370a8353574fdad6951b0f75f6e3404521643322f/ensemble_packed.pt",
+          "bytes": 88074378
+        },
+        {
+          "path": "core/assets/21287fee31d7b4e5165638678636ec28bad2e51cee407d70e791558d75325514/models.joblib",
+          "bytes": 26574167
+        },
+        {
+          "path": "core/assets/49d9d5cba20a0cda3d41af9e9929027dbbbc5f253966f4306a908af788b6f317/models.joblib",
+          "bytes": 26611870
+        },
+        {
+          "path": "core/assets/6cfb9334f62614d1fa4e6a4554e017dfc3ccd86d4cc9cf2927ac14021516690f/models.joblib",
+          "bytes": 8719031
+        },
+        {
+          "path": "core/assets/7fa05327141de05f1e9815007adbe39b3614d19b40e125ff2d23b1ef7cfafdc9/models.joblib",
+          "bytes": 5927619
+        },
+        {
+          "path": "core/assets/89c53ae6703cece381d4d2a048dbd1fe53a08cba81e3f99a2e55d49452e95231/B.pt",
+          "bytes": 2687803
+        },
+        {
+          "path": "core/assets/91a641e6c2ab531d1aca5f4321b4d802ec5c3babc15df855cdb6e39c6a1107c8/r2plus1d_18-91a641e6.pth",
+          "bytes": 126162996
+        },
+        {
+          "path": "core/assets/ade133f18548b59da3a36d6a70d44a4a7cc4b90460654c338cb8a023e9a3e0e1/r2plus1d_34_clip32_ft_kinetics_from_ig65m-ade133f1.pth",
+          "bytes": 255061555
+        },
+        {
+          "path": "core/assets/b732b889d00c9b8cf685851907742b2b489705bedb610f52e0c740e642690e96/models.joblib",
+          "bytes": 7617601
+        },
+        {
+          "path": "core/assets/c6074c98853df567abcaecc63306060669d2395b97b10112bcb9339e0ddba814/models.joblib",
+          "bytes": 101444364
+        },
+        {
+          "path": "core/assets/db6a779671d5afb9d106116073e86765ee1deb48fffd97391281db14defe5b3a/leaf10_final.joblib",
+          "bytes": 2159461
+        },
+        {
+          "path": "core/assets/e524a3de6114cd4ed293538efa775403fe562abaa52534fef8c2dd479a2e3200/models_seed20260904.joblib",
+          "bytes": 210003001
+        },
+        {
+          "path": "core/assets/ede4306d457e65a86419d33c36f5681b494f357573c79307d99927254d189f5b/models.joblib",
+          "bytes": 60090656
+        },
+        {
+          "path": "core/pretrained/videomae/pytorch_model.bin",
+          "bytes": 345503629
+        }
+      ]
+    },
+    {
+      "name": "kuroname-models-2.tar.gz",
+      "url": "https://github.com/zmuxuny/KURONAME-CUHK-X-2026/releases/download/v1.0.0/kuroname-models-2.tar.gz",
+      "bytes": 1234052390,
+      "sha256": "adce5c0dd2d38d238d6b35ed073d8a9c7ba3efb67cae5aa879087fd5b16ddf77",
+      "files": [
+        {
+          "path": "artifacts/d1_model/model.joblib",
+          "bytes": 2133185
+        },
+        {
+          "path": "artifacts/source_rgb625/model.pt",
+          "bytes": 238279331
+        },
+        {
+          "path": "artifacts/temporal_residual/model.npz",
+          "bytes": 1022
+        },
+        {
+          "path": "core/assets/2fee1c121231157f56b8b24d3304a84440b9181b3658eeddf005f78ea595447a/models_seed20260906.joblib",
+          "bytes": 210008594
+        },
+        {
+          "path": "core/assets/42af66dc16699cf8a4d32e2fbd02459c5900c601c5b582b2ea869c588e15373b/normalizer.joblib",
+          "bytes": 26737
+        },
+        {
+          "path": "core/assets/4b486aa3eef40e7d77a0319c8203068f22496218b7a0e839f44f35571bfcf346/leaf2_final.joblib",
+          "bytes": 3670594
+        },
+        {
+          "path": "core/assets/83e52b30c8910fb29161d4f5bb9b97bb64c71391ebd80482bfad04a3299c0487/models.joblib",
+          "bytes": 34100488
+        },
+        {
+          "path": "core/assets/917d8a4cd8d9108ac31bc1bdd34184d0da78b7da78a9f75514537a210dd86c1b/models.joblib",
+          "bytes": 101456186
+        },
+        {
+          "path": "core/assets/91fdfc20d9a9162cfc41b4483e46785e1c3bb009159817f95c9e8f21179dbf9d/models_seed20260905.joblib",
+          "bytes": 209706539
+        },
+        {
+          "path": "core/assets/a4ba7e66ff0c4dd00d9c367a01bb59fbc521a7b51cc324695d6d0644ce3e4745/models.joblib",
+          "bytes": 26576462
+        },
+        {
+          "path": "core/assets/b1b3e61b243a1e8e54a9decbe451908c79ce85ca16f7bb030d5c16a52303802e/models.joblib",
+          "bytes": 84134525
+        },
+        {
+          "path": "core/assets/b666a2a157706c85805c639fb83afbbfbb7b72f2a9d6377b8f1b762311204c54/leaf5_final.joblib",
+          "bytes": 2904074
+        },
+        {
+          "path": "core/assets/b960dafd7b3051e8be4ce7ca1bcbc051012eee2a0767f22dd6b7ca77507b82fb/pytorch_model.bin",
+          "bytes": 345503629
+        },
+        {
+          "path": "core/assets/c4e1e9bd383654ef185af5c448119cd801b81b318e42b6b37996bfa78a7c4e07/A.pt",
+          "bytes": 2687803
+        },
+        {
+          "path": "core/assets/c8f6edc75ec37db91a2c1e3871a7f17ce0848be41531ad804edd0e783fad1d68/models.joblib",
+          "bytes": 20707378
+        },
+        {
+          "path": "core/assets/e8bda83f8220e8459219cc07ba5193b10cf556e6d08f7d2be8b724c79ecff9d9/models.joblib",
+          "bytes": 10889596
+        },
+        {
+          "path": "core/assets/fc0e0d99c2a6d099a7ec4c9059ee27a85811c817dd94a075bbce0109c11f3180/model.joblib",
+          "bytes": 6169104
+        },
+        {
+          "path": "core/pretrained/kuno/ensemble_packed.pt",
+          "bytes": 88074378
+        },
+        {
+          "path": "core/pretrained/kuno/yolo11n.pt",
+          "bytes": 5613764
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "kind": "cuhkx_harn_three_equal_families_v1",
+  "parent_checkpoint": {
+    "path": "/root/workspace/CUHK-X/runs/20260905_harn_seed_ensemble_nested_v1/checkpoint.json",
+    "sha256": "9e60c349c95ca591b9c76e0b6d5a3ed5ce12e7db265c18f0f51d3fd9e433bde4",
+    "bytes": 7210
+  },
+  "r34_checkpoint": {
+    "path": "/root/workspace/CUHK-X/runs/20260906_r34_tail_nested_v1/models.joblib",
+    "sha256": "b1b3e61b243a1e8e54a9decbe451908c79ce85ca16f7bb030d5c16a52303802e",
+    "bytes": 84134525
+  },
+  "videomae_model": {
+    "path": "/root/workspace/CUHK-X/runs/20260908_harn_videomae_nested_v1/models.joblib",
+    "sha256": "ede4306d457e65a86419d33c36f5681b494f357573c79307d99927254d189f5b",
+    "bytes": 60090656
+  },
+  "nested_report": {
+    "path": "/root/workspace/CUHK-X-research-20260909/runs/20260909_harn_three_family_nested_v1/report.json",
+    "sha256": "34b7d32ad9c145e52d7cf94f4970405af00a53746c11e3c5d3e6c5f8a9670ba8",
+    "bytes": 1428705
+  },
+  "plan": {
+    "path": "/root/workspace/CUHK-X-research-20260909/configs/harn_three_family_plan_v1.json",
+    "sha256": "db552d9274b02f31703d75eeaf391d61d013b2119bdd682ff41024ebee3271ca",
+    "bytes": 4141
+  },
+  "selected_skeleton_weight": 0.5,
+  "family_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "model_weights": [
+    0.16666666666666666,
+    0.16666666666666666,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "feature_specs": {
+    "r2_middle": {
+      "kind": "r2plus1d_18_layer3",
+      "weights_sha256": "91a641e6c2ab531d1aca5f4321b4d802ec5c3babc15df855cdb6e39c6a1107c8",
+      "frames": 16,
+      "modalities": [
+        "Depth",
+        "IR"
+      ],
+      "shape": [
+        256,
+        4,
+        14,
+        14
+      ],
+      "storage": "float16",
+      "core_fitting": "Kinetics400 pretrained only; never fitted on CUHK-X"
+    },
+    "r34_middle": {
+      "kind": "cuhkx_generic_r34_layer4_1_v1",
+      "backbone": "r2plus1d_34_32_kinetics",
+      "weights_sha256": "ade133f18548b59da3a36d6a70d44a4a7cc4b90460654c338cb8a023e9a3e0e1",
+      "frames": 32,
+      "modalities": [
+        "Depth_Color",
+        "IR"
+      ],
+      "shape": [
+        512,
+        4,
+        7,
+        7
+      ],
+      "cut_after": "layer4[1]",
+      "remaining_pretrained_block": "layer4[2]",
+      "storage": "float16",
+      "row_keys": [
+        "units",
+        "modalities",
+        "window_indices"
+      ],
+      "regimes": {
+        "HARn": {
+          "name": "whole",
+          "windows": 1
+        },
+        "HAU": {
+          "name": "temporal",
+          "windows": 8,
+          "window_seconds": 2.5
+        }
+      },
+      "preprocessing": "RGB Depth_Color; RGB-to-gray IR replicated3; normalized person ROI; INTER_AREA171x128; center112; Kinetics mean/std",
+      "missing_policy": "Keep zero rows with available=false; never substitute Depth for missing Depth_Color",
+      "core_fitting": "Generic IG65M then Kinetics400 pretraining only; no CUHK-X labels or model weights"
+    },
+    "videomae": {
+      "kind": "generic_videomae_ssv2_whole16_harn",
+      "shape": [
+        2,
+        768
+      ],
+      "modalities": [
+        "Depth_Color",
+        "IR"
+      ],
+      "availability": "explicit aligned view mask",
+      "backbone_fitting": "fixed generic SSv2 e3f23b7; no CUHK-X fitting"
+    }
+  },
+  "sources": [
+    {
+      "path": "/root/workspace/CUHK-X-research-20260909/scripts/infer_harn_three_family_v2.py",
+      "sha256": "f07d398bf7ab4f9ec99806a425fd3881363772ae1b6dde5d77a6b11d977b0bca",
+      "bytes": 9077
+    },
+    {
+      "path": "/root/workspace/CUHK-X-research-20260909/scripts/infer_three_family_harn_experts_v2.py",
+      "sha256": "79fb782aa7c2a4cfcde363045e1e7509e650d396d7fc62a6d45cda7f0cf9248f",
+      "bytes": 3264
+    },
+    {
+      "path": "/root/workspace/CUHK-X-research-20260909/src/cuhkx/harn_three_family.py",
+      "sha256": "a87c034a7b6bbe25076804ad747435851e6833a66ddfeca6624feacc292ada16",
+      "bytes": 1069
+    },
+    {
+      "path": "/root/workspace/CUHK-X-research-20260909/src/cuhkx/harn_videomae_inference.py",
+      "sha256": "36b4c7202582766f29e4250081f587832a1f1a970b138cc8b94a5025ca60df2c",
+      "bytes": 3184
+    },
+    {
+      "path": "/root/workspace/CUHK-X-research-20260909/scripts/prepare_three_family_complete_inference.py",
+      "sha256": "6de6c12ff219c19a8c408be61375aa9b3d19482cfcd9d332f9fc442c3d59b07c",
+      "bytes": 6252
+    },
+    {
+      "path": "/root/workspace/CUHK-X-research-20260909/scripts/research_write_guard.py",
+      "sha256": "30782fbe6cdf7fbc64bc373af42cbeb72bdfadf3592207e536f185666862299b",
+      "bytes": 1286
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "weights": "/root/workspace/CUHK-X/data/external/ig65m-r2plus1d34-kinetics-v1/r2plus1d_34_clip32_ft_kinetics_from_ig65m-ade133f1.pth",
+  "source_manifest": "/root/workspace/CUHK-X/artifacts/visual/generic_r34_layer4_1_v1/input_manifest.json",
+  "source_sha256": "63faf8522e1047b287c8b241e8149677eafdd403a254cb888f45baa208c7abad",
+  "sources": {
+    "rgb": "/root/workspace/CUHK-X/runs/20260914_cloud_charades_sources_verified_v2/rgb/model.pt",
+    "depth": "/root/workspace/CUHK-X/runs/20260914_cloud_charades_sources_verified_v2/depth/model.pt"
+  },
+  "data_root": "/root/workspace/CUHK-X/data/media/visual",
+  "rois": "/root/workspace/CUHK-X/runs/20260914_window_roi_full_v1",
+  "min_host_free_bytes": 8589934592,
+  "mechanism": "Matched generic/625RGB/625syntheticDepth source-only512 pools; shared windowCPU ROIs. No target backbone adaptation. Reuse existing source-only HARn pools for separately person-excluded nonlinear joint HAU supervision. Compare fixed previous head recipe; all18historically observed, no Test."
+}

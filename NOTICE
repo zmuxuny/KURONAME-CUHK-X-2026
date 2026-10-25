@@ -1,0 +1,19 @@
+KURONAME: CUHK-X Challenge 2026 Large Model Track solution
+Copyright 2026 Zeyang Cao and Yanqing Zhou
+
+Original KURONAME source code is licensed under the Apache License, Version 2.0.
+Third-party source and model assets retain their original licenses. See
+THIRD_PARTY.md and core/delivery/licenses/ for source attribution and terms.
+The technical report in report/ is licensed under CC BY 4.0.
+The weights, derived training metadata and benchmark data are not relicensed
+under the repository's Apache-2.0 license. See MODEL_LICENSE.md.
+
+CUHK-X dataset attribution: The Chinese University of Hong Kong (CUHK),
+AIoT Lab, Department of Information Engineering. See the CUHK-X paper cited
+in the technical report and https://aiot-public-dataset-cuhk-x.cuhkaiot.com/.
+
+R(2+1)D-34 architecture implementation: Copyright (c) 2019 MoabitCoin,
+MIT License. Files: core/pretrained/kuno/ig65m_models.py and its preserved
+copy under core/assets/4dc243ff4048db3fc9c9ad4473bfa3b10c61d2c3f6e9fd61a6c0291ee12fdc36/.
+Public K-KUNO implementation and model: Kaggle user phuongncn. Its original
+notebook code is Apache-2.0; model-use terms are recorded separately.

@@ -1,0 +1,46 @@
+[
+  {
+    "submission_id": "56239668",
+    "elapsed_seconds": 2043.5416128629877,
+    "peak_device_memory_mib_sampled": 3729,
+    "peak_container_memory_bytes_sampled": 8874476175.36,
+    "rows": 682,
+    "expected_rows": 682,
+    "different_answers": 0,
+    "exact_csv_bytes": true,
+    "output_sha256": "3c54a87aac45a8186f9cb887c531200e443ac9e51b86ba891cc460671dba78ef",
+    "name": "primary_docker_v1",
+    "hardware": "RTX 3060 Laptop 6 GB",
+    "execution": "offline Docker",
+    "date": "2026-09-18"
+  },
+  {
+    "submission_id": "56258762",
+    "elapsed_seconds": 2134.581657,
+    "rows": 682,
+    "expected_rows": 682,
+    "different_answers": 0,
+    "exact_csv_bytes": true,
+    "output_sha256": "00506d77c500ea213cac6bdbd6204c8fd2447fe9610b044bfdf80fce180b95d9",
+    "peak_device_memory_mib_sampled": null,
+    "peak_container_memory_bytes_sampled": null,
+    "name": "secondary_docker_v1",
+    "hardware": "RTX 3060 Laptop 6 GB",
+    "execution": "offline Docker",
+    "date": "2026-09-18"
+  },
+  {
+    "submission_id": "56239668",
+    "elapsed_seconds": 1113.4004777371883,
+    "peak_device_memory_mib_sampled": 1436,
+    "rows": 682,
+    "expected_rows": 682,
+    "different_answers": 0,
+    "exact_csv_bytes": true,
+    "output_sha256": "3c54a87aac45a8186f9cb887c531200e443ac9e51b86ba891cc460671dba78ef",
+    "name": "primary_clean_v1",
+    "hardware": "RTX 4090 24 GB",
+    "execution": "native",
+    "date": "2026-09-17"
+  }
+]

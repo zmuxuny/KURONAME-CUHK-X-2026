@@ -1,0 +1,25 @@
+{
+  "submission_id": "56239668",
+  "source_arm": "rgb",
+  "calibrated_slot": "replace",
+  "source_assets": {
+    "source_rgb625": "artifacts/source_rgb625/model.pt",
+    "source_hau_head": "artifacts/source_hau_head/model.joblib"
+  },
+  "source_model_training": "Charades official Train; 625 source videos",
+  "hau_head_training": "Official CUHK-X Training; final fit all 18 persons",
+  "source_inference": {
+    "windows": 8,
+    "frames": 32,
+    "window_seconds": 2.5,
+    "encoder_precision": "bfloat16",
+    "feature_storage": "float32",
+    "forward_batch": 2,
+    "modalities": [
+      "Depth_Color",
+      "IR"
+    ]
+  },
+  "baseline": "core/conditioned_package.json",
+  "method_change": false
+}

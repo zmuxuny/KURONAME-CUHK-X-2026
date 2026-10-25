@@ -1,0 +1,2025 @@
+{
+  "files": [
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/outer_predictions.csv",
+      "sha256": "9a2b02189e889d9477553874bf32ce1aff1c426999a1b32b92ec1441fd6dfb74",
+      "bytes": 42968
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/protection.json",
+      "sha256": "a01e3ba2c585e7427d0bad653bf19feb1fdf1523ebb67dc76bfe0dcadfafad87",
+      "bytes": 100593
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/report.json",
+      "sha256": "24877a7200ecd9ba73601199c60af28cd4aa3997fc2f5b83684d62fad29c8fb5",
+      "bytes": 28815
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/A.pt",
+      "sha256": "c4e1e9bd383654ef185af5c448119cd801b81b318e42b6b37996bfa78a7c4e07",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/A_history.json",
+      "sha256": "713473aa17dd261f96e9118b0e6f28872d602737997a413d89454f3c6e002866",
+      "bytes": 8337
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/A_predictions.npz",
+      "sha256": "1d41d90877accd596dad705a1ca0a9064ed5d48c2fffeb9c49202dbe68b44663",
+      "bytes": 15913
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/B.pt",
+      "sha256": "89c53ae6703cece381d4d2a048dbd1fe53a08cba81e3f99a2e55d49452e95231",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/B_history.json",
+      "sha256": "488bc31c28ffa71bc2170416599adaeedd03399cbdec943a6311f6015efff886",
+      "bytes": 9173
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/B_predictions.npz",
+      "sha256": "d42d65c9a9b4e57ae2da298968380888d149a65205b7107955c7419b45c14258",
+      "bytes": 16053
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/initial.pt",
+      "sha256": "f1a5ad2e52ece682c0e2bf060693bada913ab1f3ef9d2041d40161803d13d79d",
+      "bytes": 895881
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/normalizer.joblib",
+      "sha256": "42af66dc16699cf8a4d32e2fbd02459c5900c601c5b582b2ea869c588e15373b",
+      "bytes": 26737
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/scope.json",
+      "sha256": "ad26893ec95cbdb1ce9bf62aa7969e56ebe53e0c61d90d465c7b6c57a7a8825a",
+      "bytes": 43352
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/teacher_inner_0/joint_states.json",
+      "sha256": "0b59c7ee4d93b4d4b8c242ae2f8a6e774da0605315b1f4fbd101fd28ce4de435",
+      "bytes": 97143
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/teacher_inner_0/receipt.json",
+      "sha256": "f4230b959998d64f40aa3e1b603257cbddcb1c42b9c2f8487178ccc1eb0748eb",
+      "bytes": 7001
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/teacher_inner_0/teacher.npz",
+      "sha256": "718d22705162f5f761a5019e51cbc46dc2723e4c44a5dc1db246fa6e5ee5a620",
+      "bytes": 5676
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/teacher_inner_1/joint_states.json",
+      "sha256": "b93dbce87c5e4925ad65930c4b120cd10bd9735b91d2309e36ec58482ebb2e53",
+      "bytes": 95753
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/teacher_inner_1/receipt.json",
+      "sha256": "152ddbbf7391c03bf1222d28e9b3f4d06ec912414bccb0530e70e42c38f83fc4",
+      "bytes": 6938
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/teacher_inner_1/teacher.npz",
+      "sha256": "57cae865322dd0c0d1a40c680cc71e42ff608e93b106de6248ba0fdec37b0ea8",
+      "bytes": 5627
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/teacher_inner_2/joint_states.json",
+      "sha256": "8d634c99ddc2f6fb10dbe3434783eeedf7116dae33eedc2882808a667c08eab9",
+      "bytes": 92309
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/teacher_inner_2/receipt.json",
+      "sha256": "cff9e838e480e0f1a819b28e0b53f7d0a1bd3ca0a85fc38218972b8cce430643",
+      "bytes": 6980
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/final/teacher_inner_2/teacher.npz",
+      "sha256": "49c4677c2bf274db3813225e6d459bd97791911fd8c43e7ad09d94c352711303",
+      "bytes": 5667
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user1/A.pt",
+      "sha256": "55f11b3662434a954bccc128c18270257b44cb418b261546cab53a4dcd16e917",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user1/A_history.json",
+      "sha256": "e0e2e33019a1b6d3fca0e0990f8849a1e7f1d16ef0a8d377fcfbd6a5b731a2ea",
+      "bytes": 8329
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user1/A_predictions.npz",
+      "sha256": "7a241169b426d16474eb639e9e8fbad5afaf7272866ea98229718583b83b88fd",
+      "bytes": 1351
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user1/B.pt",
+      "sha256": "a59cf7cb382ba0062741d9d37283aca50fc075e4169ca03c60fd406af90b433f",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user1/B_history.json",
+      "sha256": "50d5844b15bb4c68c3b1066ae2bd7598ca712383823000af232fb4ebe252f572",
+      "bytes": 9148
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user1/B_predictions.npz",
+      "sha256": "ef2b272e2e16471ad6fbe42226d56b959615b535c1d87f385962554d13521acf",
+      "bytes": 1355
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user1/initial.pt",
+      "sha256": "a9e2aa4e14de8fcc0bb1bc5a542aa60ff214c955b17d2abe5dea24284992954c",
+      "bytes": 895881
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user1/normalizer.joblib",
+      "sha256": "19a068a69d096f0ce67941e6cb7799b47cdf92e466dba569a36f035c786e59f0",
+      "bytes": 26651
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user1/scope.json",
+      "sha256": "73870df805800e75c2cfb3a1c9351875f34b6aa8d68b4254a65630d7f44ebfbd",
+      "bytes": 44175
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user1/teacher_inner_0/joint_states.json",
+      "sha256": "7fd89547f64a213099f97070e89e40e39c5e92edb84c15ad039127fa7b77f92f",
+      "bytes": 97130
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user1/teacher_inner_0/receipt.json",
+      "sha256": "daf1a509036755ad2548ed6f07e42557efe9f681c87dc0956c6d5e90f09b1d2a",
+      "bytes": 7001
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user1/teacher_inner_0/teacher.npz",
+      "sha256": "982bd3cbc04747b0d49249d121c0bb8149197cb215a43609538c23de3d4db8a6",
+      "bytes": 5686
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user1/teacher_inner_1/joint_states.json",
+      "sha256": "4df8dc7e7d4eb196cf65aaf0c1bea1fd353ec944bfb410016f1a151fac8dfc6f",
+      "bytes": 80490
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user1/teacher_inner_1/receipt.json",
+      "sha256": "4b1c07e4079b4746c98b13e78c1c2904806f9a3c164133b57b8f16967feaac6e",
+      "bytes": 6245
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user1/teacher_inner_1/teacher.npz",
+      "sha256": "47fa5b83b21f24df697f7438f541f84d1b5999b419345e8cd81bd31d645f11ad",
+      "bytes": 5033
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user1/teacher_inner_2/joint_states.json",
+      "sha256": "9a4085282ef5391d18a5f8efed92674ce768be8272041e34e420a859f5023fc6",
+      "bytes": 94036
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user1/teacher_inner_2/receipt.json",
+      "sha256": "ebb1e99384dab0885ef6679d43e30e15b4844b95f0fe3c752d8b58d6a10a775f",
+      "bytes": 6980
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user1/teacher_inner_2/teacher.npz",
+      "sha256": "99c7fb6ca1707537f9bc99118c0daa49c8cd91ce3b4963af7d5acf03eae002b8",
+      "bytes": 5658
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user1/teacher_outer/joint_states.json",
+      "sha256": "5bff46202221dcbdd34a9304fb914642bff2cc274e7062849afec7c21f7925ca",
+      "bytes": 13510
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user1/teacher_outer/receipt.json",
+      "sha256": "ba9eef8ae7dffb7c7da6f9759ac4f3be378b2e24064aa4f735921ed49cd38729",
+      "bytes": 1985
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user1/teacher_outer/teacher.npz",
+      "sha256": "b78d43193af40fbd4688cb276a07836e3044425a5df460a3a36c3900557025ac",
+      "bytes": 1496
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user16/A.pt",
+      "sha256": "96bfaf0284ef83617842d9e0308ca229436bdafc88f768777afd7ef28b56f966",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user16/A_history.json",
+      "sha256": "378b24c1da0a72c5e0c44f93826ff2a3520d4c9c53b83e4f2baef4631527f92f",
+      "bytes": 8347
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user16/A_predictions.npz",
+      "sha256": "315853bc372de18878de5f3c923121bfa38bfe902b6cb13f19e7623be54793d2",
+      "bytes": 1714
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user16/B.pt",
+      "sha256": "477430d8e2f257bee00c99be674be19e38910e3c42421536a4399e943ffff8aa",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user16/B_history.json",
+      "sha256": "9216f9b8eb4ef74b83daa51b2b3496b61ea27771303af67fa8fd0ebfb565659e",
+      "bytes": 9174
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user16/B_predictions.npz",
+      "sha256": "9d78b22eba4fcb41bc1767199b1c79e76b0d7fa5355cca74b0ec9effe0106046",
+      "bytes": 1718
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user16/initial.pt",
+      "sha256": "0273604c1d9cd6dbdb69412ff503eada9521ea54423a1ad7431f7f371677eef2",
+      "bytes": 895881
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user16/normalizer.joblib",
+      "sha256": "2e9aca7471abc6b23d715dc8f186a5712591def0b5a8a746f3377cdd26c53683",
+      "bytes": 26593
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user16/scope.json",
+      "sha256": "6c7aeb5e4f0cdda995a953153427626e72d44b3e6318bdcf5f78259e4d9a5139",
+      "bytes": 43809
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user16/teacher_inner_0/joint_states.json",
+      "sha256": "b1386ad7012a96fd9c66283382217a744d0976310771fc21f5448b7449cc18a9",
+      "bytes": 81393
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user16/teacher_inner_0/receipt.json",
+      "sha256": "26ae2ee9fe85a3a36c5fee52d17b720d7fb4f4c7f91500e406ac328489fc33bf",
+      "bytes": 6185
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user16/teacher_inner_0/teacher.npz",
+      "sha256": "a603222b9667d2db6c4493023cb6407784d46beacc7125ee8444e77281c964a7",
+      "bytes": 4993
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user16/teacher_inner_1/joint_states.json",
+      "sha256": "8143008febba233f8f9c3650db0d42c5f9dcd286133968ef554575eb51fbe249",
+      "bytes": 89537
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user16/teacher_inner_1/receipt.json",
+      "sha256": "e658b6573f9d7e2f24407cd370227821b8f3ab1e02fa6e20720d4d85539ba5d9",
+      "bytes": 6815
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user16/teacher_inner_1/teacher.npz",
+      "sha256": "bac0623d0551ca4c6eb57c3b34048d6870aad604fd27304b6a14bcb9c396d63e",
+      "bytes": 5530
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user16/teacher_inner_2/joint_states.json",
+      "sha256": "ddac6079738bac431d9dbc4e9ba75a8a51b15cc91ff539206ec63514fcf188da",
+      "bytes": 96832
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user16/teacher_inner_2/receipt.json",
+      "sha256": "5368914641e010114b5d8b3063b20c9539e07783228374b09bcd26cbe787d85e",
+      "bytes": 6857
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user16/teacher_inner_2/teacher.npz",
+      "sha256": "c2186374367f7eae750ca10f8ceeef508570f01eb97173a46a20519ed58323a5",
+      "bytes": 5588
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user16/teacher_outer/joint_states.json",
+      "sha256": "594a61016a611a212b3771115ad99d81c4d977d29db41a3d89ea7b17c7b396e3",
+      "bytes": 17418
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user16/teacher_outer/receipt.json",
+      "sha256": "5c83ce47fe3fe598d203399f98560e223bf24471a6b96cf58f7f9e35384f00e0",
+      "bytes": 2366
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user16/teacher_outer/teacher.npz",
+      "sha256": "4bc7001d4dedb7520a568c4345aa42fca65b75baece660e3a20866d922c3e217",
+      "bytes": 1843
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user17/A.pt",
+      "sha256": "9812a8f3a6ba6273a3f4e4046e0eeb29f6f98d1e316b7cb4beadcb645bf9e7dc",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user17/A_history.json",
+      "sha256": "f541a9bdae8e6418cc300371f81aae34508fac0be073f0dcb1e3480def6ad939",
+      "bytes": 8345
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user17/A_predictions.npz",
+      "sha256": "7db2f0723456c094c3149820f75a90973300335d87db0146418140ec32833b9d",
+      "bytes": 1662
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user17/B.pt",
+      "sha256": "495d77383f10596c5041efca0b0526a02f3bc9cea966f2cdcd0f2710fdabd397",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user17/B_history.json",
+      "sha256": "53927845b94aa3821d78a738fd7cacbba22c9ac7cd600de9b556b9f6b3ae1fac",
+      "bytes": 9162
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user17/B_predictions.npz",
+      "sha256": "4fc48e0de43abe1cf8513fd21cd4dce859e9937ab185346bb31aed3cd015d120",
+      "bytes": 1665
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user17/initial.pt",
+      "sha256": "3dd9692eabd5f4596fca6958d25d8fe8caf16895dd067beac9c6dc7763564b18",
+      "bytes": 895881
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user17/normalizer.joblib",
+      "sha256": "9011a45dd28d55b027be81eca14943b91b63e084d11baca7ce00a67c81c7e358",
+      "bytes": 26597
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user17/scope.json",
+      "sha256": "104d87c24c7c11c5c397156a96b7ecfa99593a9c23f210432e16434a759894bb",
+      "bytes": 43872
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user17/teacher_inner_0/joint_states.json",
+      "sha256": "3e4379301059183e468902c068f49b43505a800e48e48c335bbe5b4b52c51592",
+      "bytes": 97054
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user17/teacher_inner_0/receipt.json",
+      "sha256": "9eede5babb071d1a825f7f9e954298af5c04382afa3e08cc20b29ffa20d2b10b",
+      "bytes": 6878
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user17/teacher_inner_0/teacher.npz",
+      "sha256": "ada57d591cb7a703ac9db36c8e782f9fcb6286f0d03cddeda18fc16ae8314494",
+      "bytes": 5636
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user17/teacher_inner_1/joint_states.json",
+      "sha256": "a0db9728976fd18133936087203b7ef474a450ae8b4a4e34755bb0f84df6db77",
+      "bytes": 81938
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user17/teacher_inner_1/receipt.json",
+      "sha256": "94202e8fec4c6b934f8b9188e2e6e5224fe175c5cfb873a3e1fa7b67dd8dc117",
+      "bytes": 6206
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user17/teacher_inner_1/teacher.npz",
+      "sha256": "38087ec2d3aa52771436874efa82deca5f5246588fedcf6b52ff299377bfdfb2",
+      "bytes": 5034
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user17/teacher_inner_2/joint_states.json",
+      "sha256": "72bc505e58d7afd23c8270804652cf14f7264f7758d381953dc9c9abcbbad9a5",
+      "bytes": 89843
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user17/teacher_inner_2/receipt.json",
+      "sha256": "866739a61680b0edd3e6dc16260eb7482aa25290b909929d3824fa9057c5ff90",
+      "bytes": 6836
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user17/teacher_inner_2/teacher.npz",
+      "sha256": "ca1f2e27f4ea2b56056e31950cf90be9d0f087b44450a952ff919a12332a69ed",
+      "bytes": 5558
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user17/teacher_outer/joint_states.json",
+      "sha256": "998da681a376da680fe15674946e48e890eade3bd43277f5552496f7a74feaab",
+      "bytes": 16304
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user17/teacher_outer/receipt.json",
+      "sha256": "fd7f1b508be2150aa2be8e30a2be36e251c1db0a9589c62e3e68520a9fe29138",
+      "bytes": 2303
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user17/teacher_outer/teacher.npz",
+      "sha256": "ce9d4a01051d26a93f6708ecb7e4b2e7a0ae2429a256debceda9616ba552bf6f",
+      "bytes": 1792
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user18/A.pt",
+      "sha256": "c31258090f4e6db3edc404954698aa0df354ccf288d5599f16dc3793dc462ffd",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user18/A_history.json",
+      "sha256": "5b016f278a943fae7c88c3a5babc252889d3ea740f2c5964f68b193ba3d9ca7f",
+      "bytes": 8359
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user18/A_predictions.npz",
+      "sha256": "5c7690915ebc02110340335940b7697949271533d1c5ed42d3784d3a45a07ba7",
+      "bytes": 1511
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user18/B.pt",
+      "sha256": "93515c7f6808546ebeb15dbdeb2ae7f969c62186c29c2e5d9dbbb39bf1cc2f9f",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user18/B_history.json",
+      "sha256": "1fad8078ab83f85ddbd37e15938a69bafb277786dc8e5c98f211ca14c8826b6a",
+      "bytes": 9146
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user18/B_predictions.npz",
+      "sha256": "53b2bc8aa82beacef86006a37b98631b00fb57881eff1d74e1027cbd9fe7ca8d",
+      "bytes": 1519
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user18/initial.pt",
+      "sha256": "ea9554557ecd19548d9cac5a1d0fc2c61a127b16a400b30480867060e5639860",
+      "bytes": 895881
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user18/normalizer.joblib",
+      "sha256": "68ec117473143e984d1ea210d416103c61c7726ea464f755b0e6dcd2401911ed",
+      "bytes": 26625
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user18/scope.json",
+      "sha256": "46c57fa5c4cfd442a163349cc3dc6c89b3f5914ad4e969a64aab21bed8b34e39",
+      "bytes": 43999
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user18/teacher_inner_0/joint_states.json",
+      "sha256": "37673bff5aebe048acfff8a1e500c84ac2278110907bc6d5522cc84231fec5d2",
+      "bytes": 84880
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user18/teacher_inner_0/receipt.json",
+      "sha256": "6a1a8f7bde285eae08e66a45fbd53953ecbfbad3505d688f8be631c0c28525da",
+      "bytes": 6248
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user18/teacher_inner_0/teacher.npz",
+      "sha256": "ccb7b7aba18d36246260d1614d2e64d7b631f85a810b0d7b546b1d402e56ac79",
+      "bytes": 5068
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user18/teacher_inner_1/joint_states.json",
+      "sha256": "9fe2b98c6ec6b05901ab44fc9f79b8016fa1b9fc93b6520630eab98895e57420",
+      "bytes": 90631
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user18/teacher_inner_1/receipt.json",
+      "sha256": "862ece813449ac2807d279cd4d2e19e5eb4ea063f36a53576f43982a07a22abf",
+      "bytes": 6878
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user18/teacher_inner_1/teacher.npz",
+      "sha256": "e294177bca6546f403c753f4826832254b902fe213362ea98cd3a83e72924bdb",
+      "bytes": 5566
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user18/teacher_inner_2/joint_states.json",
+      "sha256": "f7bc4b7980d8eabda1e58108dc89006fc44f7d2d9806395451626f19a7e783f6",
+      "bytes": 95312
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user18/teacher_inner_2/receipt.json",
+      "sha256": "2da7a10a0fde22a78f4b86f08a620161aa0bdb7d684bcaa28b296e5239d3f801",
+      "bytes": 6920
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user18/teacher_inner_2/teacher.npz",
+      "sha256": "9462671221c91742f7c2180043ea16875964cd560fbf0ebf55a8f963897b6539",
+      "bytes": 5630
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user18/teacher_outer/joint_states.json",
+      "sha256": "4cd5ff9d3672f0c7663c7380a0bfa7f1de03510874eff9213644d959d94acc0d",
+      "bytes": 14384
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user18/teacher_outer/receipt.json",
+      "sha256": "3dd450c308c1e5dac4518a8de461baa1d180fad2b7ef61ef2951e6d3ab2c933b",
+      "bytes": 2177
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user18/teacher_outer/teacher.npz",
+      "sha256": "4076972d64a8e6b72cee334598822d4ca120fae20e97aa742c5d0c1d93bc9c51",
+      "bytes": 1654
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user19/A.pt",
+      "sha256": "d994316c24f3e1a46e4594ebe67ce5db055bcdc09d1e34ad3e66a6e9c4c05e49",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user19/A_history.json",
+      "sha256": "0e6076e17a7636f13e9cacb99b9afdbe29c314880a7a51318a8018489f418319",
+      "bytes": 8339
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user19/A_predictions.npz",
+      "sha256": "336220b384b7668392a6207bf5057b63ae94c2d7104eddb8046e9fb1ffcf4b08",
+      "bytes": 1758
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user19/B.pt",
+      "sha256": "ba281e40b3a115bc30a8f7a691ec4056ccb17464e63da45b7fcec53ef04adf3a",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user19/B_history.json",
+      "sha256": "aa236b8ad1015c6101c74f46dad9dca3e31203ae278b51fb6e85c86a45b9924a",
+      "bytes": 9163
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user19/B_predictions.npz",
+      "sha256": "7d4b1d59ee24b0f1756ed74206b2f69304a680c7caaed2f3b3c680cd4aeed329",
+      "bytes": 1767
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user19/initial.pt",
+      "sha256": "94cd2c4902e3343ed8eff150243d62ad372ca3a14f2773f055e6f003528c52d8",
+      "bytes": 895881
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user19/normalizer.joblib",
+      "sha256": "eab131d3469e607f8506577141d527c15f74ef5f91a50784cfab51e41214bad3",
+      "bytes": 26593
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user19/scope.json",
+      "sha256": "408e16b620b88b59faecfe3ac65373b4300f5e9a2a25d36bb8ebe4a1bad3d45c",
+      "bytes": 43747
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user19/teacher_inner_0/joint_states.json",
+      "sha256": "f6ecd6744b15191f0af5ead49487f197767c70b4f2eb1b7be3279eb023956bf0",
+      "bytes": 89469
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user19/teacher_inner_0/receipt.json",
+      "sha256": "7cc6a2f7d6653cfc7c0e38b3e521be9e51af7d9a45dd1540a6a9a1db8c2eedf6",
+      "bytes": 6815
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user19/teacher_inner_0/teacher.npz",
+      "sha256": "8c82020371c016b46e8b3feb7724066de0134f614df77ef74ce0d765251ab2b8",
+      "bytes": 5518
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user19/teacher_inner_1/joint_states.json",
+      "sha256": "2c974b1addf704630e50388950ce6d5341c3863b5e3c3ee3d0db154a1f37c78e",
+      "bytes": 81140
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user19/teacher_inner_1/receipt.json",
+      "sha256": "71ae54f687213685f2b5955915ce278abb420b776dab7430d3486470b2cc3f3c",
+      "bytes": 6164
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user19/teacher_inner_1/teacher.npz",
+      "sha256": "096d3af354273d3610227c3f6c20890515ff90d35cacd37f76d07cb8f5066440",
+      "bytes": 4963
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user19/teacher_inner_2/joint_states.json",
+      "sha256": "9288b0b36c7e574b51eb305038255f34a5cc4e9e78bf02e7da5338bf37f0cec4",
+      "bytes": 96013
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user19/teacher_inner_2/receipt.json",
+      "sha256": "6cbbe7d5e7fdb8cd33e7824d3ebed9990a20fd26c8f3049d99dfde87da76eb73",
+      "bytes": 6815
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user19/teacher_inner_2/teacher.npz",
+      "sha256": "3aee665f020ec427c0dfd8e3a5697ad8a927de900a966f304b7c377fb37cec21",
+      "bytes": 5547
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user19/teacher_outer/joint_states.json",
+      "sha256": "fc713d79b1969d6ac10fa1fdc8a16c244d7586029a678a8e2f3ecbdbedb59fc0",
+      "bytes": 18460
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user19/teacher_outer/receipt.json",
+      "sha256": "429f16fb97171cc47bea8487d45fa33c40bd61229b6688fbd539611100cbf4d4",
+      "bytes": 2429
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user19/teacher_outer/teacher.npz",
+      "sha256": "c08d98cee7493d016d2be05a0043d1341c1853ba549bcdd9082a5ff8efdbe055",
+      "bytes": 1885
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user2/A.pt",
+      "sha256": "8939bc36c04f22f740dbc986e7040c8dd430b4ee4a15f20235b70b9840d1d4f8",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user2/A_history.json",
+      "sha256": "0dfb1b5171db411fce90c8bf700e77c3db39f76a55d058010823431b74ede3ff",
+      "bytes": 8333
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user2/A_predictions.npz",
+      "sha256": "2f0eb05489f283938cd9bc9798a061365bb56ed3fc3faa238d46f50dde43f5bf",
+      "bytes": 1529
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user2/B.pt",
+      "sha256": "2ac328185f5b32f78562a54b6e10671730cd122995be135b1d2a67e40094f647",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user2/B_history.json",
+      "sha256": "6f278425e619b3c1a53b13958736a6bbe68ccb1c9d5a92eaf5a408b258971c94",
+      "bytes": 9162
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user2/B_predictions.npz",
+      "sha256": "e46fe92f8814397d779efe0896223a1d1de68ae740e8bc05fce1349467324ba2",
+      "bytes": 1536
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user2/initial.pt",
+      "sha256": "25eebc73579674b0538252a21fff8fee2346729f7163ae600ce669b683554e3b",
+      "bytes": 895881
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user2/normalizer.joblib",
+      "sha256": "fe264d1f4fef0b72e7db6204d553ba00a0707e2b0e49a9a3803495d517c398db",
+      "bytes": 26606
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user2/scope.json",
+      "sha256": "c09a9d3b9a96e3e3562f9c764cdc267c9bb30ca20b531ab6d8e7450d9745f5a8",
+      "bytes": 43964
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user2/teacher_inner_0/joint_states.json",
+      "sha256": "1495fd463b16b065b7a6c2477e7de78e2bb2c692ded7f0029528b99c17cc87e6",
+      "bytes": 95695
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user2/teacher_inner_0/receipt.json",
+      "sha256": "68f2c8302ec6d70019196116ec0d793b8653c1bc323aaca6dc9da7c5b7bb64cf",
+      "bytes": 6917
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user2/teacher_inner_0/teacher.npz",
+      "sha256": "fffd9586a30e48dfbbf11a54cf72de6fb000c9c839fe9f4b7ad8b32873bab64e",
+      "bytes": 5624
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user2/teacher_inner_1/joint_states.json",
+      "sha256": "4fc105cdb987cc73e59e9dfd5c0bb26470182cdccb7935e7e2fc337bd615e221",
+      "bytes": 90644
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user2/teacher_inner_1/receipt.json",
+      "sha256": "5b01bcb96b4c878585e0d6579b39a8888aeaa2b5f08a93ab15834fe44cfdfca9",
+      "bytes": 6875
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user2/teacher_inner_1/teacher.npz",
+      "sha256": "9dc7769ac0c6e29119100f846dc52aaf61b49d48e9eee608c25da7ed70d062f0",
+      "bytes": 5564
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user2/teacher_inner_2/joint_states.json",
+      "sha256": "912dd46650cef450d7cc61533e39119a3ef403d410240e48316a30f7c40fc48a",
+      "bytes": 82059
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user2/teacher_inner_2/receipt.json",
+      "sha256": "44b588b196764f87712c5d7fda3592a014868de0f2d3adeefd48ba58af89e3a6",
+      "bytes": 6224
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user2/teacher_inner_2/teacher.npz",
+      "sha256": "9e63f47b2cfe634b05eb452f7900acca0660ca079260bc3f01b2f23e3e38fd57",
+      "bytes": 5050
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user2/teacher_outer/joint_states.json",
+      "sha256": "96ecfaa876c705356a5a58146362faac8be43ee94063c9f3441abc54125b62fe",
+      "bytes": 16825
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user2/teacher_outer/receipt.json",
+      "sha256": "e147223b4aeac53cc0177b9425ca758c7bf8ae6bc8cb3898e9e1d15dcddfb2f7",
+      "bytes": 2195
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user2/teacher_outer/teacher.npz",
+      "sha256": "9ecc8b5e14dc4473d9813823fea1e3da6a41f6e9ca8032561c98a6fcf2d332bb",
+      "bytes": 1687
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user20/A.pt",
+      "sha256": "e5bdce948e6148c6098474bd4ef1ec29a69ee4c31bd0a200ce7d38b4d8461ce5",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user20/A_history.json",
+      "sha256": "b67531d92a8590f8b8fb085fe35aec505c6d7df42380290bf5238189f669f54c",
+      "bytes": 8345
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user20/A_predictions.npz",
+      "sha256": "62d334cc35d3c94cacd7e7ecb75a932c166b6e2e778c29e1fbee46502bd43489",
+      "bytes": 1508
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user20/B.pt",
+      "sha256": "5a599d7f9300c0a6314fc5ba7ddef62784a5c76323a22a316dc6cb941b1a5db4",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user20/B_history.json",
+      "sha256": "03f3409edd090fc826d66a1217b416d33416f7f17f74ba743168d30647f5a850",
+      "bytes": 9161
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user20/B_predictions.npz",
+      "sha256": "33c636fa9eaa00d6162a2aa85ec16fb85ea77461b708017ab3b52f2269b3c2e0",
+      "bytes": 1515
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user20/initial.pt",
+      "sha256": "00bd07ee609900030265977c50ae1379287a9a7628ad33a83523e1d9f486568e",
+      "bytes": 895881
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user20/normalizer.joblib",
+      "sha256": "cab830072b1c81584b7f01a8bec7a88ecb5c811533052f8513d2e739a9cf575e",
+      "bytes": 26635
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user20/scope.json",
+      "sha256": "1aff367dd57961adc298d6deecbba0bc1b9092975ee85329ae64fc3c8226eadc",
+      "bytes": 43998
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user20/teacher_inner_0/joint_states.json",
+      "sha256": "df5e35e725f07e312b6d8840aacf180cc792b441bbe2e3264466e9e84a05180a",
+      "bytes": 82482
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user20/teacher_inner_0/receipt.json",
+      "sha256": "51885809e9b1aa72c97e3d17777d1ac026fdeb76e8c37819517c955f89840c49",
+      "bytes": 6248
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user20/teacher_inner_0/teacher.npz",
+      "sha256": "e5793b8aeb5167b1327b5fff69235e78d21b999c3680ce5bc8f07ef14e973c0c",
+      "bytes": 5046
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user20/teacher_inner_1/joint_states.json",
+      "sha256": "8d2b56f44f7577c8557afb2694e505979d7f629843f01c034baa7f58379b9d76",
+      "bytes": 90687
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user20/teacher_inner_1/receipt.json",
+      "sha256": "f5e6065d310a771850ce37e9419ba3f1aeac0b43268e23c3f980939b6ffe1721",
+      "bytes": 6878
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user20/teacher_inner_1/teacher.npz",
+      "sha256": "600bcb32cfa0a32f608750e73666b574a47242a913eb0f5b48d75176abf91464",
+      "bytes": 5561
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user20/teacher_inner_2/joint_states.json",
+      "sha256": "cfea7cfa91d251704687cd2ed13d01b095ba7988dabb05c56d1ba018c940631c",
+      "bytes": 95294
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user20/teacher_inner_2/receipt.json",
+      "sha256": "5b00fbad00a216d546c166315dd2a4da2e2cef958a103a3341854195b2040664",
+      "bytes": 6920
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user20/teacher_inner_2/teacher.npz",
+      "sha256": "c68ff0379d0b2a0710ebe65e69e7d7c377ce3050f6fd8ff463d69051dced9b12",
+      "bytes": 5629
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user20/teacher_outer/joint_states.json",
+      "sha256": "69fab3553d3f194efd1a69a3e54b18c707cd98960b58854a53ed2559c718bb83",
+      "bytes": 16827
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user20/teacher_outer/receipt.json",
+      "sha256": "4b62e9137e8407b43eb6a28b8ebabb1d931eb5ce6070bc5072ac367be36c73c8",
+      "bytes": 2177
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user20/teacher_outer/teacher.npz",
+      "sha256": "bb73e4b8a42afad4c7d703d35bf55c787cc666f793cfe17b14feb7b27e8ebb51",
+      "bytes": 1659
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user21/A.pt",
+      "sha256": "75c99417f0386ddde0946a8fa257c952738bf96fc271c123d4358a419d60107d",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user21/A_history.json",
+      "sha256": "cc6a2951fb824009f580327e711e9d1991535ab414cef73b8cd04d3eb3e59e35",
+      "bytes": 8339
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user21/A_predictions.npz",
+      "sha256": "e39c39a4b69e9d1252ea6651a1e198406a5e928daebabf067addfa318000e51d",
+      "bytes": 1520
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user21/B.pt",
+      "sha256": "ea858c6698a43803674dd7fe5784c57689647ca5ce50bd6b5a6976b23d5e7f4f",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user21/B_history.json",
+      "sha256": "840b04da18407d284798c1b0f38731e49c85de2d013aa30a7bd9725b1edaaf05",
+      "bytes": 9168
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user21/B_predictions.npz",
+      "sha256": "8db75ce2912acd6fa1fae091d45ad3257f697cfeb582707744cc2323d70067b2",
+      "bytes": 1525
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user21/initial.pt",
+      "sha256": "15e1f830d93640abb8dba0718421b8a56246f8b3189c7abc5ef95753884fc828",
+      "bytes": 895881
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user21/normalizer.joblib",
+      "sha256": "94acac26adf548d45777669a40a2c5c083c0817d87160c7cac956bf22dc45056",
+      "bytes": 26608
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user21/scope.json",
+      "sha256": "7b46b9165fe3d1fe89f8c2ee6d5f30d51082e2e26a745773ca63469176911098",
+      "bytes": 43999
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user21/teacher_inner_0/joint_states.json",
+      "sha256": "0ef807a74d7800d29ebb2a1b3012dfde6a9feefc3d0b24da48d6b5abf37d2e97",
+      "bytes": 82454
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user21/teacher_inner_0/receipt.json",
+      "sha256": "4e3fe4b6b1776ca3e679e0884db12af740825df1ea9c896b49087b1cf666a8ec",
+      "bytes": 6248
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user21/teacher_inner_0/teacher.npz",
+      "sha256": "435e90f7242b5b2e4e62766d542b1a719a9bd8dbbfa73bfe58fbad5a73768bfc",
+      "bytes": 5051
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user21/teacher_inner_1/joint_states.json",
+      "sha256": "3e275295ce923a7363491745022491de7052e3e331f93f970a1fe0982b2eab6e",
+      "bytes": 90642
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user21/teacher_inner_1/receipt.json",
+      "sha256": "4e55ee0acb47e3158ec2095938947a95bf35a4c181567889f694d1d7bd0810f7",
+      "bytes": 6878
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user21/teacher_inner_1/teacher.npz",
+      "sha256": "142773075ef75e66cd497c2e991c86384a34aa84e32327e3ade01e4d6f93fdc0",
+      "bytes": 5566
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user21/teacher_inner_2/joint_states.json",
+      "sha256": "b6e231f482b9be396dfda2e713780c8a0defb03b439734a17e4d9fb25bdf5b4c",
+      "bytes": 96017
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user21/teacher_inner_2/receipt.json",
+      "sha256": "bae7e9c438aeb79e3bfc8de088c7ec9c76b9d942b345510944a1184753be496b",
+      "bytes": 6920
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user21/teacher_inner_2/teacher.npz",
+      "sha256": "e0de508c9a7630376fe416ec671cb91fc81179ab58ced11eba5613e06969d39e",
+      "bytes": 5643
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user21/teacher_outer/joint_states.json",
+      "sha256": "ef9f39e5a76048c20e052bfdb92b007ed047d9fe72d1507673f35103aa3e68e0",
+      "bytes": 16102
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user21/teacher_outer/receipt.json",
+      "sha256": "3c4e1deeded7ad3dcf2bbb0143b00dbd181bac7da7f9a1d880e5c5049474ae9e",
+      "bytes": 2177
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user21/teacher_outer/teacher.npz",
+      "sha256": "fe1d46921c7cf218af781a86cde8296fdf49487a640ada51fdce80bc76a4ed84",
+      "bytes": 1673
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user22/A.pt",
+      "sha256": "32fa45f480cc0a21de270f379521857173bdec9be4b57bc80f3024de5b5a896a",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user22/A_history.json",
+      "sha256": "87a87c28df75c71eebee55957077d871493188604ee151e99f9742c5cda5a680",
+      "bytes": 8347
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user22/A_predictions.npz",
+      "sha256": "0b20320e51ec44f7df8e257370dc733bca84c815e4bdefdcaecab29155d4b7eb",
+      "bytes": 1677
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user22/B.pt",
+      "sha256": "37403e1c1df4e9e0985ba4489cb9673a81bac5ae0a4f51498645e31a69732b5f",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user22/B_history.json",
+      "sha256": "164fedfdb8a6d880597dfd1963a02a9da8e06bf556f1de06833c90c557fc6a1f",
+      "bytes": 9180
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user22/B_predictions.npz",
+      "sha256": "0c9b5b81a93f4d760c1b1f17d3abf638514939385c133125d6c388683e496e42",
+      "bytes": 1685
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user22/initial.pt",
+      "sha256": "9c0437bb79322cd72d957d26efc99080861a8274f339ae96b1423f5c1d6859a2",
+      "bytes": 895881
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user22/normalizer.joblib",
+      "sha256": "9247a0812129b15f7c47d2bf2d6f6046ae58638f4d4edcf85b8083a2a79b13fe",
+      "bytes": 26611
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user22/scope.json",
+      "sha256": "594e26cf86e77936442ddf4c52dda1e34f8fe15f6e46b726942ab58694e87c6c",
+      "bytes": 43851
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user22/teacher_inner_0/joint_states.json",
+      "sha256": "9095258a7fb7161d3dc3c34564111669048fc19d7ad6eeb78930d96b32686a33",
+      "bytes": 96298
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user22/teacher_inner_0/receipt.json",
+      "sha256": "6269aac551b1a2593366f05b9de45bc39cb16bda92ff510d851eb9c822caf935",
+      "bytes": 6878
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user22/teacher_inner_0/teacher.npz",
+      "sha256": "de8ce75ea97e03e823fb77eef2d0abcf3c83e9d5d375eadd621c0bbdbca5bd3e",
+      "bytes": 5614
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user22/teacher_inner_1/joint_states.json",
+      "sha256": "6743479073974c7f8fcc91d9447cfb91e41c346307c3129fa58654eed459625e",
+      "bytes": 81912
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user22/teacher_inner_1/receipt.json",
+      "sha256": "230db7b667711ce5cdc053d6b64123c05046bd9a0aa784c57be63596a291a6f3",
+      "bytes": 6185
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user22/teacher_inner_1/teacher.npz",
+      "sha256": "149bab9f37c0e3811171e45daf46a133e46e8ae6b125100feb6611e1a9e0424e",
+      "bytes": 5010
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user22/teacher_inner_2/joint_states.json",
+      "sha256": "7f84b52d2dfb34ff5aa36dadbc522f834ac0be8814b28d2680917f058d18cd61",
+      "bytes": 89889
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user22/teacher_inner_2/receipt.json",
+      "sha256": "488c1a08fb59293912727faf166095b107b40615b20290c81bf5078a60ff7492",
+      "bytes": 6836
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user22/teacher_inner_2/teacher.npz",
+      "sha256": "b6cf6d3783d6e487d846eeff59f423ae09bff647576ed4a23af467cdd42b6ed3",
+      "bytes": 5564
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user22/teacher_outer/joint_states.json",
+      "sha256": "6cab4ad35ec88b4eb3b3d7f5774a0455ff5ece0da09dced73439858cb2e40563",
+      "bytes": 17053
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user22/teacher_outer/receipt.json",
+      "sha256": "574438e18885fd3e32a740e559b370c90c2092312181c3b8ece8fc2267dbeafd",
+      "bytes": 2324
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user22/teacher_outer/teacher.npz",
+      "sha256": "1a8aba863c8f1ea807b56a126ab638bcc988e64c71d8fa48f8c04e1cd37370e6",
+      "bytes": 1812
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user23/A.pt",
+      "sha256": "024f583c97042a0e7de26bd4694bacbe0efe645a224b6c143fea1513e1683fe6",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user23/A_history.json",
+      "sha256": "f5474ca8a06d22826e70c4fe832004f1fa54315773480dcabc2f3d3b167ae905",
+      "bytes": 8347
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user23/A_predictions.npz",
+      "sha256": "f1bed3e64f838bfbc87c9b350f8e4541c7699123c517f197bd6c654fec4ce631",
+      "bytes": 1753
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user23/B.pt",
+      "sha256": "ea8aa81352f971a48059e3a803f036cb00684afe4354b9eeb67c787df460f04b",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user23/B_history.json",
+      "sha256": "1c739bf761d014d584704181947b5e702177e005f4dbebf81f5da28d81e6fd9b",
+      "bytes": 9167
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user23/B_predictions.npz",
+      "sha256": "76a63fcb1e07eb08b3a9d865716053710ef37b414d50c32baacff2224e38bb65",
+      "bytes": 1759
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user23/initial.pt",
+      "sha256": "639b751f0d2fed68911c8f5596dae0a5ea39d89b41f4f82d7ca26b9660f26f66",
+      "bytes": 895881
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user23/normalizer.joblib",
+      "sha256": "0aa148dd22b76db06155adc9c0b7462df8ed499cdd40f7001f55811abbe00d80",
+      "bytes": 26598
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user23/scope.json",
+      "sha256": "6076796aa3362e930d6db7dd5b643a3ee8a115ca076a747bf3da15a5c244c9af",
+      "bytes": 43766
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user23/teacher_inner_0/joint_states.json",
+      "sha256": "6b4f06be0ee76ef4257652b09a9fa343a43292b9f0e1add748aa443db5eea98d",
+      "bytes": 95981
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user23/teacher_inner_0/receipt.json",
+      "sha256": "d97675e1b7d5a0887f1770e615a7338f2af2620f40a2d749d3777959c6788b00",
+      "bytes": 6836
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user23/teacher_inner_0/teacher.npz",
+      "sha256": "b144ef494ecff9eff5ad3fcd62fe919ebf3339a01521c7748071004f283a59b2",
+      "bytes": 5559
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user23/teacher_inner_1/joint_states.json",
+      "sha256": "a48d46e543f26280970e8d1005e907d5a50a1d39c35fa05f3b4b75cbfc339514",
+      "bytes": 89568
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user23/teacher_inner_1/receipt.json",
+      "sha256": "75b3f231f8aa3d02f70ce0551ee1eabee7e1011354f017bdda25c24eb17be42b",
+      "bytes": 6815
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user23/teacher_inner_1/teacher.npz",
+      "sha256": "01b314449bd3a4fe70cfd48452e7212ae101d82c9a02c354e5167f8993e95c20",
+      "bytes": 5538
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user23/teacher_inner_2/joint_states.json",
+      "sha256": "fea4738c41d8a4d04880c5415e7f9ddaf078a19df162af638127d684dfb4b7c2",
+      "bytes": 81427
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user23/teacher_inner_2/receipt.json",
+      "sha256": "d6bcb7b4d83dba031706ce2a8b707e5e9c8f7e59f8ca262ef9b8dfc27ccc8b47",
+      "bytes": 6164
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user23/teacher_inner_2/teacher.npz",
+      "sha256": "98c007cf783b19921678ce0b711013f0c839c369a358ea53f4bf1959cbcb2045",
+      "bytes": 4976
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user23/teacher_outer/joint_states.json",
+      "sha256": "75f6182e38471d2079d59d14204c3185e4f1a17d19a8654b58c850bbc18d0144",
+      "bytes": 18198
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user23/teacher_outer/receipt.json",
+      "sha256": "a7c04948eb6f9a61bbc3f50a23410d7f4b1a66d8c1eef429d4a1ce095dd67a83",
+      "bytes": 2408
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user23/teacher_outer/teacher.npz",
+      "sha256": "e98dcd0063c7c94ea516126ef8f9ca75a3eaa23d086319dc2717dc914241f4be",
+      "bytes": 1893
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user24/A.pt",
+      "sha256": "670515d0f46a24eeafcd8cd4cf71f9d4197730f124d471fd24dc9d6d890568a9",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user24/A_history.json",
+      "sha256": "a6b38d1c5c0b252ebe11708e0bd3f85b43204abeb2471f78d34967b50fe609bb",
+      "bytes": 8343
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user24/A_predictions.npz",
+      "sha256": "ad0940c71281871c388769a4b58da8197dd5bfc2ad4539902323e079dea99fc9",
+      "bytes": 1577
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user24/B.pt",
+      "sha256": "de73b3408c6002b43c49afbedd0e5a089b4fc3a53d76debaf692683144a818b3",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user24/B_history.json",
+      "sha256": "7538cc178d2bab985e45a5143d1c647d227cfc2549b888beae021af8d71d896a",
+      "bytes": 9174
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user24/B_predictions.npz",
+      "sha256": "adad0e1d9c40758b858c931ce5c3b18bd7d31e1388e036bbbef331ca743c04e9",
+      "bytes": 1586
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user24/initial.pt",
+      "sha256": "41629ab4b1a070e5785039d45cb8539d5568b9f57198d89c67675ca2e2554147",
+      "bytes": 895881
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user24/normalizer.joblib",
+      "sha256": "b63cd5e2be05bcf97dbd14dcba4d45769ad3b43e8cb3eb54ddb5a05a01266b3d",
+      "bytes": 26642
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user24/scope.json",
+      "sha256": "046b94f75e2a1539baed76884a7d6e537eb146531d79254cf773baee24a87d53",
+      "bytes": 43936
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user24/teacher_inner_0/joint_states.json",
+      "sha256": "61639186ca08bb2db779d8457e03cda341e2d8c13d73973927a6040b1d478d0b",
+      "bytes": 96307
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user24/teacher_inner_0/receipt.json",
+      "sha256": "c85d4201c48c50526ae4e20d0e4c2fc942e62658f285411c3bec74ca4adf97ed",
+      "bytes": 6878
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user24/teacher_inner_0/teacher.npz",
+      "sha256": "aa0e5e4afd2fc410f84bcb96cb6195c81f14454c9b6daa0faa274810dcec62f8",
+      "bytes": 5631
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user24/teacher_inner_1/joint_states.json",
+      "sha256": "eff43728350cdc5d69e5e532227c14753d3dc9a91ee8178874301bdf60792784",
+      "bytes": 90660
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user24/teacher_inner_1/receipt.json",
+      "sha256": "f211824125bf39dd53633e0836b6e308f390ddd21097968311b410d0b02c5507",
+      "bytes": 6878
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user24/teacher_inner_1/teacher.npz",
+      "sha256": "70b9cbe9958ce700bf93e5858c9558db1a7b57131db8d1056a08d7e807382f3f",
+      "bytes": 5577
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user24/teacher_inner_2/joint_states.json",
+      "sha256": "46ed245080f0c60214ef136a3af1429945680e90d6e7e6b02848ae4fa2cf7272",
+      "bytes": 82841
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user24/teacher_inner_2/receipt.json",
+      "sha256": "bc47a7b0a2499be21976d91a77c1b4163b9f3b71d3a29938a4669cce5718c280",
+      "bytes": 6227
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user24/teacher_inner_2/teacher.npz",
+      "sha256": "8304d4181d7bd74919ee473cc222859ae477b367df4d2d702009234093c8b4f7",
+      "bytes": 5054
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user24/teacher_outer/joint_states.json",
+      "sha256": "1de8aeed2c280009a984a5e580714aca972d2650813c0c789e97cea25b852188",
+      "bytes": 15435
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user24/teacher_outer/receipt.json",
+      "sha256": "bbd3eccd1f8e525e20a6cda0dc42d52595c8dd10e7251f66b2b4a7c7439608ad",
+      "bytes": 2240
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user24/teacher_outer/teacher.npz",
+      "sha256": "b0420933d4f2f7a779605dfa6eab6fb181fd7fee03d4ac78cb63b859d6ebba6e",
+      "bytes": 1722
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user3/A.pt",
+      "sha256": "c7660e0df63fff26cbee76b6b1e7a010e4f3766c280fc3ce71c56d8fa26eb76e",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user3/A_history.json",
+      "sha256": "f22713aabd9a9f34723af284e9519e0999475ac8bc60688a9a56e57780ee07ee",
+      "bytes": 8319
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user3/A_predictions.npz",
+      "sha256": "a693505cf22e45149dd20b4793bec9184fa8922797e8c8b30844258b665d659c",
+      "bytes": 1385
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user3/B.pt",
+      "sha256": "95821300dbf42b26a0bf2672a1b2c2b9a772bccaa543966e9ecaa2fb78f2cab5",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user3/B_history.json",
+      "sha256": "5dd6fb37a6e90fd620c4ebb024246b5ecd6ad60ba3e78a8c3e4584aa67611dc9",
+      "bytes": 9144
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user3/B_predictions.npz",
+      "sha256": "14256bb78b48955184650e012b7816639b9bca531b521ad8462b5c6d9f481d99",
+      "bytes": 1398
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user3/initial.pt",
+      "sha256": "a5cb431723dc251f54d8b038ecc7668b180da241d148dac7c81fa0721ecdf86f",
+      "bytes": 895881
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user3/normalizer.joblib",
+      "sha256": "768520aefd4d5a61763ed7b7bbcdd19fb53095014358515019d06bbc92677c68",
+      "bytes": 26661
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user3/scope.json",
+      "sha256": "6b8faa051ba4c70ebf64a0faa52f16b803c480416c4902449c2de54ae43f4582",
+      "bytes": 44112
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user3/teacher_inner_0/joint_states.json",
+      "sha256": "32af4613976f65868765f4a18f1993db007a37efbac43985ac80395c811d1b58",
+      "bytes": 95951
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user3/teacher_inner_0/receipt.json",
+      "sha256": "261c03c700c8a675c81b6ba34efaa50545b43624cd35936a6210ffc11155dadc",
+      "bytes": 6938
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user3/teacher_inner_0/teacher.npz",
+      "sha256": "3f44f536aee26b7ad4ad045851f0835111e30d65f659402ccef1d2b345882ddf",
+      "bytes": 5613
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user3/teacher_inner_1/joint_states.json",
+      "sha256": "6dffcacf235196774e4d135dfc5700c4349836720969c5a931de5fa4cc6fb08e",
+      "bytes": 83018
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user3/teacher_inner_1/receipt.json",
+      "sha256": "14f61694234ef438a292db7c3f6f3a386f19ee4abf1766ac3cc092501887a3dd",
+      "bytes": 6245
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user3/teacher_inner_1/teacher.npz",
+      "sha256": "cc50a61cdfda7b6c1a02e498c9b098eb33b030aeae7b04656c4075d7a41d3798",
+      "bytes": 5037
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user3/teacher_inner_2/joint_states.json",
+      "sha256": "72170ab3a7a76f60173a9e787a6ad302652e1073b0e223c71af2539d35994f70",
+      "bytes": 94048
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user3/teacher_inner_2/receipt.json",
+      "sha256": "cac2f14b308d8007a92864afe14c9acb18190e95043e5bc9d225575dd131a42a",
+      "bytes": 6980
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user3/teacher_inner_2/teacher.npz",
+      "sha256": "162477a064ba9782221cc0dd4212e51888038eaa5f790e9193a1598164b6ecc2",
+      "bytes": 5663
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user3/teacher_outer/joint_states.json",
+      "sha256": "3052e62b45347a42734d1a783f61b4086356e28b899d13357bbe4591375d5a71",
+      "bytes": 12245
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user3/teacher_outer/receipt.json",
+      "sha256": "dc62299ca66ccc831d9e3299107a0dc17155a0e5a5ee7c61257b88c3d5d37f3b",
+      "bytes": 2048
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user3/teacher_outer/teacher.npz",
+      "sha256": "feec89afa27997b97a7afa0493b6d374e72850771ecf51be3fcaf215a32cd30b",
+      "bytes": 1537
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user4/A.pt",
+      "sha256": "bca0c791189ecb0e52a4ba4b0cc7c854d1b43d2a35ca58a6f5b5105814b97bcb",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user4/A_history.json",
+      "sha256": "98ef3460f99dc1a0cc3ef6db8b681fa98cb2634ebc539b9c7ceb2d0301025139",
+      "bytes": 8321
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user4/A_predictions.npz",
+      "sha256": "88293e99d53416f4e97c63dd6e25c5fb833d6116bbd0e8e2ec826b910dc10111",
+      "bytes": 1399
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user4/B.pt",
+      "sha256": "80898722e13ffccd7ac57942a7ed19e5c0cd252ea0f4bd4a04d1ce101d500fdf",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user4/B_history.json",
+      "sha256": "d3f55eba19cdbb32e94e28e7f42ae640e82eab175f72534c1a4335abbe481193",
+      "bytes": 9138
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user4/B_predictions.npz",
+      "sha256": "1a33a3852a617e04cf02ed308a2ca196d12ad852b826362c3c35199bb0661ee4",
+      "bytes": 1408
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user4/initial.pt",
+      "sha256": "08e234b3f4005aa77f68c6ce15328468a3c30aaa88784aec403f3a4c46f484b9",
+      "bytes": 895881
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user4/normalizer.joblib",
+      "sha256": "01c20fc2062bf6f2e2dfe28c1a717d61cf921b34e580033956465c0c2fc9f606",
+      "bytes": 26646
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user4/scope.json",
+      "sha256": "cd23b6f82634ac76aeed455dafe73779f9a1462a9d2f99c90ffafdaace8bfb3c",
+      "bytes": 44110
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user4/teacher_inner_0/joint_states.json",
+      "sha256": "f7104310a5d1c83080b5f38b43d1c15ea6e686f2603e888218000fb4ce27d186",
+      "bytes": 95924
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user4/teacher_inner_0/receipt.json",
+      "sha256": "fdad26bbe88e6adebe97260fc88f90986c779189c9716669fb31932aeddaa691",
+      "bytes": 6938
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user4/teacher_inner_0/teacher.npz",
+      "sha256": "d0aabf4857808ee5fe74f678cce1e503a987a27c0fa146b78f4496b350205cb4",
+      "bytes": 5615
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user4/teacher_inner_1/joint_states.json",
+      "sha256": "b4ec80bc32fc29c47e3d529d6e905fbaccda5b7980896c506c505bcb28c1cd85",
+      "bytes": 82998
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user4/teacher_inner_1/receipt.json",
+      "sha256": "99d0d84c920ecdc5ea4eca5edbe7a5bc046fbc8cc3988ac6bf6ffef983448b59",
+      "bytes": 6245
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user4/teacher_inner_1/teacher.npz",
+      "sha256": "9f17731b9e9e4731029f01560889179b177379fa9ccb95ecdc78c0ac75397f71",
+      "bytes": 5028
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user4/teacher_inner_2/joint_states.json",
+      "sha256": "0bdd95e8dfe61e297fd51690ece6692d1a394a4ec7a7e31227fa7813ef136c50",
+      "bytes": 94046
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user4/teacher_inner_2/receipt.json",
+      "sha256": "b7f6425adde56f1b19bf73637a2f9ee675d99121868c9cd78b2d729b6104c7b5",
+      "bytes": 6980
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user4/teacher_inner_2/teacher.npz",
+      "sha256": "c678761ecb8e08e246a357506a4ca41b70f6ee1bcb8e41055ba3566e1b55832d",
+      "bytes": 5656
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user4/teacher_outer/joint_states.json",
+      "sha256": "ead306eee5689f9ec6c23591937c10736aa9258dd574cd1a580ea8e7b89f3f4c",
+      "bytes": 12262
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user4/teacher_outer/receipt.json",
+      "sha256": "5dcb77881103094009e4dd5bc71af79bfac31e7d40d8a6ef9118ca1ab9b94492",
+      "bytes": 2048
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user4/teacher_outer/teacher.npz",
+      "sha256": "d8a4d950c535d85fa081e5ba4d834f6bfa502481d976571ac8f4deb5d6a6cfad",
+      "bytes": 1547
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user5/A.pt",
+      "sha256": "6db132e91721443528c3a02efdccf01677b015a9abd64dd24dd76f6b8cb29ca4",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user5/A_history.json",
+      "sha256": "7321b460e3431c02924d7722c34d2b15654345ea1bcc66e9fb1e3915a453a407",
+      "bytes": 8345
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user5/A_predictions.npz",
+      "sha256": "3a9268eb37da838cb80454444ffbb050282ef9657dc6f45a085710291f864815",
+      "bytes": 1520
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user5/B.pt",
+      "sha256": "852ba3fb23c0a87cbe0bd95b683a71e02781d2bbf37e0aa2649b349bc3402792",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user5/B_history.json",
+      "sha256": "d9475f1b5fa43cb6dd3af8d6f5b75d9385d6587d28a1f2499c7445169ee83f87",
+      "bytes": 9161
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user5/B_predictions.npz",
+      "sha256": "dba03a50a0ec224ba5c892c6c934fce69047117de17f4e05b2874c10cf145c40",
+      "bytes": 1530
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user5/initial.pt",
+      "sha256": "e3805eedc60cf036289af0c582d64b8ad12aaabd6510637911eebfc991c4d5af",
+      "bytes": 895881
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user5/normalizer.joblib",
+      "sha256": "024010bf94c66e42740d9d683baaf0e3e00042d4bb398fbc634317ae2313a4b3",
+      "bytes": 26618
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user5/scope.json",
+      "sha256": "f4e4b8efe892fbf6a075b717849418d883adb0ad1974e2ef118501b55a0bd9fd",
+      "bytes": 43985
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user5/teacher_inner_0/joint_states.json",
+      "sha256": "14a51ad64a2b050fb03af70eed277f190bee034cb060434abae5716c5efbb62f",
+      "bytes": 82462
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user5/teacher_inner_0/receipt.json",
+      "sha256": "b27ae02852fb6411f9749850f66e28e6461514a1558da89c62c5a1cb314c4ab8",
+      "bytes": 6245
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user5/teacher_inner_0/teacher.npz",
+      "sha256": "cb797bcbc5bbd8984259506d20ef2454c38daaa1e0b147bc54a2fe90aed72c8d",
+      "bytes": 5053
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user5/teacher_inner_1/joint_states.json",
+      "sha256": "afca4852465792096e080a732667b68e99d5a0763620dd9ede1731b68cc5a291",
+      "bytes": 90640
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user5/teacher_inner_1/receipt.json",
+      "sha256": "269726ecd89002da87380904752b13a45d7ec051be60de8c9f73db6fefdc08fb",
+      "bytes": 6875
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user5/teacher_inner_1/teacher.npz",
+      "sha256": "231c4307b1e44f6a6df9bf930d83bf7f862496e2c35ead3e2aeee22402e7a0d0",
+      "bytes": 5569
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user5/teacher_inner_2/joint_states.json",
+      "sha256": "c85193129b19d0a0b084b24d496e2261e446d148b4fb38ab73ccaff6ea5dcc38",
+      "bytes": 97979
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user5/teacher_inner_2/receipt.json",
+      "sha256": "28cc33e1a07de99674ad04c10a24723a6a88b02f0589cc74ae0c3cf67a93f443",
+      "bytes": 6917
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user5/teacher_inner_2/teacher.npz",
+      "sha256": "09b8ab0bca1a2636f03213e61c04c94f5c677108737a4078f81fb1d14c67c618",
+      "bytes": 5625
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user5/teacher_outer/joint_states.json",
+      "sha256": "0ba23ac1b85f937ff14fbbe20d95d8e4ecd7a32848a7f9815fba0281fce4da0d",
+      "bytes": 14171
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user5/teacher_outer/receipt.json",
+      "sha256": "f1fe39740b39ccebd685a877e70c1eba9f425dfde2e8ebeb944682044cc33969",
+      "bytes": 2174
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user5/teacher_outer/teacher.npz",
+      "sha256": "93890a81bf048c45a6e0e3115363279d37b1bdca2c883cbbc11934db91fe03d9",
+      "bytes": 1670
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user6/A.pt",
+      "sha256": "668a32a564ca5d1ce5644830c106ce59a9e43564412daa3968404859776cfd4f",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user6/A_history.json",
+      "sha256": "5961f0e1158d6baae0bdbfa8e7fab9ee258297a08c2409723597defca9582379",
+      "bytes": 8337
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user6/A_predictions.npz",
+      "sha256": "757fbe2936bc77061a392fc0216302ce9371a7c5498a3a9b0c063588f3bc4356",
+      "bytes": 1714
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user6/B.pt",
+      "sha256": "25024989846502c6cbc7de85ca5abb01d9cae8705d1dac9528beae34ccc1dd5f",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user6/B_history.json",
+      "sha256": "90af0a3fe5d84e4b509196a823aae4336531b623336d9bab850cf10e00a93b60",
+      "bytes": 9167
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user6/B_predictions.npz",
+      "sha256": "be1d6cc3d470ac31b64db291f534219c72bc53c14d0bfdadef4be7df1c92d741",
+      "bytes": 1725
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user6/initial.pt",
+      "sha256": "95c479864929441056ffab23a7fda67d3adc4f91455b04f94e6c7a8e9e4d35bc",
+      "bytes": 895881
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user6/normalizer.joblib",
+      "sha256": "4a17310e359b12ccbe6a8a8a0673d21fee84c5598766bd79fd313ebda5bffe78",
+      "bytes": 26624
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user6/scope.json",
+      "sha256": "575101ea0c5eb6426cf1f9e03060538603e8acd35f8c649862a7801ea30038c5",
+      "bytes": 43797
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user6/teacher_inner_0/joint_states.json",
+      "sha256": "77910e121d15166b90127a4844d909be7fd30bf93a9611e503dae858a10d364b",
+      "bytes": 82111
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user6/teacher_inner_0/receipt.json",
+      "sha256": "40548ddab69461cba96028e3090f55719742184611b23f0b31bb059c1f1d5be4",
+      "bytes": 6182
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user6/teacher_inner_0/teacher.npz",
+      "sha256": "6265617a6719d3ac0f8b55c4e499c199d8280cc6eea17347107b46b964bdfd63",
+      "bytes": 4969
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user6/teacher_inner_1/joint_states.json",
+      "sha256": "8d2ae1c6f425db7cc3f5c178f28254fc2da94b634c31d1446f056778a644c4f1",
+      "bytes": 89265
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user6/teacher_inner_1/receipt.json",
+      "sha256": "57334b3cece3253da46145c7e6ba4a60bb5e4c4d8999c7a0104f62a70aac4e0c",
+      "bytes": 6812
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user6/teacher_inner_1/teacher.npz",
+      "sha256": "b18446407ee6d2d394ff2e12f9560df2d6eec2b47b782b10906515d4e5cc9588",
+      "bytes": 5537
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user6/teacher_inner_2/joint_states.json",
+      "sha256": "17a59f401b8e566abbbd0966e23f5a5d25a3fca12d92d36552fe6326cf4620af",
+      "bytes": 96321
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user6/teacher_inner_2/receipt.json",
+      "sha256": "f58a552977766f1cba2a14c1d6135f437159deb55603dfa1df1773919baba51f",
+      "bytes": 6854
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user6/teacher_inner_2/teacher.npz",
+      "sha256": "00246e731ebe56138f9eed05df915f7ae7a13bff1ea0a35e96358f3504b7159d",
+      "bytes": 5560
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user6/teacher_outer/joint_states.json",
+      "sha256": "85522e906f45f28ae2f4f0e61f77ac76f78d57671066e3322ff0251223cea572",
+      "bytes": 17416
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user6/teacher_outer/receipt.json",
+      "sha256": "b7ac6994d9addb23767838021a472f9eb1c1fa45f743c9ddcde9cf9267a455c0",
+      "bytes": 2363
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user6/teacher_outer/teacher.npz",
+      "sha256": "feb120c19f3bf8935444b25197c6e90299843b436f445944cf3e648540c57541",
+      "bytes": 1851
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user7/A.pt",
+      "sha256": "0a944a03b98138602adae667af74f22b2c8db9e582200728a3951fc98ef9ded8",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user7/A_history.json",
+      "sha256": "79c684fd4163b156127647067f0369ad546d19fa3531544a0c02b59cc5b35a19",
+      "bytes": 8347
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user7/A_predictions.npz",
+      "sha256": "851f2e6a18cd5bb6c7b0f9d1059d1a9dbf81dd78bfb891365f5e71a61ea4623f",
+      "bytes": 1606
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user7/B.pt",
+      "sha256": "01a36be6e91753460751d5a3e5f2850b1478fa85b7560323119d4f4b577b8d59",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user7/B_history.json",
+      "sha256": "80b27c88a712829dfb84388febf88c6075f569e5aaa553d042ea99cd9d80a5a6",
+      "bytes": 9171
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user7/B_predictions.npz",
+      "sha256": "1cf4b404da4b7811b1ad31b8dab874ab0b1b8b9155cc6a42e99b397542535a5d",
+      "bytes": 1613
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user7/initial.pt",
+      "sha256": "989330e0212bb82c9300d911526e8aa824d261f485bc4f30db7a3ad4a1d922d3",
+      "bytes": 895881
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user7/normalizer.joblib",
+      "sha256": "32bdd80a87501f792716a28bd4c77d698949094a5656b67b6920252d84d9e145",
+      "bytes": 26643
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user7/scope.json",
+      "sha256": "113402fcc8fd072edde5af83284a8d71a97fd8aaaccdba281e3cde3a2951107a",
+      "bytes": 43900
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user7/teacher_inner_0/joint_states.json",
+      "sha256": "d04c6afa7eee01f3f8f9c152e0faeb083eae6ffcadd21b236d49d02ff63fc3fc",
+      "bytes": 96572
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user7/teacher_inner_0/receipt.json",
+      "sha256": "d8cb3ca3786cee2b452735b89607542dd03d79019073d56dec69bad9820c3659",
+      "bytes": 6875
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user7/teacher_inner_0/teacher.npz",
+      "sha256": "8e199744e853046dfcea078be748c0013f0a41ee9bbf3366490b95f6ee085314",
+      "bytes": 5585
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user7/teacher_inner_1/joint_states.json",
+      "sha256": "172f9668ba5f5c70ce85bf495071ba390527a1ea2d9399ca6bce3aeb0b9a151b",
+      "bytes": 90380
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user7/teacher_inner_1/receipt.json",
+      "sha256": "aa71f471e53087c09f3f400aeaa287ebeea10ab8cfb4ed31a69c6e087bb1580e",
+      "bytes": 6875
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user7/teacher_inner_1/teacher.npz",
+      "sha256": "c0ce07f24e4f3d92f45c1c3b52e010ab14c1485a2645ff18e24dd8f399847f6f",
+      "bytes": 5580
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user7/teacher_inner_2/joint_states.json",
+      "sha256": "1691e67a12ec53ec385c658d18a84a968cc931a52c579dac37b582f5cc79b7f5",
+      "bytes": 82252
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user7/teacher_inner_2/receipt.json",
+      "sha256": "8edee5365e767cbfc0c43b564a1001b7effd20b47b3de5c7c5e0e6bc7b308d88",
+      "bytes": 6203
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user7/teacher_inner_2/teacher.npz",
+      "sha256": "0d0a25e82d98ca277339d645e8bc93f023e3df6d1e72c5b264c7e066a9a3e84e",
+      "bytes": 5015
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user7/teacher_outer/joint_states.json",
+      "sha256": "81eda78ec0a6558fb700e29c27b8e028ffc0672871c8628005a05d95acadeb96",
+      "bytes": 16020
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user7/teacher_outer/receipt.json",
+      "sha256": "8f7c9330d24e792bd60303e600ef5f8d47eba3b0e972fc66ab288a9aa9451bec",
+      "bytes": 2258
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user7/teacher_outer/teacher.npz",
+      "sha256": "71daf92c4a0bc96eb3d6e7be7fa6ff093c0cb38e9d6bdb1cfb43b7f9164885c3",
+      "bytes": 1730
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user8/A.pt",
+      "sha256": "5c449f33d92931234100e05173be61011710e698fa6e10624b221c9fb5c6e8cb",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user8/A_history.json",
+      "sha256": "d7acfc6e74345451694cb4547a3eed0be6575203bce0ff5aa94043675cdaac8c",
+      "bytes": 8343
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user8/A_predictions.npz",
+      "sha256": "a648efb5dacbc805a6567db03ab7e07563a929fcfeccca077158fd52396363bc",
+      "bytes": 1509
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user8/B.pt",
+      "sha256": "5bd444baad28d36c8755c032c41ccc7b8e10c2d15a55d40a7e67fe004ebc298e",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user8/B_history.json",
+      "sha256": "67deb3993f2c1b5c939af563976377f54e8848d98e62e51753567fa5bc36c106",
+      "bytes": 9166
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user8/B_predictions.npz",
+      "sha256": "ad7c2ebbe38ecd4f5c8e706a5e14df4b74b02e5bc1532376441ed10a7c7d507e",
+      "bytes": 1520
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user8/initial.pt",
+      "sha256": "ccde75ac48ddab4ccc63eaa4389ab0b436ffbd641657604adb8b421c61953d8a",
+      "bytes": 895881
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user8/normalizer.joblib",
+      "sha256": "89997d323546a43e4ad82b69c6d1e7f29b278cae9a54fe65c131998a2ed20264",
+      "bytes": 26630
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user8/scope.json",
+      "sha256": "b29747478bca4dc2a9af48d1c0075058db1f7fa4b0d55fceeaf216ef53c72879",
+      "bytes": 43984
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user8/teacher_inner_0/joint_states.json",
+      "sha256": "f7ba1e547ec81aaa80b99d3c9f6f704b372ea4a9d221363ffd577fd19c88fa50",
+      "bytes": 82416
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user8/teacher_inner_0/receipt.json",
+      "sha256": "c774806c693aa139145c21db383d95a8949a6187067833438d2fa9314797247b",
+      "bytes": 6245
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user8/teacher_inner_0/teacher.npz",
+      "sha256": "82109ee8330e5ff3a4f21040723575ac36befad2abb2fecfba9fc77aa47d7785",
+      "bytes": 5059
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user8/teacher_inner_1/joint_states.json",
+      "sha256": "e9d72c00d2975f072c3c9b0515d168e6b850104dd3512223a6657e8eebf554c7",
+      "bytes": 90404
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user8/teacher_inner_1/receipt.json",
+      "sha256": "7d763a94c19fb5186d0b33f4221b5d752e5b23a8bf0db23d35c7f4176a5dcef2",
+      "bytes": 6875
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user8/teacher_inner_1/teacher.npz",
+      "sha256": "f771c2cc9d7e8646b38f378def6b65119253326fb75419d989575c97230512c8",
+      "bytes": 5568
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user8/teacher_inner_2/joint_states.json",
+      "sha256": "c927db4a5e36b1ea8abb7603addff9a5449020d5b6115f9f792d667671c29d6a",
+      "bytes": 97976
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user8/teacher_inner_2/receipt.json",
+      "sha256": "0f687874f358bc2ab854ead4095f5a96c26efed091c37da142e5f159d326b069",
+      "bytes": 6917
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user8/teacher_inner_2/teacher.npz",
+      "sha256": "19fab9d3da48ba17fc4c3bdfb1f7318e6cade134a72a5507e2f6192b36af9482",
+      "bytes": 5622
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user8/teacher_outer/joint_states.json",
+      "sha256": "ad866d651e1c066cdca3844977a1c80ead28cde1efc3707dcfcb1e6ea858c606",
+      "bytes": 14378
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user8/teacher_outer/receipt.json",
+      "sha256": "a946dba39dba6eb4b42debb28201b2a058cf048b917ee8db033ebe9ddbbf9477",
+      "bytes": 2174
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user8/teacher_outer/teacher.npz",
+      "sha256": "21e79ef686870c570eee68923b6b1ade83b2fbdc272f938a6740f35c03b8670b",
+      "bytes": 1650
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user9/A.pt",
+      "sha256": "677fc1b7ca5f4b4ffddbbbeed41563b81e6b3f5d7129885002193dfa8a95d410",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user9/A_history.json",
+      "sha256": "7d91662c03424e65b42500cc1e52a3a0b13a26a3caad8667651781f355ec307b",
+      "bytes": 8345
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user9/A_predictions.npz",
+      "sha256": "4edab3b4e782583a7c081d6e7517abeb1a3630a16ec3fde51632680bfd061a68",
+      "bytes": 1745
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user9/B.pt",
+      "sha256": "66ac7a417c3473a7399e44789f1e5aa79230fbcc93f8b657ae953efa0c7d7c4a",
+      "bytes": 2687803
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user9/B_history.json",
+      "sha256": "a80918fe36b4c9cc2b08826acb4eae238a2b67e1bf03acd8b1af1d43be9242b6",
+      "bytes": 9170
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user9/B_predictions.npz",
+      "sha256": "67443cad4ad20dce1ddb09429bd0f5be38fd2d28823af036549e11e0ca55f3a7",
+      "bytes": 1758
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user9/initial.pt",
+      "sha256": "f621cb922fad31b285e5d8bf5e72e0651802921bcc325ec9270af3b6fb4f1f42",
+      "bytes": 895881
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user9/normalizer.joblib",
+      "sha256": "e7fc1a6ba9577b130c6db1de9a08fd2c705c588994b0b264f931935fd1536b75",
+      "bytes": 26601
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user9/scope.json",
+      "sha256": "afc020175ffca0a1c816428cbd134281cf4b2195dc1c5ffb233033c52a44bb04",
+      "bytes": 43733
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user9/teacher_inner_0/joint_states.json",
+      "sha256": "0d7ceb132e060d3c5a31a863928b381d22e77daf98e5f4f03ec0e3814a33141a",
+      "bytes": 89290
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user9/teacher_inner_0/receipt.json",
+      "sha256": "a8d38f5f8bd3ca95fa2235310ca5d0d0c086a7fd73677052e1ea7b84db03b79e",
+      "bytes": 6812
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user9/teacher_inner_0/teacher.npz",
+      "sha256": "c68fc14346727d3ea41e18e9a0ebeeb02d0f05da3199fd9f76350f99221854ef",
+      "bytes": 5539
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user9/teacher_inner_1/joint_states.json",
+      "sha256": "1e5eda92354772d821c487ec262a2d4014825e9be3d9adc34212958f6dd3d1f5",
+      "bytes": 81121
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user9/teacher_inner_1/receipt.json",
+      "sha256": "1f53463ca2429ee4ff292daab8fc1175ab3867f62dbe603143a893780ea9f8b9",
+      "bytes": 6161
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user9/teacher_inner_1/teacher.npz",
+      "sha256": "b284234c7fc688af4977669659c33ffcbf19be48f34677e330f029a01775e94f",
+      "bytes": 4963
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user9/teacher_inner_2/joint_states.json",
+      "sha256": "4e488328b9f037e0250492244ca8e4d7922deb68b5aafa3bfeec5ac63a302690",
+      "bytes": 96231
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user9/teacher_inner_2/receipt.json",
+      "sha256": "f48401656cbf37a3455c59feb1e4a219bda80aaa362ff4f51f96e9f9734ee868",
+      "bytes": 6812
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user9/teacher_inner_2/teacher.npz",
+      "sha256": "e4306b8830003e704dce0a2f81e624e35d7272b9a34ac0629c817f3428f09f1b",
+      "bytes": 5520
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user9/teacher_outer/joint_states.json",
+      "sha256": "71da52b8a8069ce0aa6bac5a557df7d4ccb4b7e3b0cad760862ed3426b8ace80",
+      "bytes": 18439
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user9/teacher_outer/receipt.json",
+      "sha256": "1938cb4db3b83a2f9a1d47e3df4b8df0e135d257bd9fe5f824090fc2486a604d",
+      "bytes": 2426
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/scopes/user9/teacher_outer/teacher.npz",
+      "sha256": "b92161becd2f6e1c62a3f35838b81dda7b8f91b696b5c417f6e51ba3251ac225",
+      "bytes": 1873
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/sources/local_emotion_distillation_v1.json",
+      "sha256": "63863ac0709536b5c2a771b2280b9655ea23643c31ac29dfd5c353ce28ad5031",
+      "bytes": 3809
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/sources/local_emotion_student.py",
+      "sha256": "d514312502460edc73fb30f14ff7e190588cfeb6e440ac922ef3ed767f9e5973",
+      "bytes": 6122
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/sources/local_emotion_teacher.py",
+      "sha256": "7526376c70ddc03eeb2da834f6111930214b9117a753fb7a822a86e205333ad3",
+      "bytes": 3105
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/sources/run_local_emotion_distillation.py",
+      "sha256": "5acfee8b8d0687131b664f6c0a91169519f76748c282e07ecd60351ffa8b40ab",
+      "bytes": 25959
+    },
+    {
+      "path": "/root/workspace/CUHK-X-integration-20260912/runs/20260912_local_emotion_distillation_v1/state.json",
+      "sha256": "d30ba4f91392975dfb868e15a3b4f51d7d46de0910fe2c915dfc3e32b3e1748c",
+      "bytes": 76
+    }
+  ],
+  "status": "closed"
+}

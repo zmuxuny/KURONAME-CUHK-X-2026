@@ -1,0 +1,2688 @@
+{
+  "kind": "reused_v5_fitted_models",
+  "parent_run": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5",
+  "parent_frozen_config": {
+    "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/frozen_config.json",
+    "sha256": "80a971860e38df00c13fa281a76babbc5c2bc1da135a49b33fe54c716f6a69ec"
+  },
+  "parent_protocol": {
+    "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/protocol.json",
+    "sha256": "8f96878df7bda8e5af9b6ed06856874bd79106c9dd2cc2ba9c91b3619249b644"
+  },
+  "parent_report": {
+    "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/report.json",
+    "sha256": "fc7181407f7644a7c3be98b39d4a9d1149176b283d7b3156330458ea95192794"
+  },
+  "original_fit_config": {
+    "version": 5,
+    "frozen_before_experiments": true,
+    "objective": "Add one fixed generic Kinetics R2Plus1D_18 visual modality to the unchanged v3 template nested emotion expert. Test complementary within-scene visual movement/pose evidence with no outer-score selection.",
+    "seed": 20260905,
+    "trees": 200,
+    "max_depth": 12,
+    "minimum_leaf": 2,
+    "workers": 3,
+    "inner_folds": 3,
+    "context_beta": 10.0,
+    "context_smoothing": 0.1,
+    "views": {
+      "imu": "(_physical_diff_|_duration_seconds$|_sample_rate_hz$|_dt_median$|_dt_q90$|_rows_per_second$)",
+      "skeleton": "^(frame_count|duration_seconds|diff[12]_|fft_)",
+      "radar": "^(meta_|point_|frame_)",
+      "visual": "^visual_"
+    },
+    "sensor_weights": {
+      "imu": 1.0,
+      "skeleton": 2.0,
+      "radar": 0.2,
+      "visual": 1.0
+    },
+    "selection_view_weights": {
+      "complete": {
+        "complete": 1.0
+      },
+      "partial": {
+        "pair": 0.6274509803921569,
+        "singleton": 0.37254901960784315
+      }
+    },
+    "validation_weight_source": "Unlabeled test structure: 31 complete-core scenes, 16 one-pair scenes and one no-pair scene; the 51 partial-group questions contain 32 paired-core rows and 19 singleton rows. All 48 test scenes retain three questions.",
+    "selection": "Independently maximize complete-core inner accuracy and partial-core inner view-weighted accuracy; ties use inner worst subject then the original decoder order. Each selected decoder applies to the whole group, never selected outer rows or subjects.",
+    "decoders": [
+      {
+        "name": "v1_manner_mean",
+        "fusion_mode": "v1_manner_mean",
+        "lexical": 0.25,
+        "context": 4.0,
+        "sensor": 1.0,
+        "use_position": true
+      },
+      {
+        "name": "option_log_sum",
+        "fusion_mode": "option_log_sum",
+        "lexical": 0.25,
+        "context": 4.0,
+        "sensor": 1.0,
+        "use_position": true
+      },
+      {
+        "name": "projected_option_log_sum",
+        "fusion_mode": "projected_option_log_sum",
+        "lexical": 0.25,
+        "context": 4.0,
+        "sensor": 1.0,
+        "use_position": true
+      },
+      {
+        "name": "projected_option_log_sum_strong",
+        "fusion_mode": "projected_option_log_sum",
+        "lexical": 0.25,
+        "context": 4.0,
+        "sensor": 2.0,
+        "use_position": true
+      },
+      {
+        "name": "context_only",
+        "fusion_mode": "v1_manner_mean",
+        "lexical": 0.25,
+        "context": 4.0,
+        "sensor": 0.0,
+        "use_position": true
+      }
+    ],
+    "constraints": "At inference use unchanged v1 feasible assignments inside audited scenes. Complete means exactly three questions with three shared words. All other groups use the inner-selected partial decoder. Synthetic partial views keep each question and its options/evidence, constrain one of three pairs to the shared core, and leave the other row unrestricted while retaining distinct-word joint assignment.",
+    "validation_caveat": "Acquisition positions remain explicit unlabeled metadata. Relaxed-core proxies test the assignment graph but do not recreate partial-question vocabulary or missing records. Repeated views are dependent; historical subjects and v2b error slices were observed. This is strict model/selection subject exclusion, not a newly untouched blind test; no outer-score or public-score selection is allowed. Historical v3/v4 external errors were reviewed before this fixed visual hypothesis. Generic embeddings are coarse motion/pose evidence, not a pretrained emotion classifier. No outer label, score or selected row may tune this new modality.",
+    "visual_specification": {
+      "dimensions": 2048,
+      "aggregation": "Depth mean,std then IR mean,std over 8 windows; population std",
+      "relative_normalization": "unchanged sensor_matrix within complete three-recording scene",
+      "invalid_unit_policy": "omit missing or physically misaligned paired video; disable visual for its whole scene",
+      "duplicate_windows": "retain fixed eight-window sample; zero std is allowed"
+    }
+  },
+  "original_source_hashes": {
+    "scripts/run_emotion_nested.py": "1f5d9b7e84e830f88779d458a448ce46b96e178e79f4eb042a5d4709ba542d9e",
+    "src/cuhkx/emotion_nested.py": "aec1d649d0d72eab48901625e71f2fb22a55fa1cfa86681dac531df8724a5259",
+    "src/cuhkx/clip_constraints.py": "52393f64d61d4c589fd2ebea6dc91cae7f3aa2b5a170e94dd264761b471f7a86",
+    "src/cuhkx/inference.py": "0d9ae78a01ba15545fb8e62d980305703b17413de627204bc8a968e141ece2aa",
+    "src/cuhkx/metadata.py": "a6bff37df1866546708e759f510beb97f1efdebd204a4e9331810df1437c0ad1",
+    "src/cuhkx/actions.py": "bad55a7051da5a8208158c97ff25fbe55a43cf64de9d47e492558da2e58f1e43",
+    "src/cuhkx/submission.py": "4075bd93a078357a545522389a2bcfa69b97f0ff4c76a784a2620e545b7f126e",
+    "scripts/run_emotion_template_nested.py": "6463f4840844920ef0c136c3cc0a7a02f306f789d03615d541c2e0f0bf3dec16",
+    "src/cuhkx/emotion_template_nested.py": "cb92b179a53690bbe75dc703e70543ff935f8d83fea868d2a86a407c249286ee",
+    "src/cuhkx/emotion_fusion_nested.py": "b172c095a14dfa69872f15501ecc047d91384572c89ad18fd831922dd85a902e",
+    "src/cuhkx/emotion_relative.py": "b92a0756679786e3e0d4320307d8a0411102b00b42981535faff3ba39b740570",
+    "scripts/run_emotion_visual_nested.py": "d8ace4a9f2fe3f0b502c0cbfa3e982a1905b6553ecedb52e744a917ef7ca2178",
+    "src/cuhkx/emotion_visual_nested.py": "7ebc595c81128f4f6f3aaeb36e7ac6ca1ce628ee436db6b5eb08041629d5ef39",
+    "scripts/pack_emotion_generic_visual.py": "77eb5dc77c9356ffc7c30acd50c337bb0483d898e9a34090d25421fc63b36391",
+    "scripts/audit_emotion_visual_nested.py": "295b26462d12b578c196218c60925d295649dbbaa453184f8c21aed6dd45b7ec",
+    "scripts/audit_emotion_nested_provenance.py": "a43c67b9229bd8fa931d22606934b19771dc7bc3b500051a5f01738395457b30",
+    "src/cuhkx/validation.py": "e1f3f3cf4b626c48dcb113978d22249275c64d5c5737d9762a442264ef20ac98",
+    "scripts/evaluate_local_predictions.py": "43d9d091dfaaf7738a2aead3134c229318f4d3940eb1659b9924dd64773baf61",
+    "scripts/extract_generic_hau_windows.py": "84da581525e95fd850a564e5576ff28728cd47b5142838d5859ffdc5db63b2ab",
+    "src/cuhkx/generic_video_windows.py": "ccc3adb237eee7d920a16bd79b4a5821b05858b5c2598395a49a44965e2bffa8",
+    "src/cuhkx/video.py": "9940a91c2560780682b8d673c3bd8f4092ee602a1c0ffd377f24cf34c70cb218",
+    "scripts/extract_video_embeddings.py": "60985de5e5d6cac1d3c2c514dfede47a711fe52e1969f46de0b4fedfc34134f7"
+  },
+  "original_input_hashes": {
+    "/root/workspace/CUHK-X/data/raw/kaggle/training_qa.csv": "2509ed00f9305d552378618d8987559bdff7a4b56241c630ba99dc4051f535bc",
+    "/root/workspace/CUHK-X/data/raw/kaggle/test_qa.csv": "d694c7abc5a003d5c9048098880f0f77716fae0eb18d1c9fe9330e4e987320a5",
+    "/root/workspace/CUHK-X/configs/emotion_visual_nested_v5.json": "f9f6184b188e349d63bacb8f830d817d0702069d58afe234da4ef265117b328b",
+    "/root/workspace/CUHK-X/artifacts/features/imu_v2.npz": "093722e928b1b99c63dd1ae9355282091f53d83106c0842555c0f949d05ca591",
+    "/root/workspace/CUHK-X/artifacts/features/skeleton_v1.npz": "7674194678af691f0a9f00772f8b99c146879972f79162e43fdd85778d11995b",
+    "/root/workspace/CUHK-X/artifacts/features/radar_v1.npz": "e83c4b29def30eb531960310b8ce6fd17de22946e105614210fb440b4e7c9f3e",
+    "/root/workspace/CUHK-X/artifacts/features/hau_emotion_generic_visual_meanstd_v5.npz": "dfe9bcc3433b593697b637d3c95fdabd404a8a58156246bd265e68b9967b2332",
+    "/root/workspace/CUHK-X/artifacts/features/hau_emotion_generic_visual_meanstd_v5.json": "06e5082ba7956bff92fe7e4da1ba004b84533f2db67b2563128bb80bd234ce5c",
+    "/root/workspace/CUHK-X/configs/emotion_template_nested_v3.json": "2c74d44c4f237fdaa6ecf9a8fe1c82e40c556781ace82353ddac184a3852093d"
+  },
+  "models": {
+    "outer/user1": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user1/models.joblib",
+        "sha256": "dddae9b4a54df56b0602bf42969ad6f773ab238feecdaebf0b7dcd2bb68f0034"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user1/training_scope.json",
+        "sha256": "5eb30bcc54d6daecea5a5254d8cad2bae2b42070f78f1026f17a9fa784786cb3"
+      },
+      "train_subjects": [
+        "user16",
+        "user17",
+        "user18",
+        "user19",
+        "user2",
+        "user20",
+        "user21",
+        "user22",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user7",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user1"
+      ]
+    },
+    "outer/user1/inner_0": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user1/inner_0_models.joblib",
+        "sha256": "984bf73900633d1add6e3fb107ebb519fbc0099d2d8603e6900f854d2d3c0229"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user1/inner_0_scope.json",
+        "sha256": "4facaa913601e8f96db87efd93a39521f31bd3669f9bf6d1d9319739d8afac22"
+      },
+      "train_subjects": [
+        "user16",
+        "user17",
+        "user18",
+        "user19",
+        "user21",
+        "user22",
+        "user23",
+        "user4",
+        "user5",
+        "user7",
+        "user8"
+      ],
+      "validation_subjects": [
+        "user2",
+        "user20",
+        "user24",
+        "user3",
+        "user6",
+        "user9"
+      ]
+    },
+    "outer/user1/inner_1": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user1/inner_1_models.joblib",
+        "sha256": "0a7413bc2ed29d659ba21fdf8fe56de96ad76a83b96841a4e31be6628324abaa"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user1/inner_1_scope.json",
+        "sha256": "e6803f86151576bb9e3ac31c612fc35793f613060d49e3e62fd7d67e0fbb98fa"
+      },
+      "train_subjects": [
+        "user16",
+        "user2",
+        "user20",
+        "user21",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user7",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user17",
+        "user18",
+        "user19",
+        "user22",
+        "user8"
+      ]
+    },
+    "outer/user1/inner_2": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user1/inner_2_models.joblib",
+        "sha256": "1494211c10143196d8a1e8c4d76aef39703d15e318a0472d92f3ff24be92693f"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user1/inner_2_scope.json",
+        "sha256": "ddb33504f4d6c7166a43161120923be00c8d76d3725d44d87811fffac147a3b2"
+      },
+      "train_subjects": [
+        "user17",
+        "user18",
+        "user19",
+        "user2",
+        "user20",
+        "user22",
+        "user24",
+        "user3",
+        "user6",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user16",
+        "user21",
+        "user23",
+        "user4",
+        "user5",
+        "user7"
+      ]
+    },
+    "outer/user16": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user16/models.joblib",
+        "sha256": "46fd04f1600943ea517995294ced5cb8a8b7872d1f08d3c55826e666401324ae"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user16/training_scope.json",
+        "sha256": "4fb52c24c57b307d27a197661667df6f367d6166911e2f1475f7757aacad56a3"
+      },
+      "train_subjects": [
+        "user1",
+        "user17",
+        "user18",
+        "user19",
+        "user2",
+        "user20",
+        "user21",
+        "user22",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user7",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user16"
+      ]
+    },
+    "outer/user16/inner_0": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user16/inner_0_models.joblib",
+        "sha256": "fa7742a82c4094793762b25762c6e145c00c0ba320a3c5ec9f6033b601f6278e"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user16/inner_0_scope.json",
+        "sha256": "5d9f7b221d56bb7f79ba293b600f0cf4f3223ddc097288139734e01c1510ea6d"
+      },
+      "train_subjects": [
+        "user1",
+        "user17",
+        "user19",
+        "user2",
+        "user20",
+        "user23",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user7",
+        "user8"
+      ],
+      "validation_subjects": [
+        "user18",
+        "user21",
+        "user22",
+        "user24",
+        "user9"
+      ]
+    },
+    "outer/user16/inner_1": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user16/inner_1_models.joblib",
+        "sha256": "5e952d4eb2f43cd8f99387259e71d23b37b834dff74e05466f5e44f7a7569a98"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user16/inner_1_scope.json",
+        "sha256": "ca354f626c0d7b8d033f4cf62612084929ee036837dfe4137ea0d6071e946177"
+      },
+      "train_subjects": [
+        "user1",
+        "user18",
+        "user2",
+        "user20",
+        "user21",
+        "user22",
+        "user23",
+        "user24",
+        "user5",
+        "user6",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user17",
+        "user19",
+        "user3",
+        "user4",
+        "user7",
+        "user8"
+      ]
+    },
+    "outer/user16/inner_2": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user16/inner_2_models.joblib",
+        "sha256": "d59827b9cb60940b1901e29b1c578ae0daaaf0d02a1c846ffaa88acd83cc13b3"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user16/inner_2_scope.json",
+        "sha256": "1ca43f20a0b28d0e6a9426af4f4002de8c02104f63f5f875bb59ac2db1996faa"
+      },
+      "train_subjects": [
+        "user17",
+        "user18",
+        "user19",
+        "user21",
+        "user22",
+        "user24",
+        "user3",
+        "user4",
+        "user7",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user1",
+        "user2",
+        "user20",
+        "user23",
+        "user5",
+        "user6"
+      ]
+    },
+    "outer/user17": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user17/models.joblib",
+        "sha256": "ea4cb28c311a002f7654ee687f1314145d7799b7c92e8561af6911c32cf91791"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user17/training_scope.json",
+        "sha256": "c75a8753a068712ba72903a353fb1b9250cddd146e4ba0b6b52ed703da599963"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user18",
+        "user19",
+        "user2",
+        "user20",
+        "user21",
+        "user22",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user7",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user17"
+      ]
+    },
+    "outer/user17/inner_0": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user17/inner_0_models.joblib",
+        "sha256": "40792dd38508c1d20b934186f75c925e7d6a1b70535de2bf749b79da8e36cba4"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user17/inner_0_scope.json",
+        "sha256": "1115aad35aa12f39efbe9f44d5bf06422da30062c22841dd58a13a407e3d816a"
+      },
+      "train_subjects": [
+        "user16",
+        "user18",
+        "user19",
+        "user21",
+        "user22",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user7",
+        "user8"
+      ],
+      "validation_subjects": [
+        "user1",
+        "user2",
+        "user20",
+        "user5",
+        "user6",
+        "user9"
+      ]
+    },
+    "outer/user17/inner_1": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user17/inner_1_models.joblib",
+        "sha256": "cc1137fd71ac53cad1b1a6514ca1b32fc0f49de454ba9d9ce7bd40eeadb0754b"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user17/inner_1_scope.json",
+        "sha256": "d4995f09b342a53f900893c9291d4080aa01c67fde70613819312571241b557f"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user2",
+        "user20",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user18",
+        "user19",
+        "user21",
+        "user22",
+        "user7"
+      ]
+    },
+    "outer/user17/inner_2": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user17/inner_2_models.joblib",
+        "sha256": "d5326600cbcb7cf59d52d34b3ee3ef7ad6d68a301c4c436ab9f7a3d633ccaa72"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user17/inner_2_scope.json",
+        "sha256": "16c444775a821597fe8991645e2b9fb9cd913cac60b8e6bb174de0fe5594fbc5"
+      },
+      "train_subjects": [
+        "user1",
+        "user18",
+        "user19",
+        "user2",
+        "user20",
+        "user21",
+        "user22",
+        "user5",
+        "user6",
+        "user7",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user16",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user8"
+      ]
+    },
+    "outer/user18": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user18/models.joblib",
+        "sha256": "a68b66155994a1736bcae5cfd3456f9d0298c82f57b0493c81fd8c2e6cea2ba8"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user18/training_scope.json",
+        "sha256": "9809a9f1f3277ecedced04b46f01f24496417633c8b863b22c057fc5e25e37b2"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user17",
+        "user19",
+        "user2",
+        "user20",
+        "user21",
+        "user22",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user7",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user18"
+      ]
+    },
+    "outer/user18/inner_0": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user18/inner_0_models.joblib",
+        "sha256": "e1466f63560c5d1d90693f28929abae4fdd60e9d478f0920f564e86520455e40"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user18/inner_0_scope.json",
+        "sha256": "94a3e70fc2e1e44eb06bad851c1407f0704f2db5d844d8370a502d9c20ce231d"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user17",
+        "user19",
+        "user21",
+        "user22",
+        "user23",
+        "user3",
+        "user4",
+        "user5",
+        "user7",
+        "user8"
+      ],
+      "validation_subjects": [
+        "user2",
+        "user20",
+        "user24",
+        "user6",
+        "user9"
+      ]
+    },
+    "outer/user18/inner_1": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user18/inner_1_models.joblib",
+        "sha256": "662d5bf4be0da6e843d01dc1e3471da86c0e662cf3ca0b0852ba02cd9f19b8ea"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user18/inner_1_scope.json",
+        "sha256": "a986536475c8444f6db7d166604b1e5ac2cf7ea644984e4b856ae3e7dea05e2b"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user2",
+        "user20",
+        "user21",
+        "user23",
+        "user24",
+        "user5",
+        "user6",
+        "user7",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user17",
+        "user19",
+        "user22",
+        "user3",
+        "user4",
+        "user8"
+      ]
+    },
+    "outer/user18/inner_2": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user18/inner_2_models.joblib",
+        "sha256": "8967c7b749847d90998b350fd14ad1244680b3f20b40e270d95fea592b8eb75d"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user18/inner_2_scope.json",
+        "sha256": "98e52cb6773bd006a4f402ae9379dc532ab59ddec9692df67e9b9628670f42ca"
+      },
+      "train_subjects": [
+        "user17",
+        "user19",
+        "user2",
+        "user20",
+        "user22",
+        "user24",
+        "user3",
+        "user4",
+        "user6",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user1",
+        "user16",
+        "user21",
+        "user23",
+        "user5",
+        "user7"
+      ]
+    },
+    "outer/user19": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user19/models.joblib",
+        "sha256": "a57f14016e9f764a86b4f935683bd395fc4719e42261f593f5d6e95fa9c11bf9"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user19/training_scope.json",
+        "sha256": "2ce9cdbd577468522ce876e802480de7040c07763a6fc91e678c17c3867606d8"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user17",
+        "user18",
+        "user2",
+        "user20",
+        "user21",
+        "user22",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user7",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user19"
+      ]
+    },
+    "outer/user19/inner_0": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user19/inner_0_models.joblib",
+        "sha256": "fa79fb11eb2c68d38d659d5fc8ac8651782de6637746f7b3bac9638cd8f54bca"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user19/inner_0_scope.json",
+        "sha256": "54c974b9368244037c97065d1378acbc8a386dc84e0029f920daa297d82c69fb"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user18",
+        "user2",
+        "user20",
+        "user21",
+        "user22",
+        "user23",
+        "user24",
+        "user5",
+        "user6"
+      ],
+      "validation_subjects": [
+        "user17",
+        "user3",
+        "user4",
+        "user7",
+        "user8",
+        "user9"
+      ]
+    },
+    "outer/user19/inner_1": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user19/inner_1_models.joblib",
+        "sha256": "d548e1e7ed6a13b2e6cc311879e47e999990303af1ed02e35794c05eba535927"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user19/inner_1_scope.json",
+        "sha256": "8e6d97b9769d82889bf355aff79cbe32fbb074d628bb119341b1be6b39a7143c"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user17",
+        "user2",
+        "user20",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user7",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user18",
+        "user21",
+        "user22",
+        "user23",
+        "user24"
+      ]
+    },
+    "outer/user19/inner_2": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user19/inner_2_models.joblib",
+        "sha256": "5f8dbda154f6ffc6faca2d3cc840a0b4fc196921d3ba53067a61c89930043614"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user19/inner_2_scope.json",
+        "sha256": "72a07678f3443f21ade2686fd9fdc2c509b4f4ac79229bf03cd7be742633ff66"
+      },
+      "train_subjects": [
+        "user17",
+        "user18",
+        "user21",
+        "user22",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user7",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user1",
+        "user16",
+        "user2",
+        "user20",
+        "user5",
+        "user6"
+      ]
+    },
+    "outer/user2": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user2/models.joblib",
+        "sha256": "b04860c487ad8f66f6714d268d6d3d12e902dc86a9c5532dbabeaf14f1880d5e"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user2/training_scope.json",
+        "sha256": "287d5a077be889d49b99e8e99355365fa8b2d6ea499bb3ac5ab60e8e11846cce"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user17",
+        "user18",
+        "user19",
+        "user20",
+        "user21",
+        "user22",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user7",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user2"
+      ]
+    },
+    "outer/user2/inner_0": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user2/inner_0_models.joblib",
+        "sha256": "c609ec29f6c71038edc506602dea246d98faf4fe324d9e628ef3c272b2c3c6e3"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user2/inner_0_scope.json",
+        "sha256": "d9516c2ad46716bc00a936923652472c28b2fc8003a1b24bba31c119d7cb96f6"
+      },
+      "train_subjects": [
+        "user16",
+        "user17",
+        "user18",
+        "user19",
+        "user21",
+        "user22",
+        "user23",
+        "user3",
+        "user4",
+        "user7",
+        "user8"
+      ],
+      "validation_subjects": [
+        "user1",
+        "user20",
+        "user24",
+        "user5",
+        "user6",
+        "user9"
+      ]
+    },
+    "outer/user2/inner_1": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user2/inner_1_models.joblib",
+        "sha256": "4ec88f2f6903e8dedf06303f1f11c393bd223018ac84b7a4ef747c878891e8ca"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user2/inner_1_scope.json",
+        "sha256": "5c3d29be99ab99902e21fb8c9ea5be6984800b3c1d017eb0b5c7c4db4ae880b3"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user18",
+        "user20",
+        "user21",
+        "user23",
+        "user24",
+        "user5",
+        "user6",
+        "user7",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user17",
+        "user19",
+        "user22",
+        "user3",
+        "user4",
+        "user8"
+      ]
+    },
+    "outer/user2/inner_2": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user2/inner_2_models.joblib",
+        "sha256": "81806153c72b396ab011980a64defb7222fea530793ab4e84836f6b90aae10ce"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user2/inner_2_scope.json",
+        "sha256": "bdceadc9b7cdaa977255ce2e9ab928010aeed4372e656612ee0ab45f612eb174"
+      },
+      "train_subjects": [
+        "user1",
+        "user17",
+        "user19",
+        "user20",
+        "user22",
+        "user24",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user16",
+        "user18",
+        "user21",
+        "user23",
+        "user7"
+      ]
+    },
+    "outer/user20": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user20/models.joblib",
+        "sha256": "1789e96c4ca05366c15915a7ba545cd3d35a1d334a0aacdab1e8c7e6e44c11f9"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user20/training_scope.json",
+        "sha256": "c22214806943ade40df4a981428ebb326f1bbf30500a2e1d630f112c68c2a935"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user17",
+        "user18",
+        "user19",
+        "user2",
+        "user21",
+        "user22",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user7",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user20"
+      ]
+    },
+    "outer/user20/inner_0": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user20/inner_0_models.joblib",
+        "sha256": "0f4b907d0fd8e91dc9928b6910dec1b5c48445bb086c73d5e186812eb7c3315c"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user20/inner_0_scope.json",
+        "sha256": "a3fde395a0f18fcb1094c6958516a81e1243464273c563c2cc7c200dc0e7e00c"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user17",
+        "user19",
+        "user21",
+        "user22",
+        "user23",
+        "user3",
+        "user4",
+        "user5",
+        "user7",
+        "user8"
+      ],
+      "validation_subjects": [
+        "user18",
+        "user2",
+        "user24",
+        "user6",
+        "user9"
+      ]
+    },
+    "outer/user20/inner_1": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user20/inner_1_models.joblib",
+        "sha256": "c55fdfe2804ae1985a9712913f242a9cff6665ea1ee59dea3bf607baf33ef500"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user20/inner_1_scope.json",
+        "sha256": "950e3720c84c2f6786195093e94a561164b8ca131b2c619579d95f439a9088c2"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user18",
+        "user2",
+        "user21",
+        "user23",
+        "user24",
+        "user5",
+        "user6",
+        "user7",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user17",
+        "user19",
+        "user22",
+        "user3",
+        "user4",
+        "user8"
+      ]
+    },
+    "outer/user20/inner_2": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user20/inner_2_models.joblib",
+        "sha256": "031e3d2a6ef68f3b73872202af115858c207d60a23d19f0bd223dbf9969acdd6"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user20/inner_2_scope.json",
+        "sha256": "7d19da56e1efff815172f3710ad41c32e7f4945474bb0401fd69d01e41b88f13"
+      },
+      "train_subjects": [
+        "user17",
+        "user18",
+        "user19",
+        "user2",
+        "user22",
+        "user24",
+        "user3",
+        "user4",
+        "user6",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user1",
+        "user16",
+        "user21",
+        "user23",
+        "user5",
+        "user7"
+      ]
+    },
+    "outer/user21": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user21/models.joblib",
+        "sha256": "0439f3327a473e8c419b8312106843ca5ee4c433a1641b240bef1bf3b80d74fe"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user21/training_scope.json",
+        "sha256": "108a35515260f568196c8e89d3aaa633454d0b1f64782d226e210b3c9551f938"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user17",
+        "user18",
+        "user19",
+        "user2",
+        "user20",
+        "user22",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user7",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user21"
+      ]
+    },
+    "outer/user21/inner_0": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user21/inner_0_models.joblib",
+        "sha256": "f41bb3572e597140b460e9ccb01bec092026d90559910df5ffe69d38348be17a"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user21/inner_0_scope.json",
+        "sha256": "29e771bc1bebf65191cd98f45fb513f344b3d10bc4217c2c42a4afe51dd92fb1"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user17",
+        "user19",
+        "user20",
+        "user22",
+        "user23",
+        "user3",
+        "user4",
+        "user5",
+        "user7",
+        "user8"
+      ],
+      "validation_subjects": [
+        "user18",
+        "user2",
+        "user24",
+        "user6",
+        "user9"
+      ]
+    },
+    "outer/user21/inner_1": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user21/inner_1_models.joblib",
+        "sha256": "c2eba346a39252515d97c37210819b03357d626076d14575601719a6dace162e"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user21/inner_1_scope.json",
+        "sha256": "d30d18477480252e6f385794adac9c379247a45eaf73aff7b79c4eaa20bfc1d7"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user18",
+        "user2",
+        "user20",
+        "user23",
+        "user24",
+        "user5",
+        "user6",
+        "user7",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user17",
+        "user19",
+        "user22",
+        "user3",
+        "user4",
+        "user8"
+      ]
+    },
+    "outer/user21/inner_2": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user21/inner_2_models.joblib",
+        "sha256": "38af15420bceb9706724a2af60ce493ba95e93187beabb052b9884cacba613ca"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user21/inner_2_scope.json",
+        "sha256": "3c1daf657f0620a4342be1e4068bdd76641f71af40492cab8c4e68d88fdc1005"
+      },
+      "train_subjects": [
+        "user17",
+        "user18",
+        "user19",
+        "user2",
+        "user22",
+        "user24",
+        "user3",
+        "user4",
+        "user6",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user1",
+        "user16",
+        "user20",
+        "user23",
+        "user5",
+        "user7"
+      ]
+    },
+    "outer/user22": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user22/models.joblib",
+        "sha256": "2bffe35ac4050740802b92a5eb857ae76ba2814542140aebbf51557b60e06d30"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user22/training_scope.json",
+        "sha256": "81c2fa98bc0f0f46ab4349d0d49a392db77bebc19edcdd4903364d8d789d428a"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user17",
+        "user18",
+        "user19",
+        "user2",
+        "user20",
+        "user21",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user7",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user22"
+      ]
+    },
+    "outer/user22/inner_0": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user22/inner_0_models.joblib",
+        "sha256": "feb519f907832db733b26945fe01c885842fa391e00579bac34e6d0a356a20ec"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user22/inner_0_scope.json",
+        "sha256": "d593cb462972b9b8cba0b7b06027c8bc2c36faf6d40c98be249a61b5419a01ef"
+      },
+      "train_subjects": [
+        "user16",
+        "user17",
+        "user18",
+        "user19",
+        "user20",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user7",
+        "user8"
+      ],
+      "validation_subjects": [
+        "user1",
+        "user2",
+        "user21",
+        "user5",
+        "user6",
+        "user9"
+      ]
+    },
+    "outer/user22/inner_1": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user22/inner_1_models.joblib",
+        "sha256": "239c3684e42c41d172d13779e7f8a748a151289082239d4da546b7c4eae753be"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user22/inner_1_scope.json",
+        "sha256": "815d5912aca8c9fa363b37cc476dde6df24770e4b504db4792b17f754ece635e"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user2",
+        "user21",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user17",
+        "user18",
+        "user19",
+        "user20",
+        "user7"
+      ]
+    },
+    "outer/user22/inner_2": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user22/inner_2_models.joblib",
+        "sha256": "80376464820d1cef50a4dab92a85241638162541a68954fb80dd3c8ce2f9e983"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user22/inner_2_scope.json",
+        "sha256": "3a0fc57f5aa31fa2535c75a82c0263b910682fda0b3043f2d5b87cc68d46241d"
+      },
+      "train_subjects": [
+        "user1",
+        "user17",
+        "user18",
+        "user19",
+        "user2",
+        "user20",
+        "user21",
+        "user5",
+        "user6",
+        "user7",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user16",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user8"
+      ]
+    },
+    "outer/user23": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user23/models.joblib",
+        "sha256": "8d2a5a1980df992aec2c8d97f54de392ee8fd437a9e4c45e0cc6aa832689e4fb"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user23/training_scope.json",
+        "sha256": "dea38d98e8e356ce560e3b01eb1936012801b33457f7fc890fe399638b0e7ea9"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user17",
+        "user18",
+        "user19",
+        "user2",
+        "user20",
+        "user21",
+        "user22",
+        "user24",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user7",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user23"
+      ]
+    },
+    "outer/user23/inner_0": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user23/inner_0_models.joblib",
+        "sha256": "85f886ef2420b2edf59a4c2ae0688bacb144e2428516a609ca36242f5303b098"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user23/inner_0_scope.json",
+        "sha256": "5054abb726012683ce16324b3b0f00b34cd27020ec9d009d85d0e401011e1609"
+      },
+      "train_subjects": [
+        "user16",
+        "user17",
+        "user18",
+        "user19",
+        "user20",
+        "user24",
+        "user3",
+        "user4",
+        "user6",
+        "user7",
+        "user8"
+      ],
+      "validation_subjects": [
+        "user1",
+        "user2",
+        "user21",
+        "user22",
+        "user5",
+        "user9"
+      ]
+    },
+    "outer/user23/inner_1": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user23/inner_1_models.joblib",
+        "sha256": "b92f119ede42a1d3d4292aae15660cab263ca2d30b5f5db3d31597ccc0b06e1a"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user23/inner_1_scope.json",
+        "sha256": "ab43e6bdf85199eb55072d2755dea9f74809cbb9e492e6cbb066692fa90be742"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user18",
+        "user2",
+        "user20",
+        "user21",
+        "user22",
+        "user24",
+        "user5",
+        "user6",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user17",
+        "user19",
+        "user3",
+        "user4",
+        "user7",
+        "user8"
+      ]
+    },
+    "outer/user23/inner_2": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user23/inner_2_models.joblib",
+        "sha256": "9808165a77ed8b78f872ce08901b6878c0baa5c57a9052261e537e4c02fed2e4"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user23/inner_2_scope.json",
+        "sha256": "1c22b6a4c944436a2fd32bf6f6dd38a2e3c90007bd463f90f42fc0bb08e4cb3b"
+      },
+      "train_subjects": [
+        "user1",
+        "user17",
+        "user19",
+        "user2",
+        "user21",
+        "user22",
+        "user3",
+        "user4",
+        "user5",
+        "user7",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user16",
+        "user18",
+        "user20",
+        "user24",
+        "user6"
+      ]
+    },
+    "outer/user24": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user24/models.joblib",
+        "sha256": "b26d7ff1fd8ba9937a67c1f3b63a1eee64931e2de845b4328e39d003dc2f0822"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user24/training_scope.json",
+        "sha256": "4d413ce0c53a216b4e7f0332242d3d28fd3c4965adb2cd9265817891eb17eb6f"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user17",
+        "user18",
+        "user19",
+        "user2",
+        "user20",
+        "user21",
+        "user22",
+        "user23",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user7",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user24"
+      ]
+    },
+    "outer/user24/inner_0": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user24/inner_0_models.joblib",
+        "sha256": "30db27dc56f89c31cbb36ee1a91164da726e0c1fb3384d4794367db3605e031d"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user24/inner_0_scope.json",
+        "sha256": "63e795c746ce18de36e19fa7c1e2b658e17578a75a9f1fca424158f0d07f8002"
+      },
+      "train_subjects": [
+        "user16",
+        "user17",
+        "user18",
+        "user19",
+        "user20",
+        "user22",
+        "user23",
+        "user3",
+        "user4",
+        "user7",
+        "user8"
+      ],
+      "validation_subjects": [
+        "user1",
+        "user2",
+        "user21",
+        "user5",
+        "user6",
+        "user9"
+      ]
+    },
+    "outer/user24/inner_1": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user24/inner_1_models.joblib",
+        "sha256": "4e30d067c5ec29fbc66044a78d2a7aad21797883ca017901461a964f55d14a6b"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user24/inner_1_scope.json",
+        "sha256": "89a3434a4b1b9c86819206ee1d13b572faf59033a1164af02530ad7cc9b5e678"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user18",
+        "user2",
+        "user20",
+        "user21",
+        "user23",
+        "user5",
+        "user6",
+        "user7",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user17",
+        "user19",
+        "user22",
+        "user3",
+        "user4",
+        "user8"
+      ]
+    },
+    "outer/user24/inner_2": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user24/inner_2_models.joblib",
+        "sha256": "8e43e0f3a6c2875c1742cf9b269591622fa8748092cf56e451586bfc60dded6f"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user24/inner_2_scope.json",
+        "sha256": "f0e257428e944ac8835c73124b58836ea35f29c79ad5ef7e879202692311ab05"
+      },
+      "train_subjects": [
+        "user1",
+        "user17",
+        "user19",
+        "user2",
+        "user21",
+        "user22",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user16",
+        "user18",
+        "user20",
+        "user23",
+        "user7"
+      ]
+    },
+    "outer/user3": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user3/models.joblib",
+        "sha256": "e037ee49720fef975a6c7438f2e764836b28549d4177951f309e92249c4d375f"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user3/training_scope.json",
+        "sha256": "0e3f4f30bd23af88c61bf9f90c4916e7593782543785b7edfc3c81a63efb2864"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user17",
+        "user18",
+        "user19",
+        "user2",
+        "user20",
+        "user21",
+        "user22",
+        "user23",
+        "user24",
+        "user4",
+        "user5",
+        "user6",
+        "user7",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user3"
+      ]
+    },
+    "outer/user3/inner_0": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user3/inner_0_models.joblib",
+        "sha256": "3ae6e3296a4161d1da298606ba462f143ed4eb7565b00efa6b8c68d380ca4c1e"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user3/inner_0_scope.json",
+        "sha256": "3c29ecf26f98e418367bfdc812f85535ac08593b357ebf356b90b4320eab4edf"
+      },
+      "train_subjects": [
+        "user16",
+        "user17",
+        "user19",
+        "user20",
+        "user21",
+        "user22",
+        "user23",
+        "user4",
+        "user5",
+        "user7",
+        "user8"
+      ],
+      "validation_subjects": [
+        "user1",
+        "user18",
+        "user2",
+        "user24",
+        "user6",
+        "user9"
+      ]
+    },
+    "outer/user3/inner_1": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user3/inner_1_models.joblib",
+        "sha256": "73c81e8c2649c89cec921340e8ff2a07dd0480a5168ee8b77c3301b6683d1b7a"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user3/inner_1_scope.json",
+        "sha256": "ef0810fa1da36b5b678417012e0c1f7f233f386eb162875dab00a983f962cd6d"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user18",
+        "user2",
+        "user21",
+        "user23",
+        "user24",
+        "user4",
+        "user5",
+        "user6",
+        "user7",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user17",
+        "user19",
+        "user20",
+        "user22",
+        "user8"
+      ]
+    },
+    "outer/user3/inner_2": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user3/inner_2_models.joblib",
+        "sha256": "65d1f880ae84b4ed162f53a7076e1027948e4a1511f68236116d6710aeb3f90c"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user3/inner_2_scope.json",
+        "sha256": "ac90400d64db89cac7c8d93610b8c9fe2f964132199c0a564de7f6d5572c1b74"
+      },
+      "train_subjects": [
+        "user1",
+        "user17",
+        "user18",
+        "user19",
+        "user2",
+        "user20",
+        "user22",
+        "user24",
+        "user6",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user16",
+        "user21",
+        "user23",
+        "user4",
+        "user5",
+        "user7"
+      ]
+    },
+    "outer/user4": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user4/models.joblib",
+        "sha256": "eb8519809da908e60b329685bb557d502e67c9d3614b6afa797e899ccfc90987"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user4/training_scope.json",
+        "sha256": "9d5b5cf37c4f274007599e6d059c742f4d536a506a72f465bb513c69b8a48632"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user17",
+        "user18",
+        "user19",
+        "user2",
+        "user20",
+        "user21",
+        "user22",
+        "user23",
+        "user24",
+        "user3",
+        "user5",
+        "user6",
+        "user7",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user4"
+      ]
+    },
+    "outer/user4/inner_0": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user4/inner_0_models.joblib",
+        "sha256": "ee5e9dfe6e3039c0936fcf62ef7ccd963c51512971490b50ea74378126c68bca"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user4/inner_0_scope.json",
+        "sha256": "f6c22f89fd42b13263406ab7694179bd5997a7b812b26b01aab1527ef27ac146"
+      },
+      "train_subjects": [
+        "user16",
+        "user17",
+        "user19",
+        "user20",
+        "user21",
+        "user22",
+        "user23",
+        "user3",
+        "user5",
+        "user7",
+        "user8"
+      ],
+      "validation_subjects": [
+        "user1",
+        "user18",
+        "user2",
+        "user24",
+        "user6",
+        "user9"
+      ]
+    },
+    "outer/user4/inner_1": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user4/inner_1_models.joblib",
+        "sha256": "380444af5d27c5beedc82e46d85b6053da654b0786e0ae990afb794f88184d22"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user4/inner_1_scope.json",
+        "sha256": "dca9f879e4d8a47c69228235c26bf3a85484f9dd29b27297b3b8a9229ab46812"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user18",
+        "user2",
+        "user21",
+        "user23",
+        "user24",
+        "user3",
+        "user5",
+        "user6",
+        "user7",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user17",
+        "user19",
+        "user20",
+        "user22",
+        "user8"
+      ]
+    },
+    "outer/user4/inner_2": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user4/inner_2_models.joblib",
+        "sha256": "52b90eb7fb5e4b701ec03e1b794b48cd692a56c6db7be4855c9a4a1f03b7c03e"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user4/inner_2_scope.json",
+        "sha256": "690ba7d36292da60b8c100c1ec50f2b948dc01bf0fc3b714d34138910454df03"
+      },
+      "train_subjects": [
+        "user1",
+        "user17",
+        "user18",
+        "user19",
+        "user2",
+        "user20",
+        "user22",
+        "user24",
+        "user6",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user16",
+        "user21",
+        "user23",
+        "user3",
+        "user5",
+        "user7"
+      ]
+    },
+    "outer/user5": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user5/models.joblib",
+        "sha256": "a379fa1762fe66a6aa580bb3e27dee528d56b67ec83a84d4e04d49255c5f9733"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user5/training_scope.json",
+        "sha256": "8d6331eefa8477b7818d0d760d402041c96d9ccdded74a1e7732e6d19e4cf67f"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user17",
+        "user18",
+        "user19",
+        "user2",
+        "user20",
+        "user21",
+        "user22",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user6",
+        "user7",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user5"
+      ]
+    },
+    "outer/user5/inner_0": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user5/inner_0_models.joblib",
+        "sha256": "41cb12cce0bb6b13e55e7ca3c225602bf1567df533d097f03699bbf8b590d203"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user5/inner_0_scope.json",
+        "sha256": "5d5e4d2b49866496b35b649dc81f172c7847aae3ed13a61ce394be745efdf251"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user17",
+        "user19",
+        "user20",
+        "user21",
+        "user22",
+        "user23",
+        "user3",
+        "user4",
+        "user7",
+        "user8"
+      ],
+      "validation_subjects": [
+        "user18",
+        "user2",
+        "user24",
+        "user6",
+        "user9"
+      ]
+    },
+    "outer/user5/inner_1": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user5/inner_1_models.joblib",
+        "sha256": "6818c7a47e598ef2f4abd9beb81fbf2b40b8b4729eb25991829491158bf0cc98"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user5/inner_1_scope.json",
+        "sha256": "5617256ef0debb588869909596b7e98fe634aeb272d251589c705b30c78dc177"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user18",
+        "user2",
+        "user20",
+        "user21",
+        "user23",
+        "user24",
+        "user6",
+        "user7",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user17",
+        "user19",
+        "user22",
+        "user3",
+        "user4",
+        "user8"
+      ]
+    },
+    "outer/user5/inner_2": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user5/inner_2_models.joblib",
+        "sha256": "587fde8bbc16f44177d675b1b59295ec26283d9666c0584087d95171850fdaa0"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user5/inner_2_scope.json",
+        "sha256": "c104088da92936cd81a66edc62a7e3f240738f3c9aa104483b61010e0f5d969c"
+      },
+      "train_subjects": [
+        "user17",
+        "user18",
+        "user19",
+        "user2",
+        "user22",
+        "user24",
+        "user3",
+        "user4",
+        "user6",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user1",
+        "user16",
+        "user20",
+        "user21",
+        "user23",
+        "user7"
+      ]
+    },
+    "outer/user6": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user6/models.joblib",
+        "sha256": "0f492a181d667e0157d29238ffcd90898fd5022022769d3e2a3b80e9719f8f3a"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user6/training_scope.json",
+        "sha256": "eceaba22cd34bd9062f0069451e7adab7c407d326a48cc2b088ecd02864bb0aa"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user17",
+        "user18",
+        "user19",
+        "user2",
+        "user20",
+        "user21",
+        "user22",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user5",
+        "user7",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user6"
+      ]
+    },
+    "outer/user6/inner_0": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user6/inner_0_models.joblib",
+        "sha256": "19056f7c8234be49a4f82821cd6c7c0a49dda499ce6abded3a86f465902a7d99"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user6/inner_0_scope.json",
+        "sha256": "82b2fc3fb8f83222937f35349beacc647639961f7275c42b08c7f8c730d9199b"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user17",
+        "user19",
+        "user2",
+        "user21",
+        "user23",
+        "user3",
+        "user4",
+        "user5",
+        "user7",
+        "user8"
+      ],
+      "validation_subjects": [
+        "user18",
+        "user20",
+        "user22",
+        "user24",
+        "user9"
+      ]
+    },
+    "outer/user6/inner_1": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user6/inner_1_models.joblib",
+        "sha256": "2489dbf34d32090286e8a136cfac353e931affec59183e484b12d71b792f388e"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user6/inner_1_scope.json",
+        "sha256": "0a9c77b900cb791c3f60b96567339a007b38f7dce67576b3af33c0d48fe61eb9"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user18",
+        "user2",
+        "user20",
+        "user21",
+        "user22",
+        "user23",
+        "user24",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user17",
+        "user19",
+        "user3",
+        "user4",
+        "user5",
+        "user7"
+      ]
+    },
+    "outer/user6/inner_2": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user6/inner_2_models.joblib",
+        "sha256": "963f7038e7436f4e6facf355c04a1a18079cf4099f1da128b785f081cf1c4bcf"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user6/inner_2_scope.json",
+        "sha256": "448922ad8065d543ed4e636710a799b34b04cc98bb125a04b71912f9ba9e4af6"
+      },
+      "train_subjects": [
+        "user17",
+        "user18",
+        "user19",
+        "user20",
+        "user22",
+        "user24",
+        "user3",
+        "user4",
+        "user5",
+        "user7",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user1",
+        "user16",
+        "user2",
+        "user21",
+        "user23",
+        "user8"
+      ]
+    },
+    "outer/user7": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user7/models.joblib",
+        "sha256": "f840bd834ac3deb5aa2ae3de008644561b5bdb641e2895b0b0307f1991aafecb"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user7/training_scope.json",
+        "sha256": "c7e6b8faadf15992c3dfcc3d37a90c5838b836b095ed4f02004a81339fb307e7"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user17",
+        "user18",
+        "user19",
+        "user2",
+        "user20",
+        "user21",
+        "user22",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user7"
+      ]
+    },
+    "outer/user7/inner_0": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user7/inner_0_models.joblib",
+        "sha256": "2171913b589a976c6c3923eb0e18306af46690d6dfcb9e5c01c90364f832ba77"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user7/inner_0_scope.json",
+        "sha256": "441756e89c671b2160488e55bcbcb07e02597eb04e218aa1df88bff31d16a0e0"
+      },
+      "train_subjects": [
+        "user16",
+        "user17",
+        "user18",
+        "user19",
+        "user20",
+        "user22",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user5"
+      ],
+      "validation_subjects": [
+        "user1",
+        "user2",
+        "user21",
+        "user6",
+        "user8",
+        "user9"
+      ]
+    },
+    "outer/user7/inner_1": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user7/inner_1_models.joblib",
+        "sha256": "e0fe5d6cc88706dba6b989ce66dc8ef6a0e4d5f0a170952f0292e3aeeb759cb8"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user7/inner_1_scope.json",
+        "sha256": "803faf5e3ac4d9b405afc6b126cdd8864d47687d6d7b2079750d1ea0dcfe60b9"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user18",
+        "user2",
+        "user20",
+        "user21",
+        "user23",
+        "user24",
+        "user6",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user17",
+        "user19",
+        "user22",
+        "user3",
+        "user4",
+        "user5"
+      ]
+    },
+    "outer/user7/inner_2": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user7/inner_2_models.joblib",
+        "sha256": "eafd261534b5b8409a1ba3e3b16450a5bae7bab68b025f43a024c0f70121d509"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user7/inner_2_scope.json",
+        "sha256": "6a217d9e9d3598e956b2cb7f3eac072838572ae84fcedcce457eb3ed481e6e4d"
+      },
+      "train_subjects": [
+        "user1",
+        "user17",
+        "user19",
+        "user2",
+        "user21",
+        "user22",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user16",
+        "user18",
+        "user20",
+        "user23",
+        "user24"
+      ]
+    },
+    "outer/user8": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user8/models.joblib",
+        "sha256": "34c5db10cccbe3f89680fe0b2681fec248d5314b94d08af679fe0dc455837026"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user8/training_scope.json",
+        "sha256": "1c498e4a7469fd34dd16b6c7375eed4b728b14bd17285c2994e0f2d679de94da"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user17",
+        "user18",
+        "user19",
+        "user2",
+        "user20",
+        "user21",
+        "user22",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user7",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user8"
+      ]
+    },
+    "outer/user8/inner_0": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user8/inner_0_models.joblib",
+        "sha256": "4b8f40224bddc6d1172159962249c54ea23fdcf0afa11e895b6548effc7a9822"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user8/inner_0_scope.json",
+        "sha256": "4cb171ebeb68b7a9b0de2247a5065a11a1e9c0e36a9ab883824e5a2cb52f0419"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user17",
+        "user19",
+        "user20",
+        "user21",
+        "user22",
+        "user23",
+        "user3",
+        "user4",
+        "user5",
+        "user7"
+      ],
+      "validation_subjects": [
+        "user18",
+        "user2",
+        "user24",
+        "user6",
+        "user9"
+      ]
+    },
+    "outer/user8/inner_1": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user8/inner_1_models.joblib",
+        "sha256": "cc0c38287daedcd1de40beb4882fa2f4d82ae51e55a738113878f6d1e1f707a2"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user8/inner_1_scope.json",
+        "sha256": "e9c355cde8c1882b1dcdc926092220f25eff4c5f2ed863f6d5d72b4db25d3d18"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user18",
+        "user2",
+        "user20",
+        "user21",
+        "user23",
+        "user24",
+        "user6",
+        "user7",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user17",
+        "user19",
+        "user22",
+        "user3",
+        "user4",
+        "user5"
+      ]
+    },
+    "outer/user8/inner_2": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user8/inner_2_models.joblib",
+        "sha256": "7645fec5b157e61a292d2467f7c411e3a78c22e2cfa58afc005ae8a2b8250889"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user8/inner_2_scope.json",
+        "sha256": "4c24e8e547a1018a8ce2d4147f749e26c0c3d1622bb43df2e00c4588f126089a"
+      },
+      "train_subjects": [
+        "user17",
+        "user18",
+        "user19",
+        "user2",
+        "user22",
+        "user24",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user1",
+        "user16",
+        "user20",
+        "user21",
+        "user23",
+        "user7"
+      ]
+    },
+    "outer/user9": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user9/models.joblib",
+        "sha256": "7e430668df9e2202e51711563f39d753df8ff74250f01f240c730536cd026a8e"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user9/training_scope.json",
+        "sha256": "a80cc713c9ba6c5eac8b35f4793597be687da695e7c65c5df1bb30f44c385498"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user17",
+        "user18",
+        "user19",
+        "user2",
+        "user20",
+        "user21",
+        "user22",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user7",
+        "user8"
+      ],
+      "validation_subjects": [
+        "user9"
+      ]
+    },
+    "outer/user9/inner_0": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user9/inner_0_models.joblib",
+        "sha256": "7cad2371777c96403f5c26ccd165739e430bfdfcd0f7f7ea4bfe382b8f983c8a"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user9/inner_0_scope.json",
+        "sha256": "99ef02fd229075921774729262f72cfe95168f5fe9b8fd6628c9984a5cd44780"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user18",
+        "user2",
+        "user20",
+        "user21",
+        "user22",
+        "user23",
+        "user24",
+        "user6",
+        "user8"
+      ],
+      "validation_subjects": [
+        "user17",
+        "user19",
+        "user3",
+        "user4",
+        "user5",
+        "user7"
+      ]
+    },
+    "outer/user9/inner_1": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user9/inner_1_models.joblib",
+        "sha256": "0b4276e9668a9febc1f0bc3686b8b238014e83fc062d8a703dcc5eea142e5162"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user9/inner_1_scope.json",
+        "sha256": "cd61d655524eb01e5cf4cf7cc30cc24e2d8a0791574d0cf580b0f91af9f682e5"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user17",
+        "user19",
+        "user2",
+        "user20",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user7",
+        "user8"
+      ],
+      "validation_subjects": [
+        "user18",
+        "user21",
+        "user22",
+        "user23",
+        "user24"
+      ]
+    },
+    "outer/user9/inner_2": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user9/inner_2_models.joblib",
+        "sha256": "333f5234cd9e47fbba8e8af2bbed7fd8520aa16ff421bed66fe5dceac5d2fb62"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/folds/user9/inner_2_scope.json",
+        "sha256": "85d14363e70f0ef2ec4a038da91eb3e94105e58b92a667284ad8524e87b2ded2"
+      },
+      "train_subjects": [
+        "user17",
+        "user18",
+        "user19",
+        "user21",
+        "user22",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user5",
+        "user7"
+      ],
+      "validation_subjects": [
+        "user1",
+        "user16",
+        "user2",
+        "user20",
+        "user6",
+        "user8"
+      ]
+    },
+    "final/inner_0": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/final_selection/inner_0_models.joblib",
+        "sha256": "83180b028a02885eddb6016cc1cc8a9835a03adad041137d2838a85ab6306c7f"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/final_selection/inner_0_scope.json",
+        "sha256": "20a8e3e68957e79da9d82063ecd4e8150dc7c79d34b1c91cab95ba1404b8ea8b"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user17",
+        "user18",
+        "user19",
+        "user21",
+        "user22",
+        "user23",
+        "user4",
+        "user5",
+        "user7",
+        "user8"
+      ],
+      "validation_subjects": [
+        "user2",
+        "user20",
+        "user24",
+        "user3",
+        "user6",
+        "user9"
+      ]
+    },
+    "final/inner_1": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/final_selection/inner_1_models.joblib",
+        "sha256": "711c3a696e847c1988c9a491b1d6731ac9f082f9d4d9b1f0d69c915c0e90c482"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/final_selection/inner_1_scope.json",
+        "sha256": "43ad9985c8416a2ef068a826eab01e9002a5dbd310624fdbb611a122050258fd"
+      },
+      "train_subjects": [
+        "user16",
+        "user2",
+        "user20",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user7",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user1",
+        "user17",
+        "user18",
+        "user19",
+        "user21",
+        "user22"
+      ]
+    },
+    "final/inner_2": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/final_selection/inner_2_models.joblib",
+        "sha256": "7cedcf203a361eb1d479c1422605e9f80ced02f3210814ffa18291123371cdeb"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/final_selection/inner_2_scope.json",
+        "sha256": "d2ff9a9b65a086458a29c8eec657f615ff1e85e9f8311ab9f35aaf99d9d52184"
+      },
+      "train_subjects": [
+        "user1",
+        "user17",
+        "user18",
+        "user19",
+        "user2",
+        "user20",
+        "user21",
+        "user22",
+        "user24",
+        "user3",
+        "user6",
+        "user9"
+      ],
+      "validation_subjects": [
+        "user16",
+        "user23",
+        "user4",
+        "user5",
+        "user7",
+        "user8"
+      ]
+    },
+    "final": {
+      "checkpoint": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/models.joblib",
+        "sha256": "7fa05327141de05f1e9815007adbe39b3614d19b40e125ff2d23b1ef7cfafdc9"
+      },
+      "scope": {
+        "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/final_training_scope.json",
+        "sha256": "bbb372192f55d3994dfc9adfe7971d101e1f0f0c02fabec9e6dfedf75a6fc7c0"
+      },
+      "train_subjects": [
+        "user1",
+        "user16",
+        "user17",
+        "user18",
+        "user19",
+        "user2",
+        "user20",
+        "user21",
+        "user22",
+        "user23",
+        "user24",
+        "user3",
+        "user4",
+        "user5",
+        "user6",
+        "user7",
+        "user8",
+        "user9"
+      ],
+      "validation_subjects": []
+    }
+  },
+  "outer_folds": [
+    {
+      "subject": "user1",
+      "model_key": "outer/user1",
+      "inner_keys": [
+        "outer/user1/inner_0",
+        "outer/user1/inner_1",
+        "outer/user1/inner_2"
+      ]
+    },
+    {
+      "subject": "user16",
+      "model_key": "outer/user16",
+      "inner_keys": [
+        "outer/user16/inner_0",
+        "outer/user16/inner_1",
+        "outer/user16/inner_2"
+      ]
+    },
+    {
+      "subject": "user17",
+      "model_key": "outer/user17",
+      "inner_keys": [
+        "outer/user17/inner_0",
+        "outer/user17/inner_1",
+        "outer/user17/inner_2"
+      ]
+    },
+    {
+      "subject": "user18",
+      "model_key": "outer/user18",
+      "inner_keys": [
+        "outer/user18/inner_0",
+        "outer/user18/inner_1",
+        "outer/user18/inner_2"
+      ]
+    },
+    {
+      "subject": "user19",
+      "model_key": "outer/user19",
+      "inner_keys": [
+        "outer/user19/inner_0",
+        "outer/user19/inner_1",
+        "outer/user19/inner_2"
+      ]
+    },
+    {
+      "subject": "user2",
+      "model_key": "outer/user2",
+      "inner_keys": [
+        "outer/user2/inner_0",
+        "outer/user2/inner_1",
+        "outer/user2/inner_2"
+      ]
+    },
+    {
+      "subject": "user20",
+      "model_key": "outer/user20",
+      "inner_keys": [
+        "outer/user20/inner_0",
+        "outer/user20/inner_1",
+        "outer/user20/inner_2"
+      ]
+    },
+    {
+      "subject": "user21",
+      "model_key": "outer/user21",
+      "inner_keys": [
+        "outer/user21/inner_0",
+        "outer/user21/inner_1",
+        "outer/user21/inner_2"
+      ]
+    },
+    {
+      "subject": "user22",
+      "model_key": "outer/user22",
+      "inner_keys": [
+        "outer/user22/inner_0",
+        "outer/user22/inner_1",
+        "outer/user22/inner_2"
+      ]
+    },
+    {
+      "subject": "user23",
+      "model_key": "outer/user23",
+      "inner_keys": [
+        "outer/user23/inner_0",
+        "outer/user23/inner_1",
+        "outer/user23/inner_2"
+      ]
+    },
+    {
+      "subject": "user24",
+      "model_key": "outer/user24",
+      "inner_keys": [
+        "outer/user24/inner_0",
+        "outer/user24/inner_1",
+        "outer/user24/inner_2"
+      ]
+    },
+    {
+      "subject": "user3",
+      "model_key": "outer/user3",
+      "inner_keys": [
+        "outer/user3/inner_0",
+        "outer/user3/inner_1",
+        "outer/user3/inner_2"
+      ]
+    },
+    {
+      "subject": "user4",
+      "model_key": "outer/user4",
+      "inner_keys": [
+        "outer/user4/inner_0",
+        "outer/user4/inner_1",
+        "outer/user4/inner_2"
+      ]
+    },
+    {
+      "subject": "user5",
+      "model_key": "outer/user5",
+      "inner_keys": [
+        "outer/user5/inner_0",
+        "outer/user5/inner_1",
+        "outer/user5/inner_2"
+      ]
+    },
+    {
+      "subject": "user6",
+      "model_key": "outer/user6",
+      "inner_keys": [
+        "outer/user6/inner_0",
+        "outer/user6/inner_1",
+        "outer/user6/inner_2"
+      ]
+    },
+    {
+      "subject": "user7",
+      "model_key": "outer/user7",
+      "inner_keys": [
+        "outer/user7/inner_0",
+        "outer/user7/inner_1",
+        "outer/user7/inner_2"
+      ]
+    },
+    {
+      "subject": "user8",
+      "model_key": "outer/user8",
+      "inner_keys": [
+        "outer/user8/inner_0",
+        "outer/user8/inner_1",
+        "outer/user8/inner_2"
+      ]
+    },
+    {
+      "subject": "user9",
+      "model_key": "outer/user9",
+      "inner_keys": [
+        "outer/user9/inner_0",
+        "outer/user9/inner_1",
+        "outer/user9/inner_2"
+      ]
+    }
+  ],
+  "final_inner_keys": [
+    "final/inner_0",
+    "final/inner_1",
+    "final/inner_2"
+  ],
+  "final_model_key": "final",
+  "new_forest_fits": 0
+}

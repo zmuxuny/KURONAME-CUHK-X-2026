@@ -1,0 +1,1275 @@
+{
+  "status": "passed_fixed_full_scene_state_fusion",
+  "conditions": {
+    "parent_control": {
+      "overall": {
+        "rows": 809,
+        "correct_rows": 749,
+        "accuracy": 0.9258343634116193,
+        "baseline_accuracy": 0.9258343634116193,
+        "accuracy_delta": 0.0,
+        "corrected_rows": 0,
+        "harmed_rows": 0,
+        "net_correct": 0,
+        "changed_subset": {
+          "rows": 0,
+          "accuracy": null,
+          "baseline_accuracy": null
+        }
+      },
+      "subjects": 18,
+      "subject_macro_accuracy": 0.9239580641614916,
+      "worst_subject_accuracy": 0.7358490566037735,
+      "worst_subjects": [
+        "user23"
+      ],
+      "by_subject": {
+        "user1": {
+          "rows": 33,
+          "correct_rows": 29,
+          "accuracy": 0.8787878787878788,
+          "baseline_accuracy": 0.8787878787878788,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user16": {
+          "rows": 51,
+          "correct_rows": 51,
+          "accuracy": 1.0,
+          "baseline_accuracy": 1.0,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user17": {
+          "rows": 48,
+          "correct_rows": 46,
+          "accuracy": 0.9583333333333334,
+          "baseline_accuracy": 0.9583333333333334,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user18": {
+          "rows": 42,
+          "correct_rows": 42,
+          "accuracy": 1.0,
+          "baseline_accuracy": 1.0,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user19": {
+          "rows": 54,
+          "correct_rows": 52,
+          "accuracy": 0.9629629629629629,
+          "baseline_accuracy": 0.9629629629629629,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user2": {
+          "rows": 43,
+          "correct_rows": 40,
+          "accuracy": 0.9302325581395349,
+          "baseline_accuracy": 0.9302325581395349,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user20": {
+          "rows": 42,
+          "correct_rows": 39,
+          "accuracy": 0.9285714285714286,
+          "baseline_accuracy": 0.9285714285714286,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user21": {
+          "rows": 42,
+          "correct_rows": 40,
+          "accuracy": 0.9523809523809523,
+          "baseline_accuracy": 0.9523809523809523,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user22": {
+          "rows": 49,
+          "correct_rows": 42,
+          "accuracy": 0.8571428571428571,
+          "baseline_accuracy": 0.8571428571428571,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user23": {
+          "rows": 53,
+          "correct_rows": 39,
+          "accuracy": 0.7358490566037735,
+          "baseline_accuracy": 0.7358490566037735,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user24": {
+          "rows": 45,
+          "correct_rows": 41,
+          "accuracy": 0.9111111111111111,
+          "baseline_accuracy": 0.9111111111111111,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user3": {
+          "rows": 36,
+          "correct_rows": 30,
+          "accuracy": 0.8333333333333334,
+          "baseline_accuracy": 0.8333333333333334,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user4": {
+          "rows": 36,
+          "correct_rows": 30,
+          "accuracy": 0.8333333333333334,
+          "baseline_accuracy": 0.8333333333333334,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user5": {
+          "rows": 42,
+          "correct_rows": 40,
+          "accuracy": 0.9523809523809523,
+          "baseline_accuracy": 0.9523809523809523,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user6": {
+          "rows": 51,
+          "correct_rows": 51,
+          "accuracy": 1.0,
+          "baseline_accuracy": 1.0,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user7": {
+          "rows": 46,
+          "correct_rows": 46,
+          "accuracy": 1.0,
+          "baseline_accuracy": 1.0,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user8": {
+          "rows": 42,
+          "correct_rows": 40,
+          "accuracy": 0.9523809523809523,
+          "baseline_accuracy": 0.9523809523809523,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user9": {
+          "rows": 54,
+          "correct_rows": 51,
+          "accuracy": 0.9444444444444444,
+          "baseline_accuracy": 0.9444444444444444,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        }
+      },
+      "by_source_category": {
+        "HAU/emotion": {
+          "rows": 809,
+          "correct_rows": 749,
+          "accuracy": 0.9258343634116193,
+          "baseline_accuracy": 0.9258343634116193,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        }
+      },
+      "by_source": {
+        "HAU": {
+          "rows": 809,
+          "correct_rows": 749,
+          "accuracy": 0.9258343634116193,
+          "baseline_accuracy": 0.9258343634116193,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        }
+      },
+      "by_category": {
+        "emotion": {
+          "rows": 809,
+          "correct_rows": 749,
+          "accuracy": 0.9258343634116193,
+          "baseline_accuracy": 0.9258343634116193,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        }
+      },
+      "cluster_bootstrap": {
+        "method": "paired percentile cluster bootstrap; resampling complete subjects",
+        "sampling_unit": "subject",
+        "subjects": 18,
+        "samples": 10000,
+        "seed": 20260912,
+        "confidence": 0.95,
+        "accuracy": {
+          "estimate": 0.9258343634116193,
+          "lower": 0.8888888888888888,
+          "upper": 0.9567758762383458
+        },
+        "subject_macro_accuracy": {
+          "estimate": 0.9239580641614916,
+          "lower": 0.8902970286357096,
+          "upper": 0.9541718942066164
+        },
+        "limitation": "Conditional uncertainty for these fixed predictions, not a correction for historical model selection, upstream leakage, or training-set variation.",
+        "accuracy_delta": {
+          "estimate": 0.0,
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "subject_macro_accuracy_delta": {
+          "estimate": 0.0,
+          "lower": 0.0,
+          "upper": 0.0
+        }
+      },
+      "baseline_subject_macro_accuracy": 0.9239580641614916,
+      "baseline_worst_subject_accuracy": 0.7358490566037735
+    },
+    "parent_half_A": {
+      "overall": {
+        "rows": 809,
+        "correct_rows": 752,
+        "accuracy": 0.9295426452410384,
+        "baseline_accuracy": 0.9258343634116193,
+        "accuracy_delta": 0.003708281829419069,
+        "corrected_rows": 6,
+        "harmed_rows": 3,
+        "net_correct": 3,
+        "changed_subset": {
+          "rows": 10,
+          "accuracy": 0.6,
+          "baseline_accuracy": 0.3
+        }
+      },
+      "subjects": 18,
+      "subject_macro_accuracy": 0.9271156530709767,
+      "worst_subject_accuracy": 0.7547169811320755,
+      "worst_subjects": [
+        "user23"
+      ],
+      "by_subject": {
+        "user1": {
+          "rows": 33,
+          "correct_rows": 29,
+          "accuracy": 0.8787878787878788,
+          "baseline_accuracy": 0.8787878787878788,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user16": {
+          "rows": 51,
+          "correct_rows": 51,
+          "accuracy": 1.0,
+          "baseline_accuracy": 1.0,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user17": {
+          "rows": 48,
+          "correct_rows": 46,
+          "accuracy": 0.9583333333333334,
+          "baseline_accuracy": 0.9583333333333334,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user18": {
+          "rows": 42,
+          "correct_rows": 42,
+          "accuracy": 1.0,
+          "baseline_accuracy": 1.0,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user19": {
+          "rows": 54,
+          "correct_rows": 52,
+          "accuracy": 0.9629629629629629,
+          "baseline_accuracy": 0.9629629629629629,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user2": {
+          "rows": 43,
+          "correct_rows": 39,
+          "accuracy": 0.9069767441860465,
+          "baseline_accuracy": 0.9302325581395349,
+          "accuracy_delta": -0.023255813953488413,
+          "corrected_rows": 1,
+          "harmed_rows": 2,
+          "net_correct": -1,
+          "changed_subset": {
+            "rows": 3,
+            "accuracy": 0.3333333333333333,
+            "baseline_accuracy": 0.6666666666666666
+          }
+        },
+        "user20": {
+          "rows": 42,
+          "correct_rows": 39,
+          "accuracy": 0.9285714285714286,
+          "baseline_accuracy": 0.9285714285714286,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user21": {
+          "rows": 42,
+          "correct_rows": 40,
+          "accuracy": 0.9523809523809523,
+          "baseline_accuracy": 0.9523809523809523,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user22": {
+          "rows": 49,
+          "correct_rows": 45,
+          "accuracy": 0.9183673469387755,
+          "baseline_accuracy": 0.8571428571428571,
+          "accuracy_delta": 0.061224489795918435,
+          "corrected_rows": 4,
+          "harmed_rows": 1,
+          "net_correct": 3,
+          "changed_subset": {
+            "rows": 6,
+            "accuracy": 0.6666666666666666,
+            "baseline_accuracy": 0.16666666666666666
+          }
+        },
+        "user23": {
+          "rows": 53,
+          "correct_rows": 40,
+          "accuracy": 0.7547169811320755,
+          "baseline_accuracy": 0.7358490566037735,
+          "accuracy_delta": 0.018867924528301994,
+          "corrected_rows": 1,
+          "harmed_rows": 0,
+          "net_correct": 1,
+          "changed_subset": {
+            "rows": 1,
+            "accuracy": 1.0,
+            "baseline_accuracy": 0.0
+          }
+        },
+        "user24": {
+          "rows": 45,
+          "correct_rows": 41,
+          "accuracy": 0.9111111111111111,
+          "baseline_accuracy": 0.9111111111111111,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user3": {
+          "rows": 36,
+          "correct_rows": 30,
+          "accuracy": 0.8333333333333334,
+          "baseline_accuracy": 0.8333333333333334,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user4": {
+          "rows": 36,
+          "correct_rows": 30,
+          "accuracy": 0.8333333333333334,
+          "baseline_accuracy": 0.8333333333333334,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user5": {
+          "rows": 42,
+          "correct_rows": 40,
+          "accuracy": 0.9523809523809523,
+          "baseline_accuracy": 0.9523809523809523,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user6": {
+          "rows": 51,
+          "correct_rows": 51,
+          "accuracy": 1.0,
+          "baseline_accuracy": 1.0,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user7": {
+          "rows": 46,
+          "correct_rows": 46,
+          "accuracy": 1.0,
+          "baseline_accuracy": 1.0,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user8": {
+          "rows": 42,
+          "correct_rows": 40,
+          "accuracy": 0.9523809523809523,
+          "baseline_accuracy": 0.9523809523809523,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user9": {
+          "rows": 54,
+          "correct_rows": 51,
+          "accuracy": 0.9444444444444444,
+          "baseline_accuracy": 0.9444444444444444,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        }
+      },
+      "by_source_category": {
+        "HAU/emotion": {
+          "rows": 809,
+          "correct_rows": 752,
+          "accuracy": 0.9295426452410384,
+          "baseline_accuracy": 0.9258343634116193,
+          "accuracy_delta": 0.003708281829419069,
+          "corrected_rows": 6,
+          "harmed_rows": 3,
+          "net_correct": 3,
+          "changed_subset": {
+            "rows": 10,
+            "accuracy": 0.6,
+            "baseline_accuracy": 0.3
+          }
+        }
+      },
+      "by_source": {
+        "HAU": {
+          "rows": 809,
+          "correct_rows": 752,
+          "accuracy": 0.9295426452410384,
+          "baseline_accuracy": 0.9258343634116193,
+          "accuracy_delta": 0.003708281829419069,
+          "corrected_rows": 6,
+          "harmed_rows": 3,
+          "net_correct": 3,
+          "changed_subset": {
+            "rows": 10,
+            "accuracy": 0.6,
+            "baseline_accuracy": 0.3
+          }
+        }
+      },
+      "by_category": {
+        "emotion": {
+          "rows": 809,
+          "correct_rows": 752,
+          "accuracy": 0.9295426452410384,
+          "baseline_accuracy": 0.9258343634116193,
+          "accuracy_delta": 0.003708281829419069,
+          "corrected_rows": 6,
+          "harmed_rows": 3,
+          "net_correct": 3,
+          "changed_subset": {
+            "rows": 10,
+            "accuracy": 0.6,
+            "baseline_accuracy": 0.3
+          }
+        }
+      },
+      "cluster_bootstrap": {
+        "method": "paired percentile cluster bootstrap; resampling complete subjects",
+        "sampling_unit": "subject",
+        "subjects": 18,
+        "samples": 10000,
+        "seed": 20260912,
+        "confidence": 0.95,
+        "accuracy": {
+          "estimate": 0.9295426452410384,
+          "lower": 0.8959997493734336,
+          "upper": 0.9576385169862055
+        },
+        "subject_macro_accuracy": {
+          "estimate": 0.9271156530709767,
+          "lower": 0.895928383766038,
+          "upper": 0.9550661521035736
+        },
+        "limitation": "Conditional uncertainty for these fixed predictions, not a correction for historical model selection, upstream leakage, or training-set variation.",
+        "accuracy_delta": {
+          "estimate": 0.003708281829419036,
+          "lower": -0.002564184852374839,
+          "upper": 0.01248442993363857
+        },
+        "subject_macro_accuracy_delta": {
+          "estimate": 0.003157588909485104,
+          "lower": -0.0028277509628979575,
+          "upper": 0.011252299662003164
+        }
+      },
+      "baseline_subject_macro_accuracy": 0.9239580641614916,
+      "baseline_worst_subject_accuracy": 0.7358490566037735
+    },
+    "parent_half_B": {
+      "overall": {
+        "rows": 809,
+        "correct_rows": 750,
+        "accuracy": 0.927070457354759,
+        "baseline_accuracy": 0.9258343634116193,
+        "accuracy_delta": 0.0012360939431397266,
+        "corrected_rows": 5,
+        "harmed_rows": 4,
+        "net_correct": 1,
+        "changed_subset": {
+          "rows": 10,
+          "accuracy": 0.5,
+          "baseline_accuracy": 0.4
+        }
+      },
+      "subjects": 18,
+      "subject_macro_accuracy": 0.9249336481935541,
+      "worst_subject_accuracy": 0.7358490566037735,
+      "worst_subjects": [
+        "user23"
+      ],
+      "by_subject": {
+        "user1": {
+          "rows": 33,
+          "correct_rows": 29,
+          "accuracy": 0.8787878787878788,
+          "baseline_accuracy": 0.8787878787878788,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user16": {
+          "rows": 51,
+          "correct_rows": 51,
+          "accuracy": 1.0,
+          "baseline_accuracy": 1.0,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user17": {
+          "rows": 48,
+          "correct_rows": 46,
+          "accuracy": 0.9583333333333334,
+          "baseline_accuracy": 0.9583333333333334,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user18": {
+          "rows": 42,
+          "correct_rows": 42,
+          "accuracy": 1.0,
+          "baseline_accuracy": 1.0,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user19": {
+          "rows": 54,
+          "correct_rows": 52,
+          "accuracy": 0.9629629629629629,
+          "baseline_accuracy": 0.9629629629629629,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user2": {
+          "rows": 43,
+          "correct_rows": 39,
+          "accuracy": 0.9069767441860465,
+          "baseline_accuracy": 0.9302325581395349,
+          "accuracy_delta": -0.023255813953488413,
+          "corrected_rows": 1,
+          "harmed_rows": 2,
+          "net_correct": -1,
+          "changed_subset": {
+            "rows": 3,
+            "accuracy": 0.3333333333333333,
+            "baseline_accuracy": 0.6666666666666666
+          }
+        },
+        "user20": {
+          "rows": 42,
+          "correct_rows": 39,
+          "accuracy": 0.9285714285714286,
+          "baseline_accuracy": 0.9285714285714286,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user21": {
+          "rows": 42,
+          "correct_rows": 40,
+          "accuracy": 0.9523809523809523,
+          "baseline_accuracy": 0.9523809523809523,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user22": {
+          "rows": 49,
+          "correct_rows": 44,
+          "accuracy": 0.8979591836734694,
+          "baseline_accuracy": 0.8571428571428571,
+          "accuracy_delta": 0.04081632653061229,
+          "corrected_rows": 4,
+          "harmed_rows": 2,
+          "net_correct": 2,
+          "changed_subset": {
+            "rows": 7,
+            "accuracy": 0.5714285714285714,
+            "baseline_accuracy": 0.2857142857142857
+          }
+        },
+        "user23": {
+          "rows": 53,
+          "correct_rows": 39,
+          "accuracy": 0.7358490566037735,
+          "baseline_accuracy": 0.7358490566037735,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user24": {
+          "rows": 45,
+          "correct_rows": 41,
+          "accuracy": 0.9111111111111111,
+          "baseline_accuracy": 0.9111111111111111,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user3": {
+          "rows": 36,
+          "correct_rows": 30,
+          "accuracy": 0.8333333333333334,
+          "baseline_accuracy": 0.8333333333333334,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user4": {
+          "rows": 36,
+          "correct_rows": 30,
+          "accuracy": 0.8333333333333334,
+          "baseline_accuracy": 0.8333333333333334,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user5": {
+          "rows": 42,
+          "correct_rows": 40,
+          "accuracy": 0.9523809523809523,
+          "baseline_accuracy": 0.9523809523809523,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user6": {
+          "rows": 51,
+          "correct_rows": 51,
+          "accuracy": 1.0,
+          "baseline_accuracy": 1.0,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user7": {
+          "rows": 46,
+          "correct_rows": 46,
+          "accuracy": 1.0,
+          "baseline_accuracy": 1.0,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user8": {
+          "rows": 42,
+          "correct_rows": 40,
+          "accuracy": 0.9523809523809523,
+          "baseline_accuracy": 0.9523809523809523,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        },
+        "user9": {
+          "rows": 54,
+          "correct_rows": 51,
+          "accuracy": 0.9444444444444444,
+          "baseline_accuracy": 0.9444444444444444,
+          "accuracy_delta": 0.0,
+          "corrected_rows": 0,
+          "harmed_rows": 0,
+          "net_correct": 0,
+          "changed_subset": {
+            "rows": 0,
+            "accuracy": null,
+            "baseline_accuracy": null
+          }
+        }
+      },
+      "by_source_category": {
+        "HAU/emotion": {
+          "rows": 809,
+          "correct_rows": 750,
+          "accuracy": 0.927070457354759,
+          "baseline_accuracy": 0.9258343634116193,
+          "accuracy_delta": 0.0012360939431397266,
+          "corrected_rows": 5,
+          "harmed_rows": 4,
+          "net_correct": 1,
+          "changed_subset": {
+            "rows": 10,
+            "accuracy": 0.5,
+            "baseline_accuracy": 0.4
+          }
+        }
+      },
+      "by_source": {
+        "HAU": {
+          "rows": 809,
+          "correct_rows": 750,
+          "accuracy": 0.927070457354759,
+          "baseline_accuracy": 0.9258343634116193,
+          "accuracy_delta": 0.0012360939431397266,
+          "corrected_rows": 5,
+          "harmed_rows": 4,
+          "net_correct": 1,
+          "changed_subset": {
+            "rows": 10,
+            "accuracy": 0.5,
+            "baseline_accuracy": 0.4
+          }
+        }
+      },
+      "by_category": {
+        "emotion": {
+          "rows": 809,
+          "correct_rows": 750,
+          "accuracy": 0.927070457354759,
+          "baseline_accuracy": 0.9258343634116193,
+          "accuracy_delta": 0.0012360939431397266,
+          "corrected_rows": 5,
+          "harmed_rows": 4,
+          "net_correct": 1,
+          "changed_subset": {
+            "rows": 10,
+            "accuracy": 0.5,
+            "baseline_accuracy": 0.4
+          }
+        }
+      },
+      "cluster_bootstrap": {
+        "method": "paired percentile cluster bootstrap; resampling complete subjects",
+        "sampling_unit": "subject",
+        "subjects": 18,
+        "samples": 10000,
+        "seed": 20260912,
+        "confidence": 0.95,
+        "accuracy": {
+          "estimate": 0.927070457354759,
+          "lower": 0.89119804400978,
+          "upper": 0.956783094432182
+        },
+        "subject_macro_accuracy": {
+          "estimate": 0.9249336481935541,
+          "lower": 0.8920338826646637,
+          "upper": 0.9540785770171613
+        },
+        "limitation": "Conditional uncertainty for these fixed predictions, not a correction for historical model selection, upstream leakage, or training-set variation.",
+        "accuracy_delta": {
+          "estimate": 0.0012360939431396785,
+          "lower": -0.0037038181568465863,
+          "upper": 0.007335187773265537
+        },
+        "subject_macro_accuracy_delta": {
+          "estimate": 0.0009755840320624372,
+          "lower": -0.003875968992248062,
+          "upper": 0.006802721088435374
+        }
+      },
+      "baseline_subject_macro_accuracy": 0.9239580641614916,
+      "baseline_worst_subject_accuracy": 0.7358490566037735
+    }
+  },
+  "scope_receipts": [
+    {
+      "subject": "user1",
+      "rows": 33,
+      "states_digest": "7c93100ef3fe2cc206619d3f15ae0874",
+      "parent_answers_exact": true,
+      "target_poison_exact": true
+    },
+    {
+      "subject": "user16",
+      "rows": 51,
+      "states_digest": "46b914c34a28e06453835d4afb596d54",
+      "parent_answers_exact": true,
+      "target_poison_exact": true
+    },
+    {
+      "subject": "user17",
+      "rows": 48,
+      "states_digest": "a443432a44195b6ef434c76e2c3b169c",
+      "parent_answers_exact": true,
+      "target_poison_exact": true
+    },
+    {
+      "subject": "user18",
+      "rows": 42,
+      "states_digest": "cf2ab1375441fce3e6317acf68ea1c14",
+      "parent_answers_exact": true,
+      "target_poison_exact": true
+    },
+    {
+      "subject": "user19",
+      "rows": 54,
+      "states_digest": "c49405a46878ea0d252b00ca1a0f3171",
+      "parent_answers_exact": true,
+      "target_poison_exact": true
+    },
+    {
+      "subject": "user2",
+      "rows": 43,
+      "states_digest": "38114b14d7b427d57700d394dc5e1cb9",
+      "parent_answers_exact": true,
+      "target_poison_exact": true
+    },
+    {
+      "subject": "user20",
+      "rows": 42,
+      "states_digest": "48f9dd8e09c9fa2ce1bed4d61c516f35",
+      "parent_answers_exact": true,
+      "target_poison_exact": true
+    },
+    {
+      "subject": "user21",
+      "rows": 42,
+      "states_digest": "2b603e26c1b36598f790f7ca548e4e5c",
+      "parent_answers_exact": true,
+      "target_poison_exact": true
+    },
+    {
+      "subject": "user22",
+      "rows": 49,
+      "states_digest": "5b072d67ab7a61a0fbcaf04dcaba83c5",
+      "parent_answers_exact": true,
+      "target_poison_exact": true
+    },
+    {
+      "subject": "user23",
+      "rows": 53,
+      "states_digest": "7a5f72618a7e93aa9d1b80292dba3d80",
+      "parent_answers_exact": true,
+      "target_poison_exact": true
+    },
+    {
+      "subject": "user24",
+      "rows": 45,
+      "states_digest": "0e380f1a556947314f315348ef297d4b",
+      "parent_answers_exact": true,
+      "target_poison_exact": true
+    },
+    {
+      "subject": "user3",
+      "rows": 36,
+      "states_digest": "b368117a02262f5cfb696a87f455bfec",
+      "parent_answers_exact": true,
+      "target_poison_exact": true
+    },
+    {
+      "subject": "user4",
+      "rows": 36,
+      "states_digest": "098a8d92ba7cbcd2ad1fc698a6862837",
+      "parent_answers_exact": true,
+      "target_poison_exact": true
+    },
+    {
+      "subject": "user5",
+      "rows": 42,
+      "states_digest": "d4c68acc8a8160586de0d2e251502efb",
+      "parent_answers_exact": true,
+      "target_poison_exact": true
+    },
+    {
+      "subject": "user6",
+      "rows": 51,
+      "states_digest": "c47879b1f155a2f05300792171208a3c",
+      "parent_answers_exact": true,
+      "target_poison_exact": true
+    },
+    {
+      "subject": "user7",
+      "rows": 46,
+      "states_digest": "5bcfef703248a3622b8dbd8816690a54",
+      "parent_answers_exact": true,
+      "target_poison_exact": true
+    },
+    {
+      "subject": "user8",
+      "rows": 42,
+      "states_digest": "5d25a3445c1b5c18d880940fc5ac42aa",
+      "parent_answers_exact": true,
+      "target_poison_exact": true
+    },
+    {
+      "subject": "user9",
+      "rows": 54,
+      "states_digest": "ace3f838dbd0764c205d0c2b8e389348",
+      "parent_answers_exact": true,
+      "target_poison_exact": true
+    }
+  ],
+  "fits": 0,
+  "protected_asset_posthash": 280,
+  "replay_of": null,
+  "limits": "All18people historically observed. Fixed full-scene fusion evaluation with independently trained A/B models; teacher/student dependence retained. Component comparison only, not uniform whole-system OOF. Original749 strong parent is retained unless independently justified by root.",
+  "Test_rows": 0,
+  "pseudo_rows": 0,
+  "wall_seconds": 19.866697117000513,
+  "resources": {
+    "new_bytes": 818962,
+    "actual_D_free_bytes": 57522933760
+  }
+}

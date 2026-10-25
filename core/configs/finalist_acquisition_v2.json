@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "kind": "cuhkx_raw_partial_acquisition_finalist_v2",
+  "layout": {
+    "visual": "visual",
+    "sensors": "nonvisual/LMT_(IMU,Radar,Skeleton)",
+    "scope": "Explicit unlabelled acquisition.csv for HAU only; arbitrary legal subsets of the seven source/category types"
+  },
+  "expected": "Nonempty current QA/sample pair; active experts and stages derived only from source/category",
+  "kuno_model_dir": "pretrained/kuno",
+  "kuno_files": {
+    "ensemble_packed.pt": "1bef2e215fc100acf571b90370a8353574fdad6951b0f75f6e3404521643322f",
+    "ig65m_models.py": "4dc243ff4048db3fc9c9ad4473bfa3b10c61d2c3f6e9fd61a6c0291ee12fdc36",
+    "yolo11n.pt": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1"
+  },
+  "generic_config": "configs/generic_hau_r2plus1d_windows8_v1.json",
+  "generic_weights": "assets/91a641e6c2ab531d1aca5f4321b4d802ec5c3babc15df855cdb6e39c6a1107c8/r2plus1d_18-91a641e6.pth",
+  "generic_weights_sha256": "91a641e6c2ab531d1aca5f4321b4d802ec5c3babc15df855cdb6e39c6a1107c8",
+  "detector": {
+    "device": "0",
+    "probes": 8
+  },
+  "logits": {
+    "logits8": {
+      "segments": 8,
+      "frames": 16,
+      "window_seconds": 2.5,
+      "batch_size": 2
+    },
+    "logits16": {
+      "segments": 16,
+      "frames": 16,
+      "window_seconds": 1.25,
+      "batch_size": 2
+    }
+  },
+  "middle": {
+    "batch_size": 8,
+    "loader_workers": 1
+  },
+  "dependencies_lock": "requirements-cuda-raw-linux-py311.lock",
+  "notes": "Frozen specialist models, window settings, normalization and inference policies retained. Omit inactive experts and raw modalities; IR person detection always required, Depth_Color optional only for K-KUNO logits, Depth required only for generic emotion/HARn features. Empty required sensor stages fail before GPU; no fabricated feature schema.",
+  "raw_view": "Testing-only hard links on the same filesystem; source and view inode identity and content hashes verified",
+  "local_ipc": "AF_UNIX allowed for torch DataLoader file descriptor transport; IP socket.connect remains blocked"
+}

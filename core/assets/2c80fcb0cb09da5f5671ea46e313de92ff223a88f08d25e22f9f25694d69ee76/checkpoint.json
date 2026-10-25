@@ -1,0 +1,50 @@
+{
+  "kind": "cuhkx_hau_skeleton_transfer_v1",
+  "source_hashes": {
+    "scripts/hau_skeleton_transfer_checkpoint.py": "1a8fa69924dd308d30959019d590e31d68d2833a014e728cc5cba83f90ccc04a",
+    "scripts/extract_hau_skeleton_action_scores.py": "a2cff121f863bba50ff32f3e8b887a69c3681f46f538d8d34eca440d92383aa3",
+    "src/cuhkx/harn.py": "8365ff27887bbd1f95c60941ecb0b7b04c123e2182036c3a68fd9378ba5cfd37",
+    "src/cuhkx/harn_nested.py": "b1340a0e4de219f05e6d739a638fecb35c5ead85fb0f21ec3b1d561534fc7bdd",
+    "src/cuhkx/inference.py": "0d9ae78a01ba15545fb8e62d980305703b17413de627204bc8a968e141ece2aa",
+    "src/cuhkx/metadata.py": "a6bff37df1866546708e759f510beb97f1efdebd204a4e9331810df1437c0ad1",
+    "src/cuhkx/submission.py": "4075bd93a078357a545522389a2bcfa69b97f0ff4c76a784a2620e545b7f126e",
+    "src/cuhkx/actions.py": "bad55a7051da5a8208158c97ff25fbe55a43cf64de9d47e492558da2e58f1e43",
+    "src/cuhkx/structural.py": "6560a6c93e1a872467fd11a73679dbe8b0f93c4c29705ad759304f9f76f1f233"
+  },
+  "models": [
+    {
+      "seed": 20260904,
+      "path": "models_seed20260904.joblib",
+      "sha256": "e524a3de6114cd4ed293538efa775403fe562abaa52534fef8c2dd479a2e3200",
+      "bytes": 210003001
+    },
+    {
+      "seed": 20260905,
+      "path": "models_seed20260905.joblib",
+      "sha256": "91fdfc20d9a9162cfc41b4483e46785e1c3bb009159817f95c9e8f21179dbf9d",
+      "bytes": 209706539
+    },
+    {
+      "seed": 20260906,
+      "path": "models_seed20260906.joblib",
+      "sha256": "2fee1c121231157f56b8b24d3304a84440b9181b3658eeddf005f78ea595447a",
+      "bytes": 210008594
+    }
+  ],
+  "verification": {
+    "20260904": {
+      "score_values": 69120,
+      "max_abs_error": 0.0
+    },
+    "20260905": {
+      "score_values": 69120,
+      "max_abs_error": 0.0
+    },
+    "20260906": {
+      "score_values": 69120,
+      "max_abs_error": 0.0
+    }
+  },
+  "scope": "recovered final weights, no new OOF search",
+  "score_combination": "float32 mean over12 views per seed, then float32 mean over3 seeds"
+}

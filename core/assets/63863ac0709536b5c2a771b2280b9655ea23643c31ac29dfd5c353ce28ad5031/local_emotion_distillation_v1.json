@@ -1,0 +1,45 @@
+{
+  "kind": "cuhkx_local_emotion_crossfit_distillation_v1",
+  "seed": 20260912,
+  "teacher_manifest": "runs/20260905_emotion_recipe_nested_v6/model_source_manifest.json",
+  "train_qa": "data/raw/kaggle/training_qa.csv",
+  "feature_paths": {
+    "imu": "runs/20260909_raw_training_sensor_rebuild_v1/imu.npz",
+    "skeleton": "runs/20260909_raw_training_sensor_rebuild_v1/skeleton.npz",
+    "radar": "runs/20260909_raw_training_sensor_rebuild_v1/radar.npz",
+    "visual": "artifacts/features/hau_emotion_generic_visual_meanstd_v5.npz"
+  },
+  "teacher": {
+    "decoder": "fixed_current_projected_option_log_sum",
+    "lexical_weight": 0.25,
+    "context_weight": 4.0,
+    "sensor_weight": 1.0,
+    "temperature": 2.0,
+    "policy_selection": "None. Protocol fixes this architecture; do not read any final/global selected decoder or use inner heldout labels for decoder choice.",
+    "soft_targets": "Softmax legal full-scene joint assignment energies divided by2, then marginalize to each current question's A/B/C/D options. Teacher sees permitted full-scene inputs; student does not. Teacher inputs remove answer/truth_word/target.",
+    "scope": "18 outer: each outer's three retained inner teachers generate only their heldout people's student-fitting softtargets. They exclude both the outer validation person and each softtarget person's labels. Matched outer teacher is evaluation-only. Final student uses three final-inner teachers.75 reused teacher checkpoints total; no final-allTrain teacher and no globalOOF shortcut."
+  },
+  "student": {
+    "hidden": 64,
+    "dropout": 0.1,
+    "epochs": 60,
+    "batch_size": 128,
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "distillation_weight": 1.0,
+    "input": "Only current recording raw frozen sensor/generic descriptors plus4availability masks, current question text32D and each current option text128D deterministic signed SHA256 token/character hash. No peer recording, other question, recording position, acquisition/group/subject/QA/clip ID features. Path only retrieves current bank row.",
+    "architecture": "raw3316+4mask to64 LayerNorm/tanh/dropout; current text to64 tanh/dropout; shared option dot interaction plus learned option-text bias. No option-letter embedding; argmax current options only.",
+    "normalization": "Per-modality mean/std from this student's fitting people and available rows only; scale>=1e-4;clip10;missing zero. Same fitted normalizer A/B.",
+    "A": "Official QA cross entropy only, same media/text inputs and model asB.",
+    "B": "Official QA cross entropy plus1*temperature^2*KL(crossfit teacher joint marginal || student softmax(logits/temperature)).",
+    "matching": "Identical initial state, per-scope RNG/dropout reset, deterministic epoch permutations and batch sizes; same60epochs and exact optimizer update count; no early stopping or outer-score selection."
+  },
+  "validation": "18 heldout people plus final allTrain A/B. No parameter grid or selection; report fixed A/B and fixed teacher separately from historical full749. All18people historically observed. Original generic Kinetics and raw label-free features reused; no HARn-trained or KUNO upstream in this emotion teacher/student.",
+  "diagnostics": "Paired by-person CI and per-person/missing-modality accuracy; official QA heldout only. Teacher in-scope crossfit scores are training-target reliability diagnostics, not globalOOF. Single-question, shuffled-ID/path, other-question deletion/poison, target/group/position poison and current-option permutation checks. Independent process reload verifies actual probabilities and model state. No Test/pseudo data or submissions.",
+  "budget_bytes": 250000000,
+  "host_reserve_bytes": 8000000000,
+  "cpu_threads": 2,
+  "gpu": false,
+  "downloads": false,
+  "environment_changes": false
+}

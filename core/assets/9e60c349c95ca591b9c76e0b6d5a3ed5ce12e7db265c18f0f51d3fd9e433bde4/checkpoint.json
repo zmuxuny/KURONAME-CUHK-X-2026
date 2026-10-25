@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "kind": "cuhkx_harn_equal_seed_ensemble_v1",
+  "config": {
+    "schema_version": 1,
+    "frozen_before_experiment": true,
+    "created_utc": "2026-09-05T21:41:18.132456+00:00",
+    "mechanism": "Fixed equal mean of the two predeclared subject-adapted R2Plus1D visual probability vectors; unchanged shared Skeleton and training-only dictionaries.",
+    "subjects": [
+      "user1",
+      "user2",
+      "user3",
+      "user4",
+      "user5",
+      "user6",
+      "user7",
+      "user8",
+      "user9",
+      "user16",
+      "user17",
+      "user18",
+      "user19",
+      "user20",
+      "user21",
+      "user22",
+      "user23",
+      "user24"
+    ],
+    "workers": 3,
+    "inner_splits": 3,
+    "visual_weights": [
+      0.5,
+      0.5
+    ],
+    "visual_seeds": {
+      "original": 20262905,
+      "repeated": 20262906
+    },
+    "skeleton_weights": [
+      0.0,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "weight_tie_order": [
+      0.5,
+      0.75,
+      0.0,
+      1.0
+    ],
+    "selection": [
+      "maximize complete inner HARn QA accuracy",
+      "maximize inner worst-subject accuracy",
+      "fixed Skeleton tie order"
+    ],
+    "endpoint_controls": "Both original four-weight inner decoders must replay fully, but neither seed endpoint participates in ensemble selection.",
+    "train_csv": "data/raw/kaggle/training_qa.csv",
+    "test_csv": "data/raw/kaggle/test_qa.csv",
+    "parents": {
+      "original": {
+        "run": "runs/20260905_harn_tail_nested_v1",
+        "config.json_sha256": "f6f0c7c7d28966dd1a033fd5f9a403b12153663afb6e308c41b00ba06b7cec50",
+        "source_manifest.json_sha256": "f7903282bc3c275df6ff91108a51e2574f2a9cdb108a3c2858743d2f1fac7a69",
+        "actual_scope_audit": "runs/20260905_harn_tail_scope_audit_v1/report.json"
+      },
+      "repeated": {
+        "run": "runs/20260905_harn_tail_seed_repeat_v1",
+        "config.json_sha256": "3e21a48512dc73fbea3dde4477847cc61596b8ca4c20ccfaa9874de36c53484a",
+        "source_manifest.json_sha256": "e52a510ff3f429f139bd3d03667ce2924f1383b95a304fc5b4e7b44ecb14f229",
+        "actual_scope_audit": "runs/20260905_harn_tail_seed_repeat_scope_audit_v1/report.json"
+      }
+    },
+    "selection_history": "All18 subjects have historical exposure. Fixed equal ensemble was declared with the single seed repeat before its official training. Only inner held-out subjects select the four unchanged Skeleton weights. No outer/Public seed selection, visual ratio search, category or per-row gates.",
+    "retention": "All76 adapted model bundles per parent retained.152 actual models in total; no generic SVC. Require both completed actual scope/model/probability audits; reload stored models and replay all endpoint and ensemble decodes; independently run final two-model Testing-only inference.",
+    "public_prediction_input_policy": "forbidden",
+    "new_neural_fits": 0
+  },
+  "sources": [
+    {
+      "path": "/root/workspace/CUHK-X/scripts/run_harn_nested_fusion.py",
+      "sha256": "e05a33a70885c3616e6e96be479b0b5f03d12886158484390a48a1c30d7dde42",
+      "bytes": 20937
+    },
+    {
+      "path": "/root/workspace/CUHK-X/src/cuhkx/harn_nested.py",
+      "sha256": "b1340a0e4de219f05e6d739a638fecb35c5ead85fb0f21ec3b1d561534fc7bdd",
+      "bytes": 17766
+    },
+    {
+      "path": "/root/workspace/CUHK-X/src/cuhkx/harn.py",
+      "sha256": "8365ff27887bbd1f95c60941ecb0b7b04c123e2182036c3a68fd9378ba5cfd37",
+      "bytes": 4999
+    },
+    {
+      "path": "/root/workspace/CUHK-X/src/cuhkx/metadata.py",
+      "sha256": "a6bff37df1866546708e759f510beb97f1efdebd204a4e9331810df1437c0ad1",
+      "bytes": 1600
+    },
+    {
+      "path": "/root/workspace/CUHK-X/src/cuhkx/submission.py",
+      "sha256": "4075bd93a078357a545522389a2bcfa69b97f0ff4c76a784a2620e545b7f126e",
+      "bytes": 5643
+    },
+    {
+      "path": "/root/workspace/CUHK-X/src/cuhkx/skeleton.py",
+      "sha256": "9494c7ded1f5895a4d944aa6f43dcdc2525e75d5b089e99e8e872b4b3c0981a8",
+      "bytes": 6707
+    },
+    {
+      "path": "/root/workspace/CUHK-X/scripts/extract_skeleton_features.py",
+      "sha256": "6244db10fe921b0c98046cff147a53d6b959432cd37c9d15b5ab9e57ec2fb281",
+      "bytes": 3074
+    },
+    {
+      "path": "/root/workspace/CUHK-X/scripts/extract_video_embeddings.py",
+      "sha256": "60985de5e5d6cac1d3c2c514dfede47a711fe52e1969f46de0b4fedfc34134f7",
+      "bytes": 6204
+    },
+    {
+      "path": "/root/workspace/CUHK-X/scripts/extract_kuno_transfer_logits.py",
+      "sha256": "855db6795b5d4b888d4b69b0fdf44aafecf0de2515e403aeaa4fb6ff9d537622",
+      "bytes": 15091
+    },
+    {
+      "path": "/root/workspace/CUHK-X/src/cuhkx/video.py",
+      "sha256": "9940a91c2560780682b8d673c3bd8f4092ee602a1c0ffd377f24cf34c70cb218",
+      "bytes": 6459
+    },
+    {
+      "path": "/root/workspace/CUHK-X/scripts/run_harn_tail_nested.py",
+      "sha256": "cb067b1a1ef4acbdcc5f6bbb819eeebb8a7d057009ee5ddd385985383690d37c",
+      "bytes": 14828
+    },
+    {
+      "path": "/root/workspace/CUHK-X/src/cuhkx/harn_tail.py",
+      "sha256": "bc942ae2e1fa475542668150af32b20d486513c7cbca5d368b3b040d223125be",
+      "bytes": 9102
+    },
+    {
+      "path": "/root/workspace/CUHK-X/src/cuhkx/video_midfeatures.py",
+      "sha256": "a50bda493e1196c9c8e670bba6e18b2c452c42157b7bb4fe346a055bfece26da",
+      "bytes": 3458
+    },
+    {
+      "path": "/root/workspace/CUHK-X/scripts/extract_video_midfeatures.py",
+      "sha256": "2e5f1fad8ce2cbd7d668ba578a73af0b87d11a1f3c003d4b9f0c491031530a63",
+      "bytes": 7065
+    },
+    {
+      "path": "/root/workspace/CUHK-X/scripts/run_harn_tail_seed_repeat.py",
+      "sha256": "f37ffe7937b98fcebbff4bf2a621fdc4a033a89ecc4a194973936d54095fdd27",
+      "bytes": 1280
+    },
+    {
+      "path": "/root/workspace/CUHK-X/src/cuhkx/harn_tail_seed_repeat.py",
+      "sha256": "4ceec7a4f67ccd9ba87cc50d9d9c83348e8c41be733209f7fdc966a33c55e626",
+      "bytes": 362
+    },
+    {
+      "path": "/root/workspace/CUHK-X/src/cuhkx/harn_seed_ensemble.py",
+      "sha256": "b8d81a5b8f96808cac1227fcf90ab26375c4490969fb7dd997519642890c8572",
+      "bytes": 7251
+    },
+    {
+      "path": "/root/workspace/CUHK-X/scripts/run_harn_seed_ensemble.py",
+      "sha256": "1db3ec3b6b644cd0971306e627fffd574eb2ab8cc1dea4beda3b63c97b987694",
+      "bytes": 29580
+    },
+    {
+      "path": "/root/workspace/CUHK-X/src/cuhkx/validation.py",
+      "sha256": "e1f3f3cf4b626c48dcb113978d22249275c64d5c5737d9762a442264ef20ac98",
+      "bytes": 15168
+    },
+    {
+      "path": "/root/workspace/CUHK-X/scripts/check_harn_seed_ensemble_inference.py",
+      "sha256": "5128de3ee3e65b16423de74033362fb86bf587ee81ab124f5f4a94ea43a96a00",
+      "bytes": 6776
+    }
+  ],
+  "visual_weights": [
+    0.5,
+    0.5
+  ],
+  "selected_skeleton_weight": 0.0,
+  "classifiers": {
+    "original": {
+      "path": "/root/workspace/CUHK-X/runs/20260905_harn_tail_nested_v1/models.joblib",
+      "sha256": "c6074c98853df567abcaecc63306060669d2395b97b10112bcb9339e0ddba814",
+      "bytes": 101444364
+    },
+    "repeated": {
+      "path": "/root/workspace/CUHK-X/runs/20260905_harn_tail_seed_repeat_v1/models.joblib",
+      "sha256": "917d8a4cd8d9108ac31bc1bdd34184d0da78b7da78a9f75514537a210dd86c1b",
+      "bytes": 101456186
+    }
+  }
+}

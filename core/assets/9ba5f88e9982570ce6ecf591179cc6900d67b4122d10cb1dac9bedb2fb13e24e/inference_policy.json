@@ -1,0 +1,279 @@
+{
+  "model_kind": "cuhkx_emotion_recipe_nested_v6",
+  "recipe_config": {
+    "version": 6,
+    "frozen_before_selection": true,
+    "new_forest_fits": 0,
+    "inner_folds": 3,
+    "recipes": [
+      {
+        "name": "current",
+        "sensor_weights": {
+          "imu": 1.0,
+          "skeleton": 2.0,
+          "radar": 0.2,
+          "visual": 1.0
+        }
+      },
+      {
+        "name": "historical_ratio",
+        "sensor_weights": {
+          "imu": 0.25,
+          "skeleton": 1.0,
+          "radar": 0.4,
+          "visual": 0.5
+        }
+      }
+    ],
+    "decoders": [
+      {
+        "name": "v1_manner_mean",
+        "fusion_mode": "v1_manner_mean",
+        "lexical": 0.25,
+        "context": 4.0,
+        "sensor": 1.0,
+        "use_position": true
+      },
+      {
+        "name": "option_log_sum",
+        "fusion_mode": "option_log_sum",
+        "lexical": 0.25,
+        "context": 4.0,
+        "sensor": 1.0,
+        "use_position": true
+      },
+      {
+        "name": "projected_option_log_sum",
+        "fusion_mode": "projected_option_log_sum",
+        "lexical": 0.25,
+        "context": 4.0,
+        "sensor": 1.0,
+        "use_position": true
+      },
+      {
+        "name": "projected_option_log_sum_strong",
+        "fusion_mode": "projected_option_log_sum",
+        "lexical": 0.25,
+        "context": 4.0,
+        "sensor": 2.0,
+        "use_position": true
+      },
+      {
+        "name": "context_only",
+        "fusion_mode": "v1_manner_mean",
+        "lexical": 0.25,
+        "context": 4.0,
+        "sensor": 0.0,
+        "use_position": true
+      }
+    ],
+    "selection_view_weights": {
+      "complete": {
+        "complete": 1.0
+      },
+      "partial": {
+        "pair": 0.6274509803921569,
+        "singleton": 0.37254901960784315
+      }
+    },
+    "selection": "Exactly ten recipe x family candidates in recipe-major order; current recipe first, then original family order. Each complete/partial scope uses only inner weighted accuracy, inner worst subject and frozen candidate order.",
+    "objective": "Test whether one fixed historical source ratio preserves generic visual benefit while reducing the current fusion regressions; reuse exactly76 v5 models.",
+    "validation_caveat": "All subjects and historical parent/v3/v5 results have been observed. This reuses subject-excluded fitted models and redoes inner selection; it is not a new blind design holdout, no new forest training, and not a reconstruction of the entire historical strong-parent recipe."
+  },
+  "selected_policy": {
+    "name": "template_routed",
+    "complete": {
+      "name": "current__projected_option_log_sum",
+      "fusion_mode": "projected_option_log_sum",
+      "lexical": 0.25,
+      "context": 4.0,
+      "sensor": 1.0,
+      "use_position": true,
+      "family": "projected_option_log_sum",
+      "recipe": "current"
+    },
+    "partial": {
+      "name": "current__projected_option_log_sum",
+      "fusion_mode": "projected_option_log_sum",
+      "lexical": 0.25,
+      "context": 4.0,
+      "sensor": 1.0,
+      "use_position": true,
+      "family": "projected_option_log_sum",
+      "recipe": "current"
+    }
+  },
+  "recipe_source_hashes": {
+    "scripts/run_emotion_nested.py": "1f5d9b7e84e830f88779d458a448ce46b96e178e79f4eb042a5d4709ba542d9e",
+    "src/cuhkx/emotion_nested.py": "aec1d649d0d72eab48901625e71f2fb22a55fa1cfa86681dac531df8724a5259",
+    "src/cuhkx/clip_constraints.py": "52393f64d61d4c589fd2ebea6dc91cae7f3aa2b5a170e94dd264761b471f7a86",
+    "src/cuhkx/inference.py": "0d9ae78a01ba15545fb8e62d980305703b17413de627204bc8a968e141ece2aa",
+    "src/cuhkx/metadata.py": "a6bff37df1866546708e759f510beb97f1efdebd204a4e9331810df1437c0ad1",
+    "src/cuhkx/actions.py": "bad55a7051da5a8208158c97ff25fbe55a43cf64de9d47e492558da2e58f1e43",
+    "src/cuhkx/submission.py": "4075bd93a078357a545522389a2bcfa69b97f0ff4c76a784a2620e545b7f126e",
+    "scripts/run_emotion_template_nested.py": "6463f4840844920ef0c136c3cc0a7a02f306f789d03615d541c2e0f0bf3dec16",
+    "src/cuhkx/emotion_template_nested.py": "cb92b179a53690bbe75dc703e70543ff935f8d83fea868d2a86a407c249286ee",
+    "src/cuhkx/emotion_fusion_nested.py": "b172c095a14dfa69872f15501ecc047d91384572c89ad18fd831922dd85a902e",
+    "src/cuhkx/emotion_relative.py": "b92a0756679786e3e0d4320307d8a0411102b00b42981535faff3ba39b740570",
+    "scripts/run_emotion_visual_nested.py": "d8ace4a9f2fe3f0b502c0cbfa3e982a1905b6553ecedb52e744a917ef7ca2178",
+    "src/cuhkx/emotion_visual_nested.py": "7ebc595c81128f4f6f3aaeb36e7ac6ca1ce628ee436db6b5eb08041629d5ef39",
+    "scripts/pack_emotion_generic_visual.py": "77eb5dc77c9356ffc7c30acd50c337bb0483d898e9a34090d25421fc63b36391",
+    "scripts/audit_emotion_visual_nested.py": "295b26462d12b578c196218c60925d295649dbbaa453184f8c21aed6dd45b7ec",
+    "scripts/audit_emotion_nested_provenance.py": "a43c67b9229bd8fa931d22606934b19771dc7bc3b500051a5f01738395457b30",
+    "src/cuhkx/validation.py": "e1f3f3cf4b626c48dcb113978d22249275c64d5c5737d9762a442264ef20ac98",
+    "scripts/evaluate_local_predictions.py": "43d9d091dfaaf7738a2aead3134c229318f4d3940eb1659b9924dd64773baf61",
+    "scripts/extract_generic_hau_windows.py": "84da581525e95fd850a564e5576ff28728cd47b5142838d5859ffdc5db63b2ab",
+    "src/cuhkx/generic_video_windows.py": "ccc3adb237eee7d920a16bd79b4a5821b05858b5c2598395a49a44965e2bffa8",
+    "src/cuhkx/video.py": "9940a91c2560780682b8d673c3bd8f4092ee602a1c0ffd377f24cf34c70cb218",
+    "scripts/extract_video_embeddings.py": "60985de5e5d6cac1d3c2c514dfede47a711fe52e1969f46de0b4fedfc34134f7",
+    "scripts/run_emotion_recipe_nested.py": "12b72f371e8b81534c3c84687b806bb6b00a4489b46f520803e62e747285b6e0",
+    "src/cuhkx/emotion_recipe_nested.py": "9f8d2a90c8d4aae77f392ce3fc5fd10ae74cc3633f2e20b68e13535cabdd085b"
+  },
+  "original_fit_config": {
+    "version": 5,
+    "frozen_before_experiments": true,
+    "objective": "Add one fixed generic Kinetics R2Plus1D_18 visual modality to the unchanged v3 template nested emotion expert. Test complementary within-scene visual movement/pose evidence with no outer-score selection.",
+    "seed": 20260905,
+    "trees": 200,
+    "max_depth": 12,
+    "minimum_leaf": 2,
+    "workers": 3,
+    "inner_folds": 3,
+    "context_beta": 10.0,
+    "context_smoothing": 0.1,
+    "views": {
+      "imu": "(_physical_diff_|_duration_seconds$|_sample_rate_hz$|_dt_median$|_dt_q90$|_rows_per_second$)",
+      "skeleton": "^(frame_count|duration_seconds|diff[12]_|fft_)",
+      "radar": "^(meta_|point_|frame_)",
+      "visual": "^visual_"
+    },
+    "sensor_weights": {
+      "imu": 1.0,
+      "skeleton": 2.0,
+      "radar": 0.2,
+      "visual": 1.0
+    },
+    "selection_view_weights": {
+      "complete": {
+        "complete": 1.0
+      },
+      "partial": {
+        "pair": 0.6274509803921569,
+        "singleton": 0.37254901960784315
+      }
+    },
+    "validation_weight_source": "Unlabeled test structure: 31 complete-core scenes, 16 one-pair scenes and one no-pair scene; the 51 partial-group questions contain 32 paired-core rows and 19 singleton rows. All 48 test scenes retain three questions.",
+    "selection": "Independently maximize complete-core inner accuracy and partial-core inner view-weighted accuracy; ties use inner worst subject then the original decoder order. Each selected decoder applies to the whole group, never selected outer rows or subjects.",
+    "decoders": [
+      {
+        "name": "v1_manner_mean",
+        "fusion_mode": "v1_manner_mean",
+        "lexical": 0.25,
+        "context": 4.0,
+        "sensor": 1.0,
+        "use_position": true
+      },
+      {
+        "name": "option_log_sum",
+        "fusion_mode": "option_log_sum",
+        "lexical": 0.25,
+        "context": 4.0,
+        "sensor": 1.0,
+        "use_position": true
+      },
+      {
+        "name": "projected_option_log_sum",
+        "fusion_mode": "projected_option_log_sum",
+        "lexical": 0.25,
+        "context": 4.0,
+        "sensor": 1.0,
+        "use_position": true
+      },
+      {
+        "name": "projected_option_log_sum_strong",
+        "fusion_mode": "projected_option_log_sum",
+        "lexical": 0.25,
+        "context": 4.0,
+        "sensor": 2.0,
+        "use_position": true
+      },
+      {
+        "name": "context_only",
+        "fusion_mode": "v1_manner_mean",
+        "lexical": 0.25,
+        "context": 4.0,
+        "sensor": 0.0,
+        "use_position": true
+      }
+    ],
+    "constraints": "At inference use unchanged v1 feasible assignments inside audited scenes. Complete means exactly three questions with three shared words. All other groups use the inner-selected partial decoder. Synthetic partial views keep each question and its options/evidence, constrain one of three pairs to the shared core, and leave the other row unrestricted while retaining distinct-word joint assignment.",
+    "validation_caveat": "Acquisition positions remain explicit unlabeled metadata. Relaxed-core proxies test the assignment graph but do not recreate partial-question vocabulary or missing records. Repeated views are dependent; historical subjects and v2b error slices were observed. This is strict model/selection subject exclusion, not a newly untouched blind test; no outer-score or public-score selection is allowed. Historical v3/v4 external errors were reviewed before this fixed visual hypothesis. Generic embeddings are coarse motion/pose evidence, not a pretrained emotion classifier. No outer label, score or selected row may tune this new modality.",
+    "visual_specification": {
+      "dimensions": 2048,
+      "aggregation": "Depth mean,std then IR mean,std over 8 windows; population std",
+      "relative_normalization": "unchanged sensor_matrix within complete three-recording scene",
+      "invalid_unit_policy": "omit missing or physically misaligned paired video; disable visual for its whole scene",
+      "duplicate_windows": "retain fixed eight-window sample; zero std is allowed"
+    }
+  },
+  "original_source_hashes": {
+    "scripts/run_emotion_nested.py": "1f5d9b7e84e830f88779d458a448ce46b96e178e79f4eb042a5d4709ba542d9e",
+    "src/cuhkx/emotion_nested.py": "aec1d649d0d72eab48901625e71f2fb22a55fa1cfa86681dac531df8724a5259",
+    "src/cuhkx/clip_constraints.py": "52393f64d61d4c589fd2ebea6dc91cae7f3aa2b5a170e94dd264761b471f7a86",
+    "src/cuhkx/inference.py": "0d9ae78a01ba15545fb8e62d980305703b17413de627204bc8a968e141ece2aa",
+    "src/cuhkx/metadata.py": "a6bff37df1866546708e759f510beb97f1efdebd204a4e9331810df1437c0ad1",
+    "src/cuhkx/actions.py": "bad55a7051da5a8208158c97ff25fbe55a43cf64de9d47e492558da2e58f1e43",
+    "src/cuhkx/submission.py": "4075bd93a078357a545522389a2bcfa69b97f0ff4c76a784a2620e545b7f126e",
+    "scripts/run_emotion_template_nested.py": "6463f4840844920ef0c136c3cc0a7a02f306f789d03615d541c2e0f0bf3dec16",
+    "src/cuhkx/emotion_template_nested.py": "cb92b179a53690bbe75dc703e70543ff935f8d83fea868d2a86a407c249286ee",
+    "src/cuhkx/emotion_fusion_nested.py": "b172c095a14dfa69872f15501ecc047d91384572c89ad18fd831922dd85a902e",
+    "src/cuhkx/emotion_relative.py": "b92a0756679786e3e0d4320307d8a0411102b00b42981535faff3ba39b740570",
+    "scripts/run_emotion_visual_nested.py": "d8ace4a9f2fe3f0b502c0cbfa3e982a1905b6553ecedb52e744a917ef7ca2178",
+    "src/cuhkx/emotion_visual_nested.py": "7ebc595c81128f4f6f3aaeb36e7ac6ca1ce628ee436db6b5eb08041629d5ef39",
+    "scripts/pack_emotion_generic_visual.py": "77eb5dc77c9356ffc7c30acd50c337bb0483d898e9a34090d25421fc63b36391",
+    "scripts/audit_emotion_visual_nested.py": "295b26462d12b578c196218c60925d295649dbbaa453184f8c21aed6dd45b7ec",
+    "scripts/audit_emotion_nested_provenance.py": "a43c67b9229bd8fa931d22606934b19771dc7bc3b500051a5f01738395457b30",
+    "src/cuhkx/validation.py": "e1f3f3cf4b626c48dcb113978d22249275c64d5c5737d9762a442264ef20ac98",
+    "scripts/evaluate_local_predictions.py": "43d9d091dfaaf7738a2aead3134c229318f4d3940eb1659b9924dd64773baf61",
+    "scripts/extract_generic_hau_windows.py": "84da581525e95fd850a564e5576ff28728cd47b5142838d5859ffdc5db63b2ab",
+    "src/cuhkx/generic_video_windows.py": "ccc3adb237eee7d920a16bd79b4a5821b05858b5c2598395a49a44965e2bffa8",
+    "src/cuhkx/video.py": "9940a91c2560780682b8d673c3bd8f4092ee602a1c0ffd377f24cf34c70cb218",
+    "scripts/extract_video_embeddings.py": "60985de5e5d6cac1d3c2c514dfede47a711fe52e1969f46de0b4fedfc34134f7"
+  },
+  "source_model": {
+    "checkpoint": {
+      "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/models.joblib",
+      "sha256": "7fa05327141de05f1e9815007adbe39b3614d19b40e125ff2d23b1ef7cfafdc9"
+    },
+    "scope": {
+      "path": "/root/workspace/CUHK-X/runs/20260905_emotion_visual_nested_v5/final_training_scope.json",
+      "sha256": "bbb372192f55d3994dfc9adfe7971d101e1f0f0c02fabec9e6dfedf75a6fc7c0"
+    },
+    "train_subjects": [
+      "user1",
+      "user16",
+      "user17",
+      "user18",
+      "user19",
+      "user2",
+      "user20",
+      "user21",
+      "user22",
+      "user23",
+      "user24",
+      "user3",
+      "user4",
+      "user5",
+      "user6",
+      "user7",
+      "user8",
+      "user9"
+    ],
+    "validation_subjects": []
+  },
+  "source_manifest": {
+    "path": "/root/workspace/CUHK-X/runs/20260905_emotion_recipe_nested_v6/model_source_manifest.json",
+    "sha256": "ea0bca2d1da68a43e2cc84cd71f5d67325ae0405e407268f89823d83e3b67b52"
+  },
+  "new_forest_fits": 0
+}
