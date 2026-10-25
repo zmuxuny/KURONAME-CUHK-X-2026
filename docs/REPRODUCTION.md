@@ -4,7 +4,7 @@
 
 The public implementation comes from the submitted verification package. `inference.sh` selects **56239668** by default. Pass `56258762` as the third argument for the other selected version. Later experimental candidates and the unsubmitted compatibility adapter are not selected by this entry.
 
-The only inference-source change in the public export removes mandatory Git-history archiving from the raw visual and sensor preparation stages. Those stages already save the actual executed source files. This permits execution from a GitHub ZIP and a Docker build without `.git`. Model tensors, preprocessing parameters, fusion settings, grouping, and answer decoding are unchanged. The package descriptor's file records were updated for these two source files. A training helper, its test fixture and test configuration omitted from the inference-only export were also restored.
+The public export replaces mandatory Git-history archiving with the existing executed-source snapshots in the raw visual and sensor preparation stages. It also removes a research-time write restriction tied to the original private workspace path. These changes permit execution from a GitHub ZIP, a Docker build without `.git`, and a caller-chosen output directory. Model tensors, preprocessing parameters, fusion settings, grouping, and answer decoding are unchanged. The package descriptor records these three source-file changes. A training helper, its test fixture and test configuration omitted from the inference-only export were also restored.
 
 ## Input contract
 
