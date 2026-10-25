@@ -54,6 +54,19 @@ Original measurements are in `reproduction/original_validation.json`. The 4090 s
 
 `reproduction/reference/final_submission_1.csv` is the primary reference; `_2.csv` is secondary. Inference does not read them. The comparison tool checks IDs, per-row answers, order, and exact bytes, and exits nonzero on a mismatch.
 
+### Public release check — 25 October 2026
+
+The public source was validated in a native Python 3.11 environment on the RTX 3060 Laptop:
+
+| Check | Input and execution | Result |
+|---|---|---|
+| Primary | All original Test features regenerated from raw input; downstream stages resumed after packaging fixes | 682/682; exact CSV bytes |
+| Secondary | Reused those fresh shared features; recomputed the secondary HARn and temporal branches and final decoding | 682/682; exact CSV bytes |
+| Source-archive entry | Fresh `bash inference.sh` run without `.git`; 17 questions, four recordings, all seven task categories | 17/17 matching reference answers; uninterrupted entry run |
+| CPU component tests | Partial supervision, held-out-person separation, explicit layout and model/fusion checks | 17 passed |
+
+This release check did not rebuild the Docker image or measure a new full-run latency. The original Docker and native timings above retain their original scope. Environment versions and comparison results are in [public_release_validation.json](../reproduction/public_release_validation.json).
+
 ## Logs
 
 The top-level work directory retains a log per stage. `baseline.log` covers raw feature production and the shared specialists; `source_presence.log` covers the external-source action branch; `selected_action.log` and `selected_sat.log` cover final answer composition. If a subprocess fails, inspect its stage log and the logs in `baseline/`. Start a new end-to-end run with a new output filename.

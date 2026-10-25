@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-25",
+  "runtime_source_commit": "521af0c8c0fda01eeee46a29cdf00ec573b6b654",
+  "environment": {
+    "python": "3.11.15",
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "torchvision": "0.26.0+cu128",
+      "numpy": "2.4.6",
+      "scikit-learn": "1.8.0",
+      "transformers": "5.9.0",
+      "ultralytics": "8.4.138",
+      "python-sat": "1.9.dev15"
+    },
+    "execution": "native",
+    "hardware": "NVIDIA GeForce RTX 3060 Laptop GPU 6 GB"
+  },
+  "model_tensors_and_decision_settings_changed": false,
+  "primary_original_test": {
+    "submission": "56239668",
+    "rows": 682,
+    "different_answers": 0,
+    "missing_ids": [],
+    "extra_ids": [],
+    "same_order": true,
+    "exact_csv_bytes": true,
+    "raw_features_regenerated": true,
+    "uninterrupted_entry_run": false,
+    "execution": "Fresh raw-data feature production, with downstream stages resumed after portability corrections. The last crop-script change removes source archiving only.",
+    "scope": "Prediction regression; not a new full-run timing benchmark."
+  },
+  "source_archive_entry": {
+    "rows": 17,
+    "expected_rows": 17,
+    "different_answers": 0,
+    "same_order": true,
+    "empty_predictions": 0,
+    "categories": [
+      "HARn/object_interaction",
+      "HARn/single",
+      "HAU/combination",
+      "HAU/emotion",
+      "HAU/multi",
+      "HAU/sequence",
+      "HAU/single"
+    ],
+    "source_archive_without_git": true,
+    "uninterrupted_entry_run": true,
+    "runtime_source_commit": "521af0c"
+  },
+  "component_tests": {
+    "passed": 17,
+    "failed": 0,
+    "command": "cd core && PYTHONPATH=.:src python -m pytest -q tests"
+  },
+  "model_archive_check": {
+    "release_assets_uploaded": 2,
+    "server_sizes_and_digests_match": true,
+    "runtime_files": 36,
+    "archive_restore_exercised": true
+  },
+  "docker_image_rebuilt_for_this_release_check": false,
+  "secondary_original_test": {
+    "submission": "56258762",
+    "rows": 682,
+    "different_answers": 0,
+    "missing_ids": [],
+    "extra_ids": [],
+    "same_order": true,
+    "exact_csv_bytes": true,
+    "shared_fresh_features_from_primary": true,
+    "secondary_visual_branches_recomputed": true,
+    "complete_independent_raw_run": false
+  }
+}

@@ -86,6 +86,8 @@ python3 tools/compare_predictions.py outputs/secondary.csv --submission 56258762
 
 The original submitted Docker package reproduced **682/682 predictions and exact CSV bytes** on the RTX 3060 Laptop: 34.1 minutes for the primary and 35.6 minutes for the secondary. A separate full **native** primary run on an RTX 4090 took 18.6 minutes. These are measurements from the submitted environment. [Reproduction records](reproduction/original_validation.json) distinguish the hardware and execution mode; rebuilding a Docker image is distinct from loading the original tested image.
 
+The public source was checked again on **25 October 2026**, using the RTX 3060 Laptop in a native environment. Regenerated raw-Test features produced exact CSV matches for both selected profiles. A separate source archive without `.git` completed the entry command on 17 questions covering all seven task categories, with all answers matching the corresponding reference rows. [Release validation](reproduction/public_release_validation.json) records the staged full-Test check, shared-feature secondary check, uninterrupted archive-entry check, and 17 passing component tests.
+
 ## Repository layout
 
 | Location | Contents |
