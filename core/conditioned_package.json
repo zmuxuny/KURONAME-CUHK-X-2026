@@ -3603,8 +3603,8 @@
     },
     {
       "relative": "delivery/THIRD_PARTY_NOTICES.md",
-      "sha256": "75a52adf3cddbfc58cbbb926cd271e930bc73c07c4d130ad265960f87509fffd",
-      "bytes": 3224
+      "sha256": "434e6fb2e02b644d720df340316f268be64aa449e1afa58dcc707a45fdb9010d",
+      "bytes": 840
     },
     {
       "relative": "delivery/licenses/CUHK_X_LICENSE_v2.txt",
@@ -3668,12 +3668,12 @@
     },
     {
       "relative": "package_manifest.json",
-      "sha256": "16be5eee506c2412756408c33267be56ac4d4fc0d6cee191bdfa414a902a9564",
-      "bytes": 56623
+      "sha256": "f3e97c4bb7db457278794d5efff23e070976402ad0965d6cc193016156669812",
+      "bytes": 56622
     },
     {
       "relative": "package_manifest.sha256",
-      "sha256": "36c0b863eb495ada9c2fd11bac7a944567f0db4bb6f01e430868454b78780f5d",
+      "sha256": "3ab736875cdb9836c8aae9a24fd7cc7337fc244372dbb74acd848d3a5e2d896e",
       "bytes": 65
     },
     {

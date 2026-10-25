@@ -563,8 +563,8 @@
     },
     {
       "path": "/root/workspace/CUHK-X-integration-20260912/scripts/research_write_guard.py",
-      "bytes": 1286,
-      "sha256": "30782fbe6cdf7fbc64bc373af42cbeb72bdfadf3592207e536f185666862299b",
+      "bytes": 565,
+      "sha256": "e7874f92005bf12d5e47cda76997e3dc3dde6c3b5817c4c4e13336b2c88e3825",
       "relative": "scripts/research_write_guard.py",
       "role": "runtime_source"
     },

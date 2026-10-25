@@ -14,3 +14,4 @@ outputs/
 data/
 .venv/
 report/build/
+.pytest_cache/
